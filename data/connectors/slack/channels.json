@@ -1,0 +1,122 @@
+[
+  {
+    "id": "C10RP",
+    "name": "route-planner",
+    "is_dm": false,
+    "topic": "Route Planner v2 — eng, QA, design",
+    "members": [
+      "U01ALEX",
+      "U02JOHN",
+      "U03SARAHK",
+      "U04DANA",
+      "U06BEN",
+      "U07PRIYA",
+      "B01LINEAR",
+      "B02GITHUB"
+    ]
+  },
+  {
+    "id": "C11SALES",
+    "name": "sales",
+    "is_dm": false,
+    "topic": "Pipeline, customer calls, deal updates",
+    "members": [
+      "U01ALEX",
+      "U02JOHN",
+      "U05MARCUS",
+      "U06BEN"
+    ]
+  },
+  {
+    "id": "C12DESIGN",
+    "name": "design",
+    "is_dm": false,
+    "topic": "Design reviews and WIP",
+    "members": [
+      "U01ALEX",
+      "U02JOHN",
+      "U03SARAHK",
+      "U04DANA",
+      "U07PRIYA"
+    ]
+  },
+  {
+    "id": "C13GEN",
+    "name": "general",
+    "is_dm": false,
+    "topic": "Company-wide announcements",
+    "members": [
+      "U01ALEX",
+      "U02JOHN",
+      "U03SARAHK",
+      "U04DANA",
+      "U05MARCUS",
+      "U06BEN",
+      "U07PRIYA",
+      "U08LEAH",
+      "U09RACHEL"
+    ]
+  },
+  {
+    "id": "C14RAND",
+    "name": "random",
+    "is_dm": false,
+    "topic": "Anything goes",
+    "members": [
+      "U01ALEX",
+      "U02JOHN",
+      "U03SARAHK",
+      "U04DANA",
+      "U05MARCUS",
+      "U06BEN",
+      "U07PRIYA",
+      "U08LEAH",
+      "U09RACHEL"
+    ]
+  },
+  {
+    "id": "D-ALEX-JOHN",
+    "name": "alex--john",
+    "is_dm": true,
+    "members": [
+      "U01ALEX",
+      "U02JOHN"
+    ]
+  },
+  {
+    "id": "D-ALEX-MARCUS",
+    "name": "alex--marcus",
+    "is_dm": true,
+    "members": [
+      "U01ALEX",
+      "U05MARCUS"
+    ]
+  },
+  {
+    "id": "D-ALEX-BEN",
+    "name": "alex--ben",
+    "is_dm": true,
+    "members": [
+      "U01ALEX",
+      "U06BEN"
+    ]
+  },
+  {
+    "id": "D-ALEX-SARAHK",
+    "name": "alex--sarah.kim",
+    "is_dm": true,
+    "members": [
+      "U01ALEX",
+      "U03SARAHK"
+    ]
+  },
+  {
+    "id": "D-ALEX-DANA",
+    "name": "alex--dana",
+    "is_dm": true,
+    "members": [
+      "U01ALEX",
+      "U04DANA"
+    ]
+  }
+]

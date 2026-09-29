@@ -1,0 +1,1091 @@
+{
+  "id": "MTG-0911-DESIGN",
+  "title": "Route Planner v2 – design review",
+  "type": "in_person",
+  "start": "2026-09-11T13:00:00-07:00",
+  "end": "2026-09-11T13:40:00-07:00",
+  "location": "Brightline HQ – Presidio room",
+  "capture": {
+    "device": "MacBook Pro (Alex)",
+    "mic": "built-in",
+    "system_audio": false
+  },
+  "calendar_event_id": "CAL-DESIGN-0911",
+  "participants_known": [
+    "alex@brightline.example.com",
+    "dana@brightline.example.com",
+    "sarah.kim@brightline.example.com"
+  ],
+  "segments": [
+    {
+      "seg_id": "MTG-0911-DESIGN#0001",
+      "start_s": 14.0,
+      "end_s": 19.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.93,
+      "channel": "room",
+      "text": "Okay, is this— yeah, it's recording. Candor's got it. Cool. Hi."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0002",
+      "start_s": 23.2,
+      "end_s": 33.1,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Hi. Can you guys see my screen on the TV? It's doing the thing again where the top is, like, slightly cut off."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0003",
+      "start_s": 40.1,
+      "end_s": 46.3,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "It's fine, we can see it. Just the top bar's clipped a little bit."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0004",
+      "start_s": 59.7,
+      "end_s": 64.5,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "Okay, hang on. Let me just— there. Is that better?"
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0005",
+      "start_s": 72.0,
+      "end_s": 86.7,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Yep, that's good. Okay so, agenda-wise, I think we've got onboarding, empty states, the map palette stuff, and then if there's time I want to talk, um, scope for v2. Like what's at risk."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0006",
+      "start_s": 88.6,
+      "end_s": 97.7,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Yeah. And I have a hard stop at one thirty, I've got the usability session right after in the other room."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0007",
+      "start_s": 99.0,
+      "end_s": 101.3,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.93,
+      "channel": "room",
+      "text": "Sure, sure. Let's go then."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0008",
+      "start_s": 105.3,
+      "end_s": 128.9,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Okay. So. Onboarding. This is the first-run flow for a brand new dispatcher account, so, like, the person at the fleet who's actually gonna be planning routes every morning, not the buyer. The buyer's already sold. This person just wants to get their routes out. Right now in prod it's, what is it, seven steps?"
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0009",
+      "start_s": 132.8,
+      "end_s": 136.0,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Seven, if you count the welcome screen."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0010",
+      "start_s": 139.1,
+      "end_s": 155.8,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Seven if you count the welcome screen, which nobody reads, we know nobody reads it, it's in the recordings. So I got it down to four. Connect your TMS, import depots, add drivers, and then plan your first route."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0011",
+      "start_s": 158.2,
+      "end_s": 171.7,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "And the TMS step, is that skippable? Because honestly half the pilots are not— like, they're not ready to connect anything on day one. Their IT person's on vacation or whatever."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0012",
+      "start_s": 174.3,
+      "end_s": 189.7,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "Yes. So there's a \"do this later\" link, it's right here, bottom left, and if you hit it, it drops you into a sandbox with sample data so you can still play with the planner."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0013",
+      "start_s": 194.1,
+      "end_s": 203.7,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "Wait, sample data from where though? We don't have a seeded sandbox tenant for new accounts right now. That's not a thing."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0014",
+      "start_s": 210.2,
+      "end_s": 229.7,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Right, that's— that's kind of a question for you, actually. I was assuming we could just clone the demo tenant. Like, the one Marcus uses for demos, with the fake trucks and the fake drivers, and then just wipe it when they connect for real."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0015",
+      "start_s": 231.5,
+      "end_s": 243.6,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Hmm. We could. The demo tenant has real-ish addresses in Oakland and Fresno and, like, Stockton, and after this week I'm a little nervous about addresses in general."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0016",
+      "start_s": 245.0,
+      "end_s": 263.0,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.84,
+      "channel": "room",
+      "text": "No, I'm serious, the geo coding thing — we're still chasing the Canada and Mexico cases, and I don't want the sandbox to be the first thing a new customer sees and there's a pin in the middle of Lake Ontario."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0017",
+      "start_s": 270.3,
+      "end_s": 278.3,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "Okay, yeah, fair. Could we just use a handful of California depots? Like stuff we know resolves correctly?"
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0018",
+      "start_s": 288.3,
+      "end_s": 297.9,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Yeah, that's fine. I can get you a list of, I dunno, twenty known-good addresses. Warehouses, truck stops, that kind of thing."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0019",
+      "start_s": 317.6,
+      "end_s": 321.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "And step two, the depot import, is that CSV only?"
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0020",
+      "start_s": 326.3,
+      "end_s": 340.0,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "CSV or paste. I added paste because in the last round of testing, three of the five people just, like, copied straight out of a spreadsheet. Nobody exported a CSV. Nobody."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0021",
+      "start_s": 342.5,
+      "end_s": 344.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "Nice. That's a good catch."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0022",
+      "start_s": 351.3,
+      "end_s": 360.8,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "And then there's the column mapping screen, which, honestly, is the ugliest part of the whole flow. Let me show you. So—"
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0023",
+      "start_s": 359.1,
+      "end_s": 362.6,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.78,
+      "channel": "room",
+      "text": "Oh, the auto-mapping, does it guess the columns?"
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0024",
+      "start_s": 367.6,
+      "end_s": 376.6,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "It guesses. And it highlights the ones it's not confident about in yellow, so you know which ones to double-check."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0025",
+      "start_s": 383.3,
+      "end_s": 388.1,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "Yellow on white is, uh— can you actually read that?"
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0026",
+      "start_s": 395.3,
+      "end_s": 402.9,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "It's a darker yellow, it's more like an amber. It passes contrast. I checked it, I promise."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0027",
+      "start_s": 405.7,
+      "end_s": 425.8,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Then drivers. Drivers is basically the same pattern as depots, on purpose, so once you've done one you know how to do the other. Name, phone, license class, home depot. Paste or CSV. And same auto-mapping, same amber highlight for the columns it's not sure about."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0028",
+      "start_s": 431.6,
+      "end_s": 441.2,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "License class should be optional. Some of the smaller fleets just don't track it in the system at all, it's on paper."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0029",
+      "start_s": 443.6,
+      "end_s": 453.1,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "It's optional. There's no asterisk. Oh wait— there is an asterisk. Okay, that's a bug in the mock, I'll fix that."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0030",
+      "start_s": 459.6,
+      "end_s": 470.4,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "And then the last step, plan your first route, that's kind of the payoff moment, right? Like that's where we want the, the \"oh wow.\""
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0031",
+      "start_s": 494.0,
+      "end_s": 512.5,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "Exactly, so this is the part I'm the most excited about. Instead of dropping them onto an empty planner, we pre-fill a route with their own depots and, like, three stops, and they just hit \"optimize\" and watch the route snap into place."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0032",
+      "start_s": 515.5,
+      "end_s": 517.5,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.94,
+      "channel": "room",
+      "text": "Oh, I love that."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0033",
+      "start_s": 520.1,
+      "end_s": 533.2,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.83,
+      "channel": "room",
+      "text": "How long does that take, though? Like, if the first thing a new customer sees is a spinner for four seconds, that's not an \"oh wow,\" that's an \"oh no.\""
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0034",
+      "start_s": 535.4,
+      "end_s": 540.5,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "That's literally why I wanted you in the room for this."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0035",
+      "start_s": 561.5,
+      "end_s": 572.4,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "For three stops it's fast. It's the big fleets that get slow, the hundreds-of-vehicles case. For a first-run thing with three stops, it's sub-second, easily."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0036",
+      "start_s": 575.9,
+      "end_s": 578.8,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "Okay, good. Then let's do it."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0037",
+      "start_s": 585.8,
+      "end_s": 594.6,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "Okay, so, that's onboarding. I'm still iterating on it, obviously, the full mockups are the thing that's due next Thursday."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0038",
+      "start_s": 602.8,
+      "end_s": 606.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.93,
+      "channel": "room",
+      "text": "The seventeenth, yeah. Are you on track for that?"
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0039",
+      "start_s": 617.8,
+      "end_s": 643.5,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "Yeah, I think so. This is like seventy percent of it. The rest is edge cases and the, um, the error states for the import. Like what happens when half the rows fail, do we import the good half or do we block the whole thing. I have an opinion but I want to see what the testers do first."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0040",
+      "start_s": 679.4,
+      "end_s": 691.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "Okay. My vote on the half-the-rows thing is import the good half and show a list of the bad ones, but let's see what testers do. Okay. Empty states."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0041",
+      "start_s": 695.1,
+      "end_s": 707.4,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "Empty states. So there's three that really matter. No routes yet, no drivers yet, and then the one everybody forgets, which is you filtered down to zero results."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0042",
+      "start_s": 710.3,
+      "end_s": 721.0,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "The filtered-to-zero one is the one we actually get bug reports about. People think their routes got deleted. Like, every week there's a ticket."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0043",
+      "start_s": 728.0,
+      "end_s": 741.9,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "Right! So that one gets a big \"clear filters\" button right in the middle of the page. And it tells you which filters are on, so you can see what you did."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0044",
+      "start_s": 770.1,
+      "end_s": 776.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "Can we say how many results are hidden? Like \"twelve routes hidden by filters\"?"
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0045",
+      "start_s": 776.6,
+      "end_s": 779.1,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Uh, is that cheap? Sarah?"
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0046",
+      "start_s": 783.8,
+      "end_s": 792.1,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "It's another count query. It's fine. Actually, yeah— it's fine. It's the same query without the where clause, basically."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0047",
+      "start_s": 795.8,
+      "end_s": 797.7,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "Okay, I'll add it."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0048",
+      "start_s": 804.3,
+      "end_s": 808.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.93,
+      "channel": "room",
+      "text": "And for no routes yet, what's the copy?"
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0049",
+      "start_s": 814.2,
+      "end_s": 822.4,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "I just reused the existing string. \"No routes yet. Plan your first route.\" With the button under it."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0050",
+      "start_s": 828.9,
+      "end_s": 831.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Great, don't touch it."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0051",
+      "start_s": 836.8,
+      "end_s": 839.1,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "I wasn't gonna touch it."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0052",
+      "start_s": 848.0,
+      "end_s": 854.5,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "And the no-drivers one points back to the driver import. Same component, different illustration."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0053",
+      "start_s": 858.7,
+      "end_s": 867.8,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "Are the illustrations final? Because the last ones were, like, four hundred K each and they were killing the page weight."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0054",
+      "start_s": 876.5,
+      "end_s": 881.2,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "They're S V G's now. They're tiny. Like two K."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0055",
+      "start_s": 882.5,
+      "end_s": 884.1,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.82,
+      "channel": "room",
+      "text": "Okay. Bless you."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0056",
+      "start_s": 885.9,
+      "end_s": 907.2,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "And there's a loading state and an error state for each one, but they're boring, they just use the standard skeleton and the standard error banner. I didn't do anything custom. I figured if we're trying to save time, that's the place, nobody's gonna notice a nicer skeleton loader."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0057",
+      "start_s": 915.3,
+      "end_s": 917.8,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.95,
+      "channel": "room",
+      "text": "Good. Boring is good there."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0058",
+      "start_s": 950.2,
+      "end_s": 955.9,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "Okay. Map palette. This is the one I actually need decisions on today."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0059",
+      "start_s": 962.8,
+      "end_s": 963.8,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.81,
+      "channel": "room",
+      "text": "Go."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0060",
+      "start_s": 974.6,
+      "end_s": 993.9,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "So right now route lines get assigned from this, uh, ten-color list, and three of the colors are basically indistinguishable if you're red-green colorblind. And, you know, dispatchers, it's a big population, it's a lot of guys, it matters. It's like one in twelve men."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0061",
+      "start_s": 1002.2,
+      "end_s": 1004.3,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.93,
+      "channel": "room",
+      "text": "Yeah, no, that matters."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0062",
+      "start_s": 1005.5,
+      "end_s": 1032.5,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "So I built a new palette. It's eight colors instead of ten, and they're all distinguishable under the common types of colorblindness. I ran it through the simulator, all three modes, and I also just, like, printed it out in grayscale, because some of the fleets still print route sheets, and they're still mostly distinguishable in grayscale, which was kind of a bonus."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0063",
+      "start_s": 1033.2,
+      "end_s": 1039.8,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.84,
+      "channel": "room",
+      "text": "What happens when there's more than eight routes, though? Which is, like, every real customer."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0064",
+      "start_s": 1043.0,
+      "end_s": 1057.9,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "Then we add a pattern. Dashed, dotted. And honestly, once you have more than eight routes on the map, you're not reading the colors anyway, you're using the side panel to pick a route."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0065",
+      "start_s": 1058.5,
+      "end_s": 1061.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "That's true. Nobody's reading forty colored lines."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0066",
+      "start_s": 1063.6,
+      "end_s": 1079.0,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "The other thing is the traffic overlay. The traffic layer uses red, orange and green, and our route colors can't collide with those, or people are gonna think a route is congested when it's not."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0067",
+      "start_s": 1080.3,
+      "end_s": 1087.1,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "Oh. Hm. I didn't— I didn't check it with traffic on. That's a good point."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0068",
+      "start_s": 1092.2,
+      "end_s": 1103.2,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.84,
+      "channel": "room",
+      "text": "Yeah, turn on traffic in the prototype and you'll see it. The coral one is gonna be a problem. It reads as, like, slow traffic."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0069",
+      "start_s": 1106.9,
+      "end_s": 1124.8,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Okay, I'll swap the coral. Maybe a purple. There's a purple in the brand palette I can pull. And I'll darken the teal a little, because on the satellite view it kind of disappears into the, like, the fields and stuff."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0070",
+      "start_s": 1125.5,
+      "end_s": 1130.6,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "Is the palette a tile provider thing, or is it ours?"
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0071",
+      "start_s": 1137.8,
+      "end_s": 1154.5,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "Route lines are ours. The base map is the provider's. We can restyle the base map, but it's this giant JSON style file and every time we touch it something breaks, like, labels disappear in Nevada or something."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0072",
+      "start_s": 1166.6,
+      "end_s": 1170.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.94,
+      "channel": "room",
+      "text": "Let's not touch the base map for v2."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0073",
+      "start_s": 1173.2,
+      "end_s": 1174.3,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.73,
+      "channel": "room",
+      "text": "Thank you."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0074",
+      "start_s": 1188.9,
+      "end_s": 1194.6,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Agreed. I only care about the route lines and the depot pins."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0075",
+      "start_s": 1199.7,
+      "end_s": 1203.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.94,
+      "channel": "room",
+      "text": "And the pins, what changed on those?"
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0076",
+      "start_s": 1210.9,
+      "end_s": 1219.9,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Depots are squares now instead of circles, so you can tell them apart from stops without relying on color at all."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0077",
+      "start_s": 1225.8,
+      "end_s": 1227.4,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "Oh, that's smart."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0078",
+      "start_s": 1231.6,
+      "end_s": 1238.1,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "That's actually a tiny change for us. Pin shape is just an icon swap."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0079",
+      "start_s": 1239.0,
+      "end_s": 1247.6,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "I'll post the updated palette in design with the traffic layer turned on, so you can yell at it."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0080",
+      "start_s": 1284.2,
+      "end_s": 1294.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "Okay, we've got, what, like ten minutes before Dana has to run. Let's talk scope, 'cause I want to know what's actually at risk."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0081",
+      "start_s": 1299.8,
+      "end_s": 1316.1,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "So. With the geocoding regression, we moved to the 14th. October 14th. And honestly, the 14th is doable, but it's tight, and there's a bunch of v2 stuff I'd rather not be doing in the last two weeks."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0082",
+      "start_s": 1328.3,
+      "end_s": 1329.6,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.83,
+      "channel": "room",
+      "text": "Like what?"
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0083",
+      "start_s": 1333.4,
+      "end_s": 1346.0,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "Dark mode is the big one. It's not hard exactly, it's just every screen, every chart, the map styling in dark, all of it has to get QA'd twice—"
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0084",
+      "start_s": 1350.0,
+      "end_s": 1357.4,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Oh, on that. John told me he's fine cutting dark mode from v2 to save time."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0085",
+      "start_s": 1364.4,
+      "end_s": 1366.6,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.93,
+      "channel": "room",
+      "text": "Wait, John said that?"
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0086",
+      "start_s": 1367.8,
+      "end_s": 1380.8,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Yeah, he said he's fine cutting it. We were talking by the coffee machine on, like, Wednesday? I mentioned it'd save us time and he was like, yeah, fine."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0087",
+      "start_s": 1383.4,
+      "end_s": 1396.8,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Honestly that would save us, I dunno, a week of engineering. Maybe more with QA. Priya would have to run the whole regression pass twice, once light and once dark."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0088",
+      "start_s": 1399.7,
+      "end_s": 1417.4,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Hmm. Okay. I mean, if he's actually fine with it, that helps a lot. I just— I'd want to hear it from him directly before we pull it, 'cause I know at least some of the pilots have asked for it."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0089",
+      "start_s": 1427.8,
+      "end_s": 1431.9,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Sure, yeah. I'm just telling you what he said."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0090",
+      "start_s": 1440.8,
+      "end_s": 1449.8,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "No, totally, totally. Let's— for planning purposes, let's treat it as maybe cut, but it's not decided, and don't delete anything."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0091",
+      "start_s": 1457.0,
+      "end_s": 1466.4,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.83,
+      "channel": "room",
+      "text": "I won't delete anything. The dark tokens are already in the design system anyway, so it's not like it goes away."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0092",
+      "start_s": 1472.1,
+      "end_s": 1481.6,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "And I'll keep making the dark versions of the new screens. It's like ten extra minutes per screen for me, it's nothing."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0093",
+      "start_s": 1483.7,
+      "end_s": 1485.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.81,
+      "channel": "room",
+      "text": "Okay, good."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0094",
+      "start_s": 1496.2,
+      "end_s": 1502.8,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.84,
+      "channel": "room",
+      "text": "The other scope thing is bulk re-optimize. If that slips, it slips. It's a nice-to-have."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0095",
+      "start_s": 1505.3,
+      "end_s": 1510.8,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "Yeah, that one's fine to slip. Nobody's buying because of bulk re-optimize."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0096",
+      "start_s": 1511.0,
+      "end_s": 1518.4,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "Can I get two more minutes on onboarding before I go? There was one thing I forgot."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0097",
+      "start_s": 1521.7,
+      "end_s": 1522.5,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.79,
+      "channel": "room",
+      "text": "Sure."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0098",
+      "start_s": 1524.4,
+      "end_s": 1528.1,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "The progress indicator. Dots, or a numbered stepper?"
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0099",
+      "start_s": 1538.2,
+      "end_s": 1545.3,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Numbered. People like knowing it's \"two of four.\" They want to know how much is left."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0100",
+      "start_s": 1555.7,
+      "end_s": 1556.6,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.83,
+      "channel": "room",
+      "text": "Numbered."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0101",
+      "start_s": 1569.7,
+      "end_s": 1571.8,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "Okay, that was easy."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0102",
+      "start_s": 1575.9,
+      "end_s": 1579.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "Anything else? Sarah, anything you need from Dana?"
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0103",
+      "start_s": 1584.7,
+      "end_s": 1600.6,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.83,
+      "channel": "room",
+      "text": "Just the red lines for the empty states once they're final, with the spacing called out, 'cause last time we guessed and we guessed wrong. And I'll send over the list of good addresses for the sandbox."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0104",
+      "start_s": 1601.9,
+      "end_s": 1605.9,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "Cool. I'll get you the empty states Monday."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0105",
+      "start_s": 1616.7,
+      "end_s": 1628.4,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.93,
+      "channel": "room",
+      "text": "Okay. Thanks, both. This was really good. The onboarding thing especially, the pre-filled first route, I think that's gonna demo really well. Marcus is gonna love it."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0106",
+      "start_s": 1647.1,
+      "end_s": 1655.4,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "Okay, I'm gonna run, my session's in the other room and I still have to set up the recording."
+    },
+    {
+      "seg_id": "MTG-0911-DESIGN#0107",
+      "start_s": 1653.9,
+      "end_s": 1660.0,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.75,
+      "channel": "room",
+      "text": "Oh, hey Dana, can you leave the TV on? I'm in here next."
+    }
+  ]
+}

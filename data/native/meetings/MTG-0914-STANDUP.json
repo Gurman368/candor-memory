@@ -1,0 +1,543 @@
+{
+  "id": "MTG-0914-STANDUP",
+  "title": "Daily standup",
+  "type": "in_person",
+  "start": "2026-09-14T09:30:00-07:00",
+  "end": "2026-09-14T09:45:00-07:00",
+  "location": "Brightline HQ – Presidio room",
+  "capture": {
+    "device": "MacBook Pro (Alex)",
+    "mic": "built-in",
+    "system_audio": false
+  },
+  "calendar_event_id": "CAL-STANDUP",
+  "participants_known": [
+    "alex@brightline.example.com",
+    "sarah.kim@brightline.example.com",
+    "dana@brightline.example.com",
+    "priya@brightline.example.com",
+    "ben@brightline.example.com"
+  ],
+  "segments": [
+    {
+      "seg_id": "MTG-0914-STANDUP#0001",
+      "start_s": 6.0,
+      "end_s": 10.8,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "Morning. Okay, let's do it, it's nine thirty. Is Ben coming?"
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0002",
+      "start_s": 12.3,
+      "end_s": 16.2,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "He's getting coffee. He said start without him."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0003",
+      "start_s": 18.3,
+      "end_s": 21.8,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Okay. Sarah, you want to kick us off?"
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0004",
+      "start_s": 25.8,
+      "end_s": 44.9,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Sure. So, geocoding. We found the root cause Friday night, it's in the address normalizer. Canadian postal codes were getting stripped, and some of the Mexican state abbreviations were matching US states. PR is up, it's got one approval, I'm merging it this morning."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0005",
+      "start_s": 46.7,
+      "end_s": 52.1,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Nice. Is that the whole thing, or are there more cases hiding?"
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0006",
+      "start_s": 60.1,
+      "end_s": 78.5,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.84,
+      "channel": "room",
+      "text": "I think that's the whole thing, but I don't trust myself until Priya's run her set on it. I also added a check so if the country doesn't match we flag it instead of just, like, silently putting a pin in North Dakota."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0007",
+      "start_s": 89.4,
+      "end_s": 94.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Okay. And we're still good for the 14th? October 14th?"
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0008",
+      "start_s": 95.6,
+      "end_s": 104.0,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.83,
+      "channel": "room",
+      "text": "Yeah, the 14th still holds. If the fix is clean, we're fine. If it's not, you'll hear about it."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0009",
+      "start_s": 108.3,
+      "end_s": 110.3,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.94,
+      "channel": "room",
+      "text": "Okay. Anything blocking you?"
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0010",
+      "start_s": 118.6,
+      "end_s": 132.8,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Kind of. I need a fresh copy of the staging database, the one we have is like three weeks stale and it doesn't have the new pilot depots. That's a Ben thing."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0011",
+      "start_s": 133.9,
+      "end_s": 137.6,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Ben Carter",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "That's a Ben thing, I heard my name."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0012",
+      "start_s": 142.4,
+      "end_s": 144.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.79,
+      "channel": "room",
+      "text": "Ha, perfect timing."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0013",
+      "start_s": 144.9,
+      "end_s": 149.6,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Ben Carter",
+      "speaker_confidence": 0.82,
+      "channel": "room",
+      "text": "Sorry, the line downstairs was insane. What's a Ben thing?"
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0014",
+      "start_s": 152.5,
+      "end_s": 155.9,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Staging DB refresh. Today, if you can."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0015",
+      "start_s": 157.1,
+      "end_s": 166.9,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Ben Carter",
+      "speaker_confidence": 0.8,
+      "channel": "room",
+      "text": "Yeah, I can kick that off after this. It takes like an hour. I'll ping you in route planner when it's done."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0016",
+      "start_s": 172.7,
+      "end_s": 174.0,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.8,
+      "channel": "room",
+      "text": "Thank you."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0017",
+      "start_s": 177.7,
+      "end_s": 179.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "Okay. Priya."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0018",
+      "start_s": 181.5,
+      "end_s": 203.4,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.84,
+      "channel": "room",
+      "text": "So, the regression plan went up Friday, it's in Notion, sixty-four cases. I'm starting the full run today. The geocoding cases I'm holding until Sarah's fix is in staging, and then I've got a set of about four hundred Canada and Mexico addresses I pulled from the pilot depot lists."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0019",
+      "start_s": 205.6,
+      "end_s": 207.4,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.79,
+      "channel": "room",
+      "text": "Four hundred, wow."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0020",
+      "start_s": 218.6,
+      "end_s": 227.8,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "A lot of them are duplicates, honestly, but I wanted the ugly ones. Quebec addresses with accents, PO boxes, rural routes."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0021",
+      "start_s": 229.5,
+      "end_s": 231.2,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.78,
+      "channel": "room",
+      "text": "Good. Break it."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0022",
+      "start_s": 233.3,
+      "end_s": 252.6,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "That's the plan. Um, the other thing is the test env keeps timing out on the map tiles, like one in ten runs. It's not us, I think it's the tile provider's sandbox. I'm just flagging it in case anyone sees flaky failures and panics."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0023",
+      "start_s": 256.6,
+      "end_s": 262.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Okay, noted. Is that a real risk for launch or just annoying?"
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0024",
+      "start_s": 263.1,
+      "end_s": 266.8,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.84,
+      "channel": "room",
+      "text": "Just annoying. Prod uses the real tile key."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0025",
+      "start_s": 270.3,
+      "end_s": 271.7,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.82,
+      "channel": "room",
+      "text": "Okay. Dana."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0026",
+      "start_s": 274.3,
+      "end_s": 295.3,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "So, onboarding mockups, still on track for Thursday. I did the usability session Friday after design review, five people. Four out of five found the \"do this later\" link on the TMS step without any help, which is great. The fifth one kind of just stared at it."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0027",
+      "start_s": 299.9,
+      "end_s": 302.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Ha. That's a pretty good ratio."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0028",
+      "start_s": 304.1,
+      "end_s": 311.5,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.84,
+      "channel": "room",
+      "text": "Yeah. And the pre-filled first route, everybody loved it. Like, audibly. One guy said \"oh, that's cool.\""
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0029",
+      "start_s": 325.6,
+      "end_s": 328.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "That's the reaction we want."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0030",
+      "start_s": 334.2,
+      "end_s": 350.1,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.82,
+      "channel": "room",
+      "text": "And then I updated the map palette. I swapped the coral for a purple and darkened the teal, and I checked it with the traffic layer on this time. It's in design if anyone wants to look."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0031",
+      "start_s": 351.4,
+      "end_s": 354.8,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "I looked. It's better. The purple's good."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0032",
+      "start_s": 359.7,
+      "end_s": 367.1,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "Thanks. No blockers. Sarah, I still need that list of good addresses for the sandbox, whenever."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0033",
+      "start_s": 375.8,
+      "end_s": 378.1,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "Oh, right, sorry. Today."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0034",
+      "start_s": 381.6,
+      "end_s": 382.7,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.78,
+      "channel": "room",
+      "text": "Okay. Ben."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0035",
+      "start_s": 384.9,
+      "end_s": 402.0,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Ben Carter",
+      "speaker_confidence": 0.82,
+      "channel": "room",
+      "text": "Yeah. So, churn dashboard. Still working on it. I'm reconciling it against the billing export line by line, which is slow, but I want it right before anybody puts it in front of the board. Should have something midweek."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0036",
+      "start_s": 403.8,
+      "end_s": 408.6,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "Okay. Midweek's good. Just let me know when it's solid."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0037",
+      "start_s": 411.5,
+      "end_s": 420.9,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Ben Carter",
+      "speaker_confidence": 0.79,
+      "channel": "room",
+      "text": "Will do. And, uh, Alex, the Harbor demo environment, I'm assuming that's dead? Marcus said the demo got pushed to October."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0038",
+      "start_s": 429.8,
+      "end_s": 437.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Yeah, that's off. They pushed it, so we don't need the environment. Don't worry about it."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0039",
+      "start_s": 439.3,
+      "end_s": 443.5,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Ben Carter",
+      "speaker_confidence": 0.79,
+      "channel": "room",
+      "text": "Cool, 'cause I hadn't started it. So that's easy."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0040",
+      "start_s": 458.4,
+      "end_s": 459.7,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.82,
+      "channel": "room",
+      "text": "Ha. Perfect."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0041",
+      "start_s": 467.1,
+      "end_s": 476.8,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Ben Carter",
+      "speaker_confidence": 0.8,
+      "channel": "room",
+      "text": "Other than that, staging refresh for Sarah, and I'm cleaning up some of the ingest jobs that keep failing overnight. No blockers."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0042",
+      "start_s": 482.1,
+      "end_s": 492.4,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "Okay. Me real quick. I'm mostly on the Acme pricing proposal today and tomorrow, and board stuff with John. Nothing for you guys there."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0043",
+      "start_s": 494.5,
+      "end_s": 511.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Oh, and one process thing. I'm gonna propose Fridays are async standups. No meeting, just post your update in Slack by ten. I do my best deep work Friday mornings and I suspect some of you do too."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0044",
+      "start_s": 516.1,
+      "end_s": 517.7,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.79,
+      "channel": "room",
+      "text": "Oh, yes please."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0045",
+      "start_s": 522.2,
+      "end_s": 523.8,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.73,
+      "channel": "room",
+      "text": "Yeah, I'm in."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0046",
+      "start_s": 523.5,
+      "end_s": 524.9,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.68,
+      "channel": "room",
+      "text": "No objection."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0047",
+      "start_s": 529.7,
+      "end_s": 536.1,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "Okay, I'll post it in general so it's official. We'll try it this Friday."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0048",
+      "start_s": 540.7,
+      "end_s": 545.9,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Ben Carter",
+      "speaker_confidence": 0.83,
+      "channel": "room",
+      "text": "Does that mean I can get coffee Friday without being late?"
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0049",
+      "start_s": 554.7,
+      "end_s": 559.7,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "It means you can get coffee whenever you want on Friday."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0050",
+      "start_s": 561.0,
+      "end_s": 562.9,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Ben Carter",
+      "speaker_confidence": 0.72,
+      "channel": "room",
+      "text": "Best standup ever."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0051",
+      "start_s": 565.4,
+      "end_s": 571.6,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Okay. Anything else? No? Okay, thanks everybody. Sarah, ping me when the fix merges."
+    },
+    {
+      "seg_id": "MTG-0914-STANDUP#0052",
+      "start_s": 573.6,
+      "end_s": 575.0,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.73,
+      "channel": "room",
+      "text": "Will do."
+    }
+  ]
+}

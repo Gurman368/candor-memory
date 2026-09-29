@@ -1,0 +1,12 @@
+{"id": "ACT-TR-01", "actions": [{"type": "slack.send_message", "args": {"to": "U03SARAHK", "dm": "D-ALEX-SARAHK", "text": "the geocoding fix looks good"}}]}
+{"id": "ACT-TR-02", "actions": [{"type": "gmail.send", "args": {"to": ["sarah.patel@acmefreight.example.com"], "cc": [], "subject": "", "body": "she's had a chance to look at the proposal"}}]}
+{"id": "ACT-TR-03", "actions": [{"type": "reminder.create", "args": {"text": "follow up with Acme", "due": "2026-09-25T09:00:00-07:00"}}]}
+{"id": "ACT-TR-04", "actions": [{"type": "calendar.update_event", "args": {"event_id": "CAL-BOARDPREP", "start": "2026-09-18T15:00:00-07:00", "end": "2026-09-18T16:00:00-07:00"}}]}
+{"id": "ACT-TR-05", "actions": [{"type": "app.open", "args": {"app": "Figma"}}]}
+{"id": "ACT-TR-06", "actions": [{"type": "slack.send_message", "args": {"to": "C10RP", "text": "we're launching October 21"}}]}
+{"id": "ACT-TR-07", "actions": [{"type": "calendar.create_event", "args": {"title": "the NRR fix", "start": "2026-09-17T14:00:00-07:00", "end": "2026-09-17T14:30:00-07:00", "attendees": ["ben@brightline.example.com"]}}]}
+{"id": "ACT-TR-08", "actions": [{"type": "memory.ask", "args": {"question": "What's our launch date again?"}}]}
+{"id": "ACT-TR-09", "actions": [{"type": "clarify", "args": {"question": "Which one did you mean -- Sarah Kim, sarah patel?"}}]}
+{"id": "ACT-TR-10", "actions": [{"type": "gmail.send", "args": {"to": ["john@brightline.example.com"], "cc": [], "subject": "", "body": "the corrected NRR (NRR: 18)"}}, {"type": "slack.send_message", "args": {"to": "U06BEN", "dm": "D-ALEX-BEN", "text": "Thanks!"}}]}
+{"id": "ACT-TR-11", "actions": [{"type": "confirm", "args": {"summary": "Delete all my emails from Marcus? This can't be undone."}}]}
+{"id": "ACT-TR-12", "actions": [{"type": "reminder.create", "args": {"text": "print the deck", "due": "2026-09-23T08:00:00-07:00"}}]}

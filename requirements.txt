@@ -1,0 +1,5 @@
+# No third-party dependencies. Everything here (BM25, the LLM client, the
+# action parser) is implemented with the Python 3.10+ standard library only,
+# same constraint as eval_harness/. `pip install -r requirements.txt` is a
+# no-op and only exists so the quickstart command in README.md doesn't fail
+# on a machine that expects one.

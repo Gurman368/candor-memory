@@ -1,0 +1,1493 @@
+{
+  "id": "MTG-0908-PLAN",
+  "title": "Route Planner v2 – launch planning",
+  "type": "in_person",
+  "start": "2026-09-08T10:00:00-07:00",
+  "end": "2026-09-08T11:00:00-07:00",
+  "location": "Brightline HQ – Presidio room",
+  "capture": {
+    "device": "MacBook Pro (Alex)",
+    "mic": "built-in",
+    "system_audio": false
+  },
+  "calendar_event_id": "CAL-PLAN-0908",
+  "participants_known": [
+    "alex@brightline.example.com",
+    "john@brightline.example.com",
+    "sarah.kim@brightline.example.com",
+    "dana@brightline.example.com",
+    "priya@brightline.example.com"
+  ],
+  "segments": [
+    {
+      "seg_id": "MTG-0908-PLAN#0001",
+      "start_s": 2.4,
+      "end_s": 9.1,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.93,
+      "channel": "room",
+      "text": "Okay, is it — is this recording? Yeah, the little light's on. Okay, cool."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0002",
+      "start_s": 20.0,
+      "end_s": 31.6,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "The projector's doing the thing again where it just shows the, uh, the blue screen with the little no-signal box bouncing around."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0003",
+      "start_s": 34.3,
+      "end_s": 46.7,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.83,
+      "channel": "room",
+      "text": "You have to unplug the HDMI and plug it back in. And then wiggle it. This room is cursed, everybody knows this room is cursed."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0004",
+      "start_s": 49.7,
+      "end_s": 59.4,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Presidio's been cursed since we moved in. Somebody should file a ticket with the, uh, with the building people."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0005",
+      "start_s": 62.2,
+      "end_s": 65.6,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "I filed one. In, like, July."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0006",
+      "start_s": 64.1,
+      "end_s": 66.7,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.81,
+      "channel": "room",
+      "text": "Of course you did."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0007",
+      "start_s": 69.1,
+      "end_s": 69.8,
+      "speaker_label": "Speaker 6",
+      "speaker_name": null,
+      "speaker_confidence": 0.45,
+      "channel": "room",
+      "text": "[laughter]"
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0008",
+      "start_s": 98.7,
+      "end_s": 109.6,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "Okay — okay, it's up. It's up. Nobody touch the cable. How was everybody's long weekend? Anybody do anything fun for Labor Day?"
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0009",
+      "start_s": 113.4,
+      "end_s": 129.7,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "I went up to Sonoma for my cousin's wedding, which was lovely, but I think I'm still, like, a little dehydrated. It was ninety-five degrees and they did the whole thing outside."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0010",
+      "start_s": 141.2,
+      "end_s": 154.8,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "I did absolutely nothing. I reorganized my closet and I'm, like, weirdly proud of it. I found a jacket I thought I lost in, like, twenty twenty-two."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0011",
+      "start_s": 157.2,
+      "end_s": 169.4,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "That's a good weekend, honestly. We tried to take the kids camping and it rained. In September. In California. Which I didn't think was legal."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0012",
+      "start_s": 171.8,
+      "end_s": 175.0,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "Wait, it rained? Where were you?"
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0013",
+      "start_s": 179.0,
+      "end_s": 195.5,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "Up near, um, near Truckee. It was like a twenty-minute thunderstorm and then my youngest refused to go back in the tent. So we came home Sunday. Anyway. Alex, you want to drive?"
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0014",
+      "start_s": 201.4,
+      "end_s": 225.4,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.93,
+      "channel": "room",
+      "text": "Yeah. So, the goal for today is pretty simple. I want us to walk out of here with a launch date for Route Planner v2 that we actually believe in. Not a, not a vibe, an actual date. And then owners on the handful of things that are blocking it."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0015",
+      "start_s": 227.7,
+      "end_s": 241.5,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "I put a doc in the channel last night with the, the list. I'll put it up here. Sarah, do you want to start with where engineering is?"
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0016",
+      "start_s": 247.0,
+      "end_s": 269.2,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Sure. So, um — the big stuff is basically done. Multi-stop optimization is merged, the new constraint solver is behind the flag in staging, and the driver app sync, the offline sync thing, that landed last Thursday. So, like, the scary architecture stuff is behind us."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0017",
+      "start_s": 280.6,
+      "end_s": 305.5,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.84,
+      "channel": "room",
+      "text": "What's left is kind of a long tail. There's bulk import for depots, which is mostly done but the CSV validation is janky, like if you have a trailing comma it just silently drops the row. And then there's the ETA display on the dispatcher board, which we're still arguing about."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0018",
+      "start_s": 316.6,
+      "end_s": 318.3,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.79,
+      "channel": "room",
+      "text": "Arguing with who?"
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0019",
+      "start_s": 320.7,
+      "end_s": 328.6,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "With ourselves, mostly. It's whether we show a range or a single time. Dana has opinions."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0020",
+      "start_s": 330.6,
+      "end_s": 348.8,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "I do have opinions. Dispatchers hate ranges. Every single interview we did, they said just give me a time, and if it's wrong, tell me it's wrong. They don't want, like, two fifteen to three forty-five."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0021",
+      "start_s": 340.6,
+      "end_s": 348.8,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.74,
+      "channel": "room",
+      "text": "But if we show a single time and it's wrong, that's worse, right? Then we look —"
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0022",
+      "start_s": 345.1,
+      "end_s": 352.1,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.74,
+      "channel": "room",
+      "text": "No, but that's what the late-risk flag is for, that's the whole —"
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0023",
+      "start_s": 354.2,
+      "end_s": 367.7,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "Okay, okay. Let's not solve that in here. Can you two just grab thirty minutes after this and land it? Whatever you two agree on, I'm fine with."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0024",
+      "start_s": 379.0,
+      "end_s": 380.6,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.69,
+      "channel": "room",
+      "text": "Yeah, fine."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0025",
+      "start_s": 384.7,
+      "end_s": 385.4,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.76,
+      "channel": "room",
+      "text": "Yep."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0026",
+      "start_s": 387.6,
+      "end_s": 396.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.93,
+      "channel": "room",
+      "text": "How's performance? Last time we looked the solver was kind of slow on the really big fleets."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0027",
+      "start_s": 398.7,
+      "end_s": 417.2,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.84,
+      "channel": "room",
+      "text": "It's better. It's not where I want it. On the big fleets it's, it's okay, it's not great. I've got someone profiling it this week. I don't think it blocks launch though, I think it's a follow-up."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0028",
+      "start_s": 420.2,
+      "end_s": 428.1,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "Okay. And is there anything you're scared of? Like genuinely scared of. Not, like, polite scared."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0029",
+      "start_s": 430.8,
+      "end_s": 450.0,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "Honestly? The stuff I'm scared of is the stuff we haven't tested much. We touched a lot of the address and geocoding path for multi-stop, and the regression coverage there is thin. But that's more a Priya question."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0030",
+      "start_s": 452.5,
+      "end_s": 473.8,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Yeah, so — that's exactly my worry, actually. We have good automation on the solver and on the driver app. But the address stuff, the geocoding stuff, that's mostly manual spot checks right now. Like, me typing addresses into staging and squinting at the map."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0031",
+      "start_s": 476.2,
+      "end_s": 479.8,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Okay. So what do you need?"
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0032",
+      "start_s": 490.4,
+      "end_s": 514.6,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.93,
+      "channel": "room",
+      "text": "I need a real regression test plan. Like, written down. Everything we're gonna run before we ship, including the ugly edge cases, the weird addresses, the — you know, the stuff that only breaks for one customer. Right now it's kind of in my head and in, like, three different spreadsheets."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0033",
+      "start_s": 517.0,
+      "end_s": 520.6,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "Can you get that done this week?"
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0034",
+      "start_s": 524.5,
+      "end_s": 533.9,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "Um. Yeah. Yeah, I think so. I can have the regression test plan done by Friday. Friday the eleventh."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0035",
+      "start_s": 539.5,
+      "end_s": 547.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.95,
+      "channel": "room",
+      "text": "Okay, great. So Priya, regression test plan, due Friday, September 11. I'm writing it down."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0036",
+      "start_s": 551.0,
+      "end_s": 556.4,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "And it'll be in Notion. Not a spreadsheet. I promise."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0037",
+      "start_s": 554.0,
+      "end_s": 555.2,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.63,
+      "channel": "room",
+      "text": "Thank God."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0038",
+      "start_s": 567.5,
+      "end_s": 576.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Do you need anything from engineering for it? Like, do you need Sarah's team to review it?"
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0039",
+      "start_s": 578.2,
+      "end_s": 594.6,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "I'll send it to Sarah once it's up, but I don't need a meeting. I just need, like, a list of what changed in the geocoding stuff so I know where to poke."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0040",
+      "start_s": 596.6,
+      "end_s": 604.6,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "I can get you that today. It's basically one PR and then, like, four follow-ups."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0041",
+      "start_s": 607.2,
+      "end_s": 608.0,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.7,
+      "channel": "room",
+      "text": "Perfect."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0042",
+      "start_s": 611.0,
+      "end_s": 613.1,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.94,
+      "channel": "room",
+      "text": "Okay. Dana, design side."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0043",
+      "start_s": 616.9,
+      "end_s": 638.0,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.82,
+      "channel": "room",
+      "text": "So, um, most of the v2 screens are final. The dispatcher board is final, the route editor is final, the driver app screens were final like two weeks ago, Sarah's team has all of those. The big thing that's not done is onboarding."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0044",
+      "start_s": 641.8,
+      "end_s": 670.9,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.83,
+      "channel": "room",
+      "text": "Right now onboarding is still the v1 flow with a new coat of paint. And it doesn't — it doesn't really set anyone up for multi-stop. People land in the app and they have no idea they're supposed to import their depots first, so they just start drawing routes by hand, which is, like, the thing we're trying to kill."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0045",
+      "start_s": 673.7,
+      "end_s": 681.6,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "That's the thing Marcus keeps complaining about, right? The, uh, the first-week drop-off?"
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0046",
+      "start_s": 683.8,
+      "end_s": 693.8,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "Yeah, it's that. And I have sketches. I don't have real mockups. I have, like, boxes and arrows in Sigma."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0047",
+      "start_s": 704.4,
+      "end_s": 709.1,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "What do you need to get to real mockups?"
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0048",
+      "start_s": 712.1,
+      "end_s": 743.0,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Honestly? Just time. I'm also doing the marketing site refresh, and that's eating, like, half my week. If I'm not doing the marketing site stuff, I could have the onboarding mockups done by — let's say Thursday the seventeenth? That gives me a week and a bit, and I want to put them in front of two or three customers before I call them done."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0049",
+      "start_s": 745.7,
+      "end_s": 752.6,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.93,
+      "channel": "room",
+      "text": "Is the seventeenth too late? If we're launching at the end of the month?"
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0050",
+      "start_s": 754.7,
+      "end_s": 774.4,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "Not for us. Onboarding is mostly front end, it's not a ton of engineering. If we have the mockups on the seventeenth, we can build it in about a week. It's tight, but it's, it's doable. We already have the components."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0051",
+      "start_s": 785.3,
+      "end_s": 797.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "Okay. So Dana, onboarding mockups, due Thursday, September 17. And I'll take the marketing site off your plate. I'll figure that out, that's on me."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0052",
+      "start_s": 800.4,
+      "end_s": 804.0,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Okay. Thank you. Seriously. Thank you."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0053",
+      "start_s": 807.9,
+      "end_s": 812.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "Which customers are you thinking for the testing?"
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0054",
+      "start_s": 815.0,
+      "end_s": 830.0,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Probably a couple of the smaller carriers, the ones who onboarded in the last month or so, because they still remember how confusing it was. I'll ask CS for names."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0055",
+      "start_s": 832.8,
+      "end_s": 837.7,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Don't use anyone who's mad at us right now."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0056",
+      "start_s": 849.2,
+      "end_s": 851.2,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.74,
+      "channel": "room",
+      "text": "Ha. Yeah. Noted."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0057",
+      "start_s": 862.4,
+      "end_s": 882.6,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.95,
+      "channel": "room",
+      "text": "Can we make sure we put the analytics events in, too? Like, I want to actually know where people drop off in the new flow. Last time we shipped onboarding with no events and then we were just guessing for a month."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0058",
+      "start_s": 885.5,
+      "end_s": 894.2,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Yeah, I'll put the events in the spec. Sarah, can someone on your side sanity-check them?"
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0059",
+      "start_s": 896.4,
+      "end_s": 899.0,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Yeah, send them over."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0060",
+      "start_s": 903.2,
+      "end_s": 909.0,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "Okay. So let's talk date. Because, honestly, that's why I'm here."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0061",
+      "start_s": 911.7,
+      "end_s": 912.7,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.75,
+      "channel": "room",
+      "text": "Yeah."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0062",
+      "start_s": 923.9,
+      "end_s": 946.0,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "We've been saying, quote, end of September, for like two months now. I want a real date. I want to be able to tell customers a date, I want Marcus to be able to tell prospects a date, and I want it in the board deck."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0063",
+      "start_s": 948.5,
+      "end_s": 959.5,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "So, if you're asking me, end of the month is realistic if regression doesn't turn up anything big. That's the, the caveat."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0064",
+      "start_s": 961.7,
+      "end_s": 964.6,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "Sure. There's always a caveat."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0065",
+      "start_s": 975.2,
+      "end_s": 978.5,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "I mean, it's a real caveat."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0066",
+      "start_s": 982.8,
+      "end_s": 987.8,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "No, I know, I know. I'm not — I'm just saying."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0067",
+      "start_s": 990.7,
+      "end_s": 1013.5,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "From the QA side, if the plan's done Friday, I can run the full pass the week of the fourteenth, and then the week of the twenty-first is for, you know, fixes and a second pass. So that gets us to the end of the month."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0068",
+      "start_s": 1017.3,
+      "end_s": 1025.7,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "That actually lines up. Two weeks of testing, and we launch right at the end of that."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0069",
+      "start_s": 1027.8,
+      "end_s": 1033.4,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "Okay. Then let's lock September 30 for Route Planner v2 launch."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0070",
+      "start_s": 1044.8,
+      "end_s": 1046.8,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.67,
+      "channel": "room",
+      "text": "Works for me."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0071",
+      "start_s": 1057.6,
+      "end_s": 1058.9,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.72,
+      "channel": "room",
+      "text": "Yeah. Yep."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0072",
+      "start_s": 1061.3,
+      "end_s": 1065.6,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "Yeah, that works. It's tight, but it works."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0073",
+      "start_s": 1069.8,
+      "end_s": 1078.8,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.94,
+      "channel": "room",
+      "text": "Great. September 30 it is. That's a Tuesday — no, wait. It's a Wednesday. September 30 is a Wednesday."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0074",
+      "start_s": 1083.2,
+      "end_s": 1090.8,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Wednesday's fine. Midweek is better for a launch anyway. Nobody reads anything on a Friday."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0075",
+      "start_s": 1093.6,
+      "end_s": 1100.4,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Okay. I'll update the roadmap doc and the launch page with the date."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0076",
+      "start_s": 1102.9,
+      "end_s": 1108.8,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "And I'll put it in the board deck. Launch September 30."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0077",
+      "start_s": 1112.8,
+      "end_s": 1125.6,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Can we — sorry, can we just agree that if regression finds something real, we talk about it, instead of, like, everybody crunching to hit the date?"
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0078",
+      "start_s": 1128.2,
+      "end_s": 1145.2,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "Yes. A hundred percent. I don't want anybody pulling all-nighters for this. If something real comes up, you tell me, and we talk about it. The date's not a, it's not a hostage situation."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0079",
+      "start_s": 1149.1,
+      "end_s": 1151.2,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "Okay. Cool. Thank you."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0080",
+      "start_s": 1156.7,
+      "end_s": 1166.1,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.93,
+      "channel": "room",
+      "text": "Okay, next thing. Launch mechanics. Sarah, are we doing the flag rollout like we talked about? The percentage thing?"
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0081",
+      "start_s": 1168.4,
+      "end_s": 1186.8,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Yeah. So the plan is internal accounts first, then like ten percent of customers, then everybody over about a week. And we can flip it back per account if something goes sideways, so it's not all or nothing."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0082",
+      "start_s": 1192.3,
+      "end_s": 1194.9,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Which customers go first?"
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0083",
+      "start_s": 1199.3,
+      "end_s": 1205.5,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "I was gonna say the small ones. Less, uh, less blast radius."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0084",
+      "start_s": 1211.0,
+      "end_s": 1228.3,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.93,
+      "channel": "room",
+      "text": "I'd actually argue the opposite. The big accounts are the ones who asked for multi-stop. If they don't get it first they're gonna be annoyed, and they're the ones who talk to each other."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0085",
+      "start_s": 1220.5,
+      "end_s": 1225.1,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.78,
+      "channel": "room",
+      "text": "But if it breaks for a big account, that's —"
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0086",
+      "start_s": 1224.8,
+      "end_s": 1228.4,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "No, I hear you, I hear you."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0087",
+      "start_s": 1230.8,
+      "end_s": 1245.4,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.94,
+      "channel": "room",
+      "text": "Can we do a hybrid? Like, a couple of friendly big accounts who've opted in, plus the small ones? People who'd tell us if something's off instead of just churning."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0088",
+      "start_s": 1248.3,
+      "end_s": 1254.2,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "Yeah, that's fine. I just need the list. Like, actual account IDs."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0089",
+      "start_s": 1256.8,
+      "end_s": 1261.5,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.93,
+      "channel": "room",
+      "text": "I'll get you the list from Marcus. That's easy."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0090",
+      "start_s": 1267.6,
+      "end_s": 1274.0,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "Do we have a rollback plan written down? Like, not in Sarah's head?"
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0091",
+      "start_s": 1276.5,
+      "end_s": 1277.7,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.73,
+      "channel": "room",
+      "text": "Hey."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0092",
+      "start_s": 1288.3,
+      "end_s": 1289.7,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.7,
+      "channel": "room",
+      "text": "No offense."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0093",
+      "start_s": 1292.6,
+      "end_s": 1309.5,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "None taken. It is in my head. I'll write it up. It's short, honestly, it's basically flip the flag and restore the old solver config, and then there's one migration we'd have to think about."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0094",
+      "start_s": 1311.9,
+      "end_s": 1313.3,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.8,
+      "channel": "room",
+      "text": "Which migration?"
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0095",
+      "start_s": 1315.3,
+      "end_s": 1337.9,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.84,
+      "channel": "room",
+      "text": "The saved routes. When someone opens an old saved route in v2 we convert it to the new format. If we roll back, the old app can still read it, we kept both fields, but I want to test that for real, not just, like, believe it."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0096",
+      "start_s": 1342.1,
+      "end_s": 1348.0,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.93,
+      "channel": "room",
+      "text": "I'll put that in the regression plan. Rollback with converted routes."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0097",
+      "start_s": 1351.9,
+      "end_s": 1353.4,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.74,
+      "channel": "room",
+      "text": "Thank you."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0098",
+      "start_s": 1355.7,
+      "end_s": 1363.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Okay, rollback plan written down before launch, that's Sarah. No hard date, just before launch."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0099",
+      "start_s": 1365.4,
+      "end_s": 1366.5,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.82,
+      "channel": "room",
+      "text": "Yep."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0100",
+      "start_s": 1371.2,
+      "end_s": 1379.5,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "What about the driver app? Doesn't that have to go through the app store review thing?"
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0101",
+      "start_s": 1390.5,
+      "end_s": 1411.1,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "Yeah, good call. The driver app update has to go through review on both stores. It's usually a day or two, but it's been slow lately, so I want to submit about a week before launch with the new stuff behind the flag."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0102",
+      "start_s": 1415.4,
+      "end_s": 1421.7,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Okay. Can you put that on the launch checklist so we don't forget?"
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0103",
+      "start_s": 1427.7,
+      "end_s": 1429.2,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.74,
+      "channel": "room",
+      "text": "Already there."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0104",
+      "start_s": 1431.9,
+      "end_s": 1444.4,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "What about support? The support folks need to know this is coming. Last launch they found out from a customer, which was — that was bad."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0105",
+      "start_s": 1455.9,
+      "end_s": 1471.6,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "Yeah, that was bad. I'll do a walkthrough for support the week before. I'll put something on the calendar. And we should give CS a, like, a one-pager they can send."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0106",
+      "start_s": 1473.8,
+      "end_s": 1475.5,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.8,
+      "channel": "room",
+      "text": "And release notes."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0107",
+      "start_s": 1479.8,
+      "end_s": 1486.0,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "I can do the screenshots for release notes. I'm not writing them."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0108",
+      "start_s": 1489.0,
+      "end_s": 1498.3,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.93,
+      "channel": "room",
+      "text": "No, I'll write them. Well, I'll write a draft, and then somebody who writes better than me fixes it."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0109",
+      "start_s": 1502.3,
+      "end_s": 1503.7,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.81,
+      "channel": "room",
+      "text": "Low bar."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0110",
+      "start_s": 1506.4,
+      "end_s": 1507.6,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.78,
+      "channel": "room",
+      "text": "Thanks, John."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0111",
+      "start_s": 1513.7,
+      "end_s": 1514.8,
+      "speaker_label": "Speaker 6",
+      "speaker_name": null,
+      "speaker_confidence": 0.44,
+      "channel": "room",
+      "text": "[laughter]"
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0112",
+      "start_s": 1517.4,
+      "end_s": 1525.8,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "Okay, next thing on your list. The dashboard. The churn dashboard. That thing is still broken, right?"
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0113",
+      "start_s": 1527.8,
+      "end_s": 1540.8,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.94,
+      "channel": "room",
+      "text": "Yeah. So the churn dashboard is — the numbers look off. Some of the retention numbers look way too good. Like, suspiciously good. And I don't trust them."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0114",
+      "start_s": 1543.0,
+      "end_s": 1552.8,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "I need that working before the board meeting. I'm not putting numbers in front of Tom that I don't trust."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0115",
+      "start_s": 1555.1,
+      "end_s": 1559.6,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.95,
+      "channel": "room",
+      "text": "Totally. It's Ben's. Ben built the pipeline for it."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0116",
+      "start_s": 1562.2,
+      "end_s": 1569.9,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Ben's not in yet, right? I think he said he was coming in late today."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0117",
+      "start_s": 1572.4,
+      "end_s": 1580.8,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "Yeah, he's not here. I'll ask Ben to fix the churn dashboard. I'll ping him today."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0118",
+      "start_s": 1587.1,
+      "end_s": 1588.7,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.81,
+      "channel": "room",
+      "text": "Thank you."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0119",
+      "start_s": 1594.8,
+      "end_s": 1602.2,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Is that the same dashboard CS uses for renewals? Or is that a different one?"
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0120",
+      "start_s": 1604.6,
+      "end_s": 1610.4,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Same one, I think. Which is another reason to fix it."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0121",
+      "start_s": 1616.2,
+      "end_s": 1619.7,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "Okay. What else is on the list?"
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0122",
+      "start_s": 1622.1,
+      "end_s": 1632.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.94,
+      "channel": "room",
+      "text": "Um, the bulk import, which Sarah already covered. The ETA thing, which Dana and Sarah are gonna fight about after this."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0123",
+      "start_s": 1635.8,
+      "end_s": 1638.9,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Discuss. We're going to discuss it."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0124",
+      "start_s": 1645.1,
+      "end_s": 1661.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.94,
+      "channel": "room",
+      "text": "Discuss. Sorry. And then pricing, which is really more a me-and-Marcus thing, but I want to flag it. We've got Acme tomorrow, and they're gonna ask about pricing for v2."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0125",
+      "start_s": 1663.3,
+      "end_s": 1666.7,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.94,
+      "channel": "room",
+      "text": "What are you gonna tell them?"
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0126",
+      "start_s": 1672.2,
+      "end_s": 1687.3,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.95,
+      "channel": "room",
+      "text": "I'm still working it out. I think per vehicle is where we land for fleets their size, but I want to think it through before I say anything on a call."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0127",
+      "start_s": 1690.2,
+      "end_s": 1695.2,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "Okay. Loop me in before anything goes out in writing."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0128",
+      "start_s": 1697.7,
+      "end_s": 1699.8,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.78,
+      "channel": "room",
+      "text": "Yep. Will do."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0129",
+      "start_s": 1702.2,
+      "end_s": 1715.0,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "And for the board — sorry, one more board thing. I'd love to have real v2 screenshots in the deck, not the, the mocks from the spring."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0130",
+      "start_s": 1717.5,
+      "end_s": 1723.0,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.83,
+      "channel": "room",
+      "text": "I can pull those from staging. Just tell me which screens."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0131",
+      "start_s": 1727.5,
+      "end_s": 1734.9,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "The dispatcher board with a real multi-stop route on it. That's the money shot."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0132",
+      "start_s": 1737.8,
+      "end_s": 1741.3,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.83,
+      "channel": "room",
+      "text": "Okay. I'll grab it this week."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0133",
+      "start_s": 1743.7,
+      "end_s": 1750.0,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "Make sure you use the demo account, not a real customer's routes."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0134",
+      "start_s": 1752.8,
+      "end_s": 1754.9,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Yes. Obviously. Demo account."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0135",
+      "start_s": 1760.7,
+      "end_s": 1763.5,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "Anything else? Anything I'm missing?"
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0136",
+      "start_s": 1770.0,
+      "end_s": 1785.7,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "Just — test environments. Staging data is like three months old. If I'm running the full regression pass the week of the fourteenth, I'd really like a fresh copy with, like, anonymized addresses."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0137",
+      "start_s": 1791.5,
+      "end_s": 1797.9,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "That's a Ben thing too, I think. The anonymizing script is his."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0138",
+      "start_s": 1800.8,
+      "end_s": 1807.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "Okay, I'll add it to my Ben list. Fresh anonymized staging data for Priya."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0139",
+      "start_s": 1812.5,
+      "end_s": 1813.6,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.74,
+      "channel": "room",
+      "text": "Thank you."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0140",
+      "start_s": 1816.3,
+      "end_s": 1833.4,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.96,
+      "channel": "room",
+      "text": "Okay. Let me just recap so it's in the, uh, in the recording. Launch is September 30 for Route Planner v2. Dana, onboarding mockups, Thursday the 17th. Priya, regression test plan, this Friday, the 11th."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0141",
+      "start_s": 1844.2,
+      "end_s": 1869.8,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "Sarah, rollback plan written down before launch, driver app submitted about a week out, and you and Dana land the ETA display thing. And me — I'll ask Ben to fix the churn dashboard and get Priya fresh staging data, I'll get the rollout list from Marcus, and I'll set up the support walkthrough."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0142",
+      "start_s": 1872.0,
+      "end_s": 1878.4,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "Good. That's a good meeting. We're giving everyone back, like, half an hour."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0143",
+      "start_s": 1880.7,
+      "end_s": 1881.4,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.74,
+      "channel": "room",
+      "text": "Wow."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0144",
+      "start_s": 1881.1,
+      "end_s": 1882.4,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.53,
+      "channel": "room",
+      "text": "A miracle."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0145",
+      "start_s": 1887.1,
+      "end_s": 1896.2,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Can I stay in here though? I have a call at eleven and every other room is booked."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0146",
+      "start_s": 1899.0,
+      "end_s": 1902.7,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "It's all yours. Don't touch the HDMI."
+    },
+    {
+      "seg_id": "MTG-0908-PLAN#0147",
+      "start_s": 1905.6,
+      "end_s": 1908.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Okay, stopping the recording."
+    }
+  ]
+}

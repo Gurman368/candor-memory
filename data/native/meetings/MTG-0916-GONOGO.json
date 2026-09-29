@@ -1,0 +1,1433 @@
+{
+  "id": "MTG-0916-GONOGO",
+  "title": "Route Planner v2 – go/no-go",
+  "type": "hybrid",
+  "start": "2026-09-16T15:00:00-07:00",
+  "end": "2026-09-16T15:45:00-07:00",
+  "location": "Brightline HQ – Presidio room + Google Meet",
+  "capture": {
+    "device": "MacBook Pro (Alex)",
+    "mic": "built-in",
+    "system_audio": true
+  },
+  "calendar_event_id": "CAL-GONOGO-0916",
+  "participants_known": [
+    "alex@brightline.example.com",
+    "john@brightline.example.com",
+    "sarah.kim@brightline.example.com",
+    "priya@brightline.example.com",
+    "dana@brightline.example.com"
+  ],
+  "segments": [
+    {
+      "seg_id": "MTG-0916-GONOGO#0001",
+      "start_s": 9.0,
+      "end_s": 12.8,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "Okay. Are we— Alex, is your thing recording?"
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0002",
+      "start_s": 17.7,
+      "end_s": 22.4,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "Yeah, Candor's on. It's got the room and the Meet."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0003",
+      "start_s": 27.4,
+      "end_s": 30.3,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Great. Is Dana on the Meet?"
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0004",
+      "start_s": 32.0,
+      "end_s": 35.4,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "She's in, I think she's on mute."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0005",
+      "start_s": 47.7,
+      "end_s": 50.1,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "Dana, can you hear us?"
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0006",
+      "start_s": 53.3,
+      "end_s": 58.3,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.93,
+      "channel": "remote",
+      "text": "Yeah— hi, sorry, I was muted. Can you hear me okay?"
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0007",
+      "start_s": 59.8,
+      "end_s": 71.4,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "Loud and clear. Okay. So. Go/no-go for Route Planner v2. We've got forty-five minutes on the calendar, I'd love to be out of here in thirty-five."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0008",
+      "start_s": 73.4,
+      "end_s": 74.6,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.8,
+      "channel": "room",
+      "text": "Ha. Sure."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0009",
+      "start_s": 76.6,
+      "end_s": 95.8,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "I mean it. So, right now we're targeting October 14th. I want to walk the checklist, bugs, QA, perf, design, customer readiness, and then make a call. Sarah, you want to start with the geocoding thing, since that's the reason we moved last time?"
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0010",
+      "start_s": 98.3,
+      "end_s": 114.5,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Yeah. So, quick recap for everybody. Last Thursday QA found that addresses in Canada and Mexico were resolving to the wrong coordinates. Sometimes, like, way off. We had a depot in Winnipeg showing up in North Dakota."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0011",
+      "start_s": 117.6,
+      "end_s": 119.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Right, I remember the screenshot."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0012",
+      "start_s": 125.2,
+      "end_s": 150.9,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "So root cause was in the address normal iser. Canadian postal codes, the letter-number-letter format, were getting stripped out as if they were junk, and then the geocoder fell back to just the city name. And on the Mexico side, a bunch of Mexican state abbreviations collide with US state codes, so it would just pick the US one."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0013",
+      "start_s": 168.6,
+      "end_s": 171.2,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.94,
+      "channel": "room",
+      "text": "Which is a fun bug."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0014",
+      "start_s": 174.6,
+      "end_s": 195.5,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "It's a very fun bug. So we fixed the normalizer to carry the country code all the way through, and we added a guard, so if the country on the address and the country on the result don't match, we flag the address instead of silently accepting it."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0015",
+      "start_s": 197.2,
+      "end_s": 201.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "And it's fixed fixed? Like, in staging, running?"
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0016",
+      "start_s": 208.1,
+      "end_s": 213.9,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "It merged Monday, it's been in staging since Monday night. Priya verified it."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0017",
+      "start_s": 239.1,
+      "end_s": 259.7,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Yeah. So I built a test set of about four hundred addresses, Canada and Mexico, mostly pulled from the pilot customers' actual depot lists, plus a bunch of nasty ones on purpose. Rural routes, PO boxes, the accented characters in Quebec addresses, Spanish street names with the abbreviations."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0018",
+      "start_s": 267.5,
+      "end_s": 268.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.82,
+      "channel": "room",
+      "text": "And?"
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0019",
+      "start_s": 269.8,
+      "end_s": 287.3,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "All of them resolve correctly now. Every single one lands within a hundred meters of the reference point. And I re-ran the US set too, to make sure the fix didn't break anything on the US side, and that's clean."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0020",
+      "start_s": 290.7,
+      "end_s": 292.7,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "So geocoding is green."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0021",
+      "start_s": 299.2,
+      "end_s": 304.9,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.84,
+      "channel": "room",
+      "text": "Geocoding is green. The fix is verified. I'm comfortable signing off on it."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0022",
+      "start_s": 307.0,
+      "end_s": 310.8,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "Okay. Good. Nice work, both of you, seriously."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0023",
+      "start_s": 320.5,
+      "end_s": 327.8,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.84,
+      "channel": "room",
+      "text": "It was mostly Priya's test set, honestly. That set's gonna live in the suite forever now."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0024",
+      "start_s": 338.5,
+      "end_s": 341.8,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.83,
+      "channel": "room",
+      "text": "It's in the suite. It runs nightly."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0025",
+      "start_s": 345.8,
+      "end_s": 348.3,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "Okay. QA overall, then. Priya."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0026",
+      "start_s": 353.6,
+      "end_s": 366.0,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "So the regression plan is the sixty-four cases I put in Notion last week. As of this morning, sixty-one pass and three fail. None of the three are blockers."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0027",
+      "start_s": 377.0,
+      "end_s": 379.1,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "What are the three?"
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0028",
+      "start_s": 392.8,
+      "end_s": 414.7,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.84,
+      "channel": "room",
+      "text": "One is the CSV export writes dates as day-month-year if your browser locale is, like, UK English. One is a tooltip on the driver panel that gets clipped on small laptop screens. And one is the print layout for the route sheet, the last stop drops onto a second page."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0029",
+      "start_s": 415.8,
+      "end_s": 422.8,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "The print one matters. People do actually print route sheets. Like, a lot of people."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0030",
+      "start_s": 426.2,
+      "end_s": 431.8,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.83,
+      "channel": "room",
+      "text": "They do. Sarah's got a fix for that one already, I think."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0031",
+      "start_s": 442.3,
+      "end_s": 448.4,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.84,
+      "channel": "room",
+      "text": "It's a CSS thing. It's in review, it'll be in today or tomorrow."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0032",
+      "start_s": 450.3,
+      "end_s": 452.4,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "And the CSV one?"
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0033",
+      "start_s": 462.6,
+      "end_s": 471.8,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "That's a one-liner. We'll just force ISO dates in the export. Nobody should be getting locale dates in a CSV anyway."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0034",
+      "start_s": 473.2,
+      "end_s": 476.3,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Okay, so no blockers from QA."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0035",
+      "start_s": 477.2,
+      "end_s": 491.7,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.84,
+      "channel": "room",
+      "text": "No blockers. I'd call QA a go, with those three tracked. And I want one more full pass on the actual release candidate build, not on staging plus whatever got merged that afternoon."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0036",
+      "start_s": 497.0,
+      "end_s": 500.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Fair. Put that on the calendar."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0037",
+      "start_s": 501.7,
+      "end_s": 502.7,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.75,
+      "channel": "room",
+      "text": "Already is."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0038",
+      "start_s": 508.8,
+      "end_s": 512.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "Of course it is. Okay. Perf. Sarah."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0039",
+      "start_s": 512.9,
+      "end_s": 535.7,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.84,
+      "channel": "room",
+      "text": "Yeah. Okay so, perf. We ran the load test yesterday with the synthetic fleet, the three-hundred-vehicle one, Monday morning peak, everybody planning at once. And, um, p95 routing latency is at 800 milliseconds — sorry, I misread that, p95 is 1.8 seconds, 800 is the median. I was looking at the wrong column."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0040",
+      "start_s": 531.6,
+      "end_s": 534.3,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.71,
+      "channel": "room",
+      "text": "Oh, 800, that's gre— wait. 1.8?"
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0041",
+      "start_s": 546.0,
+      "end_s": 557.8,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.84,
+      "channel": "room",
+      "text": "1.8 seconds at p95. The median is 800 milliseconds. Sorry. The dashboard puts p50 right next to p95 and I just, yeah, I read the wrong one."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0042",
+      "start_s": 575.0,
+      "end_s": 576.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "Okay. Is 1.8 okay?"
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0043",
+      "start_s": 589.4,
+      "end_s": 596.6,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "Our launch bar was p95 under two seconds. So we're under it. Not by a ton."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0044",
+      "start_s": 600.5,
+      "end_s": 604.1,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "What pushes it over? Is it fleet size?"
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0045",
+      "start_s": 614.0,
+      "end_s": 637.2,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Fleet size and number of stops, mostly. The big customers, like Acme with four hundred-ish vehicles on a Monday morning, that's the worst case. We have a caching change for the distance matrix that should take a real chunk off, but I don't want to put it in before launch. It touches too much."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0046",
+      "start_s": 640.5,
+      "end_s": 646.5,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "Agreed. Don't touch it before launch. That goes in the first patch after."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0047",
+      "start_s": 647.9,
+      "end_s": 650.1,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Yep, that's the plan."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0048",
+      "start_s": 652.3,
+      "end_s": 663.2,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.84,
+      "channel": "room",
+      "text": "And I'd want the load test re-run on the release candidate either way. Same test, same synthetic fleet, just so we're comparing apples to apples."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0049",
+      "start_s": 665.0,
+      "end_s": 667.4,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Yeah, totally. We'll re-run it."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0050",
+      "start_s": 675.3,
+      "end_s": 685.5,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "Okay. So perf is a go, but we watch it. What's the median again, just so I have it right for the notes?"
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0051",
+      "start_s": 695.0,
+      "end_s": 698.1,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Median 800 milliseconds, p95 1.8 seconds."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0052",
+      "start_s": 703.7,
+      "end_s": 705.5,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Got it. 1.8. Okay."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0053",
+      "start_s": 705.2,
+      "end_s": 711.6,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.82,
+      "channel": "room",
+      "text": "And we'll have the dashboard up for launch week, right? Like, alerting on p95?"
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0054",
+      "start_s": 712.8,
+      "end_s": 721.6,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Yeah, we'll alert if p95 goes over two and a half seconds for more than five minutes. That pages me."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0055",
+      "start_s": 723.0,
+      "end_s": 724.1,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.74,
+      "channel": "room",
+      "text": "Okay, good."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0056",
+      "start_s": 744.1,
+      "end_s": 746.4,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Okay, design. Dana, you're up."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0057",
+      "start_s": 747.7,
+      "end_s": 764.3,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.93,
+      "channel": "remote",
+      "text": "Hi. Um, so, onboarding. The mockups are on track for tomorrow, the full set's going up in Figma. It's the four-step flow we reviewed last week, plus the error states for the import, which I finally figured out."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0058",
+      "start_s": 771.2,
+      "end_s": 775.3,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "What did you land on for the half-the-rows-fail thing?"
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0059",
+      "start_s": 782.1,
+      "end_s": 795.9,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.93,
+      "channel": "remote",
+      "text": "Import the good rows, show a list of the bad ones with, like, why they failed. Four of the five testers expected that. The fifth one just, um, closed the tab."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0060",
+      "start_s": 799.1,
+      "end_s": 799.8,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.77,
+      "channel": "room",
+      "text": "Ha."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0061",
+      "start_s": 806.3,
+      "end_s": 812.9,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.95,
+      "channel": "remote",
+      "text": "And I've been reviewing the empty states with Sarah, the red lines are basically done."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0062",
+      "start_s": 814.8,
+      "end_s": 819.2,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "They're good. I have them. Spacing's called out this time."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0063",
+      "start_s": 825.6,
+      "end_s": 833.2,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.95,
+      "channel": "remote",
+      "text": "And the map palette is final. The one without the coral. We checked it with traffic on."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0064",
+      "start_s": 841.0,
+      "end_s": 845.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "I don't know what that means but I'm glad it's final."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0065",
+      "start_s": 850.0,
+      "end_s": 855.2,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.93,
+      "channel": "remote",
+      "text": "Ha. It means route lines won't look like traffic jams anymore."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0066",
+      "start_s": 857.7,
+      "end_s": 862.4,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "Okay, love it. Anything at risk on design for launch?"
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0067",
+      "start_s": 873.0,
+      "end_s": 877.8,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.97,
+      "channel": "remote",
+      "text": "Not for v2, no. Nothing on my side is blocking."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0068",
+      "start_s": 882.2,
+      "end_s": 882.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.78,
+      "channel": "room",
+      "text": "Great."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0069",
+      "start_s": 905.5,
+      "end_s": 913.4,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "Okay. So before we make the call, there's one more thing, and it, uh, it changes the date."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0070",
+      "start_s": 923.8,
+      "end_s": 924.8,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.82,
+      "channel": "room",
+      "text": "Uh oh."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0071",
+      "start_s": 927.0,
+      "end_s": 934.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "No, it's a good thing, sort of. Sarah Patel — Acme Sarah, not you, Sarah —"
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0072",
+      "start_s": 936.7,
+      "end_s": 938.1,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.74,
+      "channel": "room",
+      "text": "Ha, got it."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0073",
+      "start_s": 942.1,
+      "end_s": 947.3,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Sarah Patel asked for a training week with their dispatchers before go-live."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0074",
+      "start_s": 956.0,
+      "end_s": 957.8,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "A full week?"
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0075",
+      "start_s": 962.4,
+      "end_s": 977.6,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "A full week. They've got dispatchers across, what, three shifts, and she doesn't want any of them seeing the new planner for the first time on a live morning with trucks waiting. Which, honestly, fair."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0076",
+      "start_s": 978.4,
+      "end_s": 981.0,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "That's fair. That's really fair."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0077",
+      "start_s": 984.3,
+      "end_s": 1004.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "And Acme's our biggest pilot. If Acme's dispatchers hate it in week one, that's the story. So I'm making the call. We move launch from October 14th to October 21st. Acme gets the week before as a training week, and we go live on the 21st."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0078",
+      "start_s": 1005.4,
+      "end_s": 1007.3,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.79,
+      "channel": "room",
+      "text": "October 21st. Okay."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0079",
+      "start_s": 1009.4,
+      "end_s": 1014.7,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "I mean, from engineering, I'm not gonna complain about an extra week."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0080",
+      "start_s": 1032.1,
+      "end_s": 1045.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "I know you're not. But I want to be really clear. This is not an extra week for new scope. This is buffer. Nothing new goes in because we have a week."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0081",
+      "start_s": 1053.5,
+      "end_s": 1055.3,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.76,
+      "channel": "room",
+      "text": "Understood. Nothing new."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0082",
+      "start_s": 1057.7,
+      "end_s": 1062.5,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Alex, that means you too. No \"while we're at it.\""
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0083",
+      "start_s": 1073.9,
+      "end_s": 1077.2,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.93,
+      "channel": "room",
+      "text": "Ha, no, I hear you. Nothing new."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0084",
+      "start_s": 1083.1,
+      "end_s": 1094.9,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.95,
+      "channel": "room",
+      "text": "What do they need from us for the training week, though? Like, do they need a training environment? I don't want them training on their live routes."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0085",
+      "start_s": 1095.8,
+      "end_s": 1111.7,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "Yeah, they'll need a training tenant, so they're not messing with real routes. We can clone theirs with their real depots and drivers and just, like, detach it from their TMS. That's maybe a day of work."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0086",
+      "start_s": 1120.5,
+      "end_s": 1122.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.83,
+      "channel": "room",
+      "text": "Fine. Do that."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0087",
+      "start_s": 1125.8,
+      "end_s": 1128.9,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "I'll put it on the board."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0088",
+      "start_s": 1130.2,
+      "end_s": 1142.8,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "I'll need to re-baseline the QA calendar then. The final regression pass moves out a week, and I'll add a pass on the training tenant before Acme gets in."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0089",
+      "start_s": 1143.9,
+      "end_s": 1152.6,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Yes. Good. Okay. So, officially, launch is October 21st. I'll let Sarah Patel know we're good with the training week."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0090",
+      "start_s": 1158.1,
+      "end_s": 1164.1,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.94,
+      "channel": "remote",
+      "text": "Sorry, I cut out for a second — did you say the 21st?"
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0091",
+      "start_s": 1168.3,
+      "end_s": 1177.5,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "October 21st, Dana. Launch moves from the 14th to the 21st, because Acme wants a training week with their dispatchers first."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0092",
+      "start_s": 1185.9,
+      "end_s": 1188.1,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.95,
+      "channel": "remote",
+      "text": "Got it. Okay. Thanks."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0093",
+      "start_s": 1210.2,
+      "end_s": 1219.8,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.95,
+      "channel": "room",
+      "text": "Okay, and then dark mode. We need to close that out, 'cause it's been kind of, uh, floating around for a week."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0094",
+      "start_s": 1221.8,
+      "end_s": 1232.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Yeah. So, I saw the conversation. Look, two enterprise pilots asked for it, specifically, by name. I don't want to just cut it."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0095",
+      "start_s": 1233.7,
+      "end_s": 1235.3,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.88,
+      "channel": "remote",
+      "text": "Yeah— no, understood."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0096",
+      "start_s": 1240.0,
+      "end_s": 1246.6,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "But I also don't want it holding the launch. That's the thing I care about."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0097",
+      "start_s": 1249.3,
+      "end_s": 1263.5,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "And it's not gonna be ready with a full QA pass by the 21st, even with the extra week. The map styling in dark mode is the long pole, it's all custom."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0098",
+      "start_s": 1265.7,
+      "end_s": 1273.7,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "And I'd have to run the whole regression twice, light and dark. That's the part that actually hurts."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0099",
+      "start_s": 1281.7,
+      "end_s": 1290.8,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "So what if it's a fast-follow? Ship v2 on the 21st without it, and then dark mode goes out in v2.1."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0100",
+      "start_s": 1292.5,
+      "end_s": 1294.7,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "How fast is fast?"
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0101",
+      "start_s": 1296.3,
+      "end_s": 1305.3,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Two weeks after launch is realistic. That gives us the map and a proper QA pass, not a rushed one."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0102",
+      "start_s": 1307.9,
+      "end_s": 1322.7,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.95,
+      "channel": "remote",
+      "text": "That works for me. The tokens are done, the screens are done, it's really just the map and the charts. And the chart colors in dark I can have to Sarah by next week."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0103",
+      "start_s": 1332.5,
+      "end_s": 1339.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Okay. Decision: dark mode ships in v2.1, as a fast-follow, two weeks after launch."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0104",
+      "start_s": 1347.4,
+      "end_s": 1351.9,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "So two weeks after the 21st, that's around November 4th."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0105",
+      "start_s": 1358.3,
+      "end_s": 1367.8,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Around November 4th, yeah. And I'll tell the two pilots who asked for it myself, that it's coming right after launch."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0106",
+      "start_s": 1371.2,
+      "end_s": 1372.3,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.82,
+      "channel": "room",
+      "text": "Okay. Good."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0107",
+      "start_s": 1374.2,
+      "end_s": 1380.7,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.97,
+      "channel": "remote",
+      "text": "Should I keep the dark variants in the v2 Figma file, or split them out?"
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0108",
+      "start_s": 1381.6,
+      "end_s": 1386.3,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Split them out. Otherwise we're gonna ship something by accident."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0109",
+      "start_s": 1387.0,
+      "end_s": 1390.7,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.96,
+      "channel": "remote",
+      "text": "Okay, I'll move them to a v2.1 page."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0110",
+      "start_s": 1414.0,
+      "end_s": 1416.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "Okay. What else. Release mechanics. Sarah."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0111",
+      "start_s": 1421.6,
+      "end_s": 1443.3,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.84,
+      "channel": "room",
+      "text": "So, we're doing it behind a feature flag. Day one, the pilots get it, that's Acme plus the other four. Then we watch it for a couple days, then ten percent of everybody else, then everybody. If anything goes sideways, the flag flips back to v1 in, like, a minute."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0112",
+      "start_s": 1451.2,
+      "end_s": 1456.5,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "And v1 still works if we flip back? Nothing migrates one-way?"
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0113",
+      "start_s": 1459.8,
+      "end_s": 1471.7,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "Nothing migrates one-way. The route data is the same tables. The only new stuff is the onboarding state and the palette preference, and v1 just ignores those."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0114",
+      "start_s": 1478.3,
+      "end_s": 1483.5,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "I tested the flip-back last week on staging. It works. Twice."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0115",
+      "start_s": 1484.6,
+      "end_s": 1487.3,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "Good. Who's on call launch week?"
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0116",
+      "start_s": 1488.9,
+      "end_s": 1493.9,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Me, plus one of the backend folks. I'll post the rotation."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0117",
+      "start_s": 1495.7,
+      "end_s": 1505.1,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.93,
+      "channel": "room",
+      "text": "And support docs. The help center articles for the new planner, those are drafted, they just need screenshots once Dana's final."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0118",
+      "start_s": 1506.0,
+      "end_s": 1509.2,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.99,
+      "channel": "remote",
+      "text": "I can export the final screens Friday."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0119",
+      "start_s": 1518.4,
+      "end_s": 1519.2,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Perfect."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0120",
+      "start_s": 1522.4,
+      "end_s": 1526.6,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Marcus is gonna want a demo video for sales."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0121",
+      "start_s": 1533.1,
+      "end_s": 1543.4,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.94,
+      "channel": "room",
+      "text": "Yeah, he asked. I'll, um— we can cut one from the onboarding flow once it's final. It's like two minutes of screen recording."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0122",
+      "start_s": 1544.8,
+      "end_s": 1545.8,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.78,
+      "channel": "room",
+      "text": "Fine. Okay."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0123",
+      "start_s": 1563.6,
+      "end_s": 1567.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "Anything else that's a no-go? Anyone? Speak now."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0124",
+      "start_s": 1567.7,
+      "end_s": 1575.5,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Just, uh, the three open QA bugs. I want them fixed before the release candidate, not after."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0125",
+      "start_s": 1577.7,
+      "end_s": 1582.4,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.84,
+      "channel": "room",
+      "text": "They will be. Two of the three are basically done."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0126",
+      "start_s": 1591.7,
+      "end_s": 1597.6,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Okay. Priya, you're the one I'd listen to on this, are you comfortable?"
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0127",
+      "start_s": 1599.3,
+      "end_s": 1608.3,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.82,
+      "channel": "room",
+      "text": "With the 21st and the training week in front of it? Yes. More comfortable than I was with the 14th, honestly."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0128",
+      "start_s": 1613.8,
+      "end_s": 1614.5,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.73,
+      "channel": "room",
+      "text": "Dana?"
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0129",
+      "start_s": 1616.4,
+      "end_s": 1617.4,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.89,
+      "channel": "remote",
+      "text": "Yes. Go."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0130",
+      "start_s": 1631.6,
+      "end_s": 1632.3,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.79,
+      "channel": "room",
+      "text": "Sarah?"
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0131",
+      "start_s": 1639.7,
+      "end_s": 1640.4,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.74,
+      "channel": "room",
+      "text": "Go."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0132",
+      "start_s": 1645.3,
+      "end_s": 1646.3,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.77,
+      "channel": "room",
+      "text": "Alex?"
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0133",
+      "start_s": 1650.5,
+      "end_s": 1651.6,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Go."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0134",
+      "start_s": 1652.9,
+      "end_s": 1667.4,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "Okay. Then we're go. Route Planner v2 launches October 21st, Acme trains the week before, dark mode is v2.1, two weeks after launch. p95 at 1.8, we watch it. Geocoding's fixed and verified."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0135",
+      "start_s": 1683.6,
+      "end_s": 1685.6,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.94,
+      "channel": "room",
+      "text": "That's a good summary."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0136",
+      "start_s": 1688.5,
+      "end_s": 1698.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "I'm told I'm good at summaries. Okay. Thanks, everyone. Seriously, good work. I know the last two weeks were a lot."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0137",
+      "start_s": 1703.2,
+      "end_s": 1704.6,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Sarah Kim",
+      "speaker_confidence": 0.77,
+      "channel": "room",
+      "text": "Thanks, John."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0138",
+      "start_s": 1706.7,
+      "end_s": 1708.1,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Dana Lee",
+      "speaker_confidence": 0.86,
+      "channel": "remote",
+      "text": "Bye, everyone."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0139",
+      "start_s": 1707.9,
+      "end_s": 1709.0,
+      "speaker_label": "Speaker 4",
+      "speaker_name": "Priya Nair",
+      "speaker_confidence": 0.56,
+      "channel": "room",
+      "text": "Bye Dana."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0140",
+      "start_s": 1713.3,
+      "end_s": 1720.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "Alex, you got a sec after? It's about the board stuff, it's not— it's quick."
+    },
+    {
+      "seg_id": "MTG-0916-GONOGO#0141",
+      "start_s": 1736.7,
+      "end_s": 1740.0,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.94,
+      "channel": "room",
+      "text": "Yeah, sure. Let me stop the recording."
+    }
+  ]
+}

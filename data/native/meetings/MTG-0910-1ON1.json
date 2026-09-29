@@ -1,0 +1,900 @@
+{
+  "id": "MTG-0910-1ON1",
+  "title": "Alex / John 1:1 (walking)",
+  "type": "in_person",
+  "start": "2026-09-10T16:30:00-07:00",
+  "end": "2026-09-10T17:00:00-07:00",
+  "location": "Walking 1:1 – outside, near Brightline HQ",
+  "capture": {
+    "device": "iPhone (Alex)",
+    "mic": "built-in",
+    "system_audio": false
+  },
+  "calendar_event_id": "CAL-1ON1-0910",
+  "participants_known": [
+    "alex@brightline.example.com",
+    "john@brightline.example.com"
+  ],
+  "segments": [
+    {
+      "seg_id": "MTG-0910-1ON1#0001",
+      "start_s": 96.0,
+      "end_s": 105.5,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.8,
+      "channel": "room",
+      "text": "Okay, I'm recording this, is that — you're fine with that? It's mostly so I don't forget stuff."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0002",
+      "start_s": 108.9,
+      "end_s": 115.5,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.82,
+      "channel": "room",
+      "text": "Yeah, go for it. Just don't record me ordering coffee, it's embarrassing."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0003",
+      "start_s": 119.0,
+      "end_s": 126.5,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.81,
+      "channel": "room",
+      "text": "No promises. You want to do the loop down to the park and back?"
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0004",
+      "start_s": 132.1,
+      "end_s": 140.4,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.79,
+      "channel": "room",
+      "text": "Yeah, let's do the loop. I've been sitting since seven. My back is — [inaudible] — terrible."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0005",
+      "start_s": 155.9,
+      "end_s": 157.5,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.71,
+      "channel": "room",
+      "text": "Investor calls?"
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0006",
+      "start_s": 160.8,
+      "end_s": 171.7,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Investor calls, then a customer thing, then more investor calls. It's that week. I'm talking in, like, slide titles now."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0007",
+      "start_s": 188.0,
+      "end_s": 196.6,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.82,
+      "channel": "room",
+      "text": "Ha. Okay, well, I have a list, but you go first. What's on your mind?"
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0008",
+      "start_s": 207.7,
+      "end_s": 223.7,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.79,
+      "channel": "room",
+      "text": "Honestly, the team. How are people doing? Like, genuinely. I feel like I've been in my office all week and I have no idea what the vibe is out there."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0009",
+      "start_s": 229.3,
+      "end_s": 245.4,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.82,
+      "channel": "room",
+      "text": "Um. Mixed. I think people are tired. It's the post-summer thing, everybody came back from Labor Day and it was just, like, straight into it. Nobody got a ramp."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0010",
+      "start_s": 249.1,
+      "end_s": 260.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Engineering especially. There's a lot on them right now. Nobody's miserable, but I wouldn't say anybody's, like, having fun either."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0011",
+      "start_s": 275.7,
+      "end_s": 287.5,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "Yeah. That's kind of what I was worried about. [inaudible] the all-hands last week felt a little flat to me."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0012",
+      "start_s": 290.6,
+      "end_s": 307.1,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.82,
+      "channel": "room",
+      "text": "It was a little flat. I think it's fine, it's just — we should do something. Not a, not a trust fall thing. Just, like, a dinner. Something that isn't a meeting."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0013",
+      "start_s": 310.5,
+      "end_s": 323.1,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.82,
+      "channel": "room",
+      "text": "I'd do that. Can you — actually, no, I'll ask Leah to find a date. Something in October, after things calm down a bit."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0014",
+      "start_s": 345.5,
+      "end_s": 347.3,
+      "speaker_label": "Speaker 4",
+      "speaker_name": null,
+      "speaker_confidence": 0.32,
+      "channel": "room",
+      "text": "[street noise] [inaudible]"
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0015",
+      "start_s": 350.7,
+      "end_s": 354.1,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.82,
+      "channel": "room",
+      "text": "Sorry, this bus — hang on. [inaudible]"
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0016",
+      "start_s": 369.6,
+      "end_s": 373.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "You're fine. Okay. Related, actually — Sarah Kim."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0017",
+      "start_s": 379.7,
+      "end_s": 381.7,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.67,
+      "channel": "room",
+      "text": "What about her?"
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0018",
+      "start_s": 397.8,
+      "end_s": 418.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.83,
+      "channel": "room",
+      "text": "I'm a little worried about her workload. She's leading root planner, she's doing most of the code reviews for that team, she's on the backend interview loop, and she's on call this week. That's, like, four jobs."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0019",
+      "start_s": 421.6,
+      "end_s": 433.4,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.82,
+      "channel": "room",
+      "text": "Yeah. She doesn't say no to anything. That's the — that's the problem with Sarah. She's great and she doesn't say no."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0020",
+      "start_s": 436.2,
+      "end_s": 443.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.84,
+      "channel": "room",
+      "text": "Right. And she won't tell us she's underwater until she's really underwater."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0021",
+      "start_s": 446.1,
+      "end_s": 450.1,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.8,
+      "channel": "room",
+      "text": "So what do you want to do?"
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0022",
+      "start_s": 453.7,
+      "end_s": 474.3,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "I want to pull her off the interview loop for a couple weeks. Somebody else from backend can cover it. And I want to spread the reviews out, there's no reason every PR has to go through her."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0023",
+      "start_s": 477.5,
+      "end_s": 493.3,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "Do it. Seriously, just do it, you don't need me for that. Just — tell her it's not a punishment. She'll take it the wrong way if you're not careful."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0024",
+      "start_s": 496.5,
+      "end_s": 505.3,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.8,
+      "channel": "room",
+      "text": "Yeah. I'll frame it as, like, protecting her time for the stuff only she can do."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0025",
+      "start_s": 508.5,
+      "end_s": 521.2,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.83,
+      "channel": "room",
+      "text": "Good. And make sure she actually takes a day off at some point this month. She didn't really take one over the summer."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0026",
+      "start_s": 527.5,
+      "end_s": 528.9,
+      "speaker_label": "Speaker 4",
+      "speaker_name": null,
+      "speaker_confidence": 0.3,
+      "channel": "room",
+      "text": "[car horn]"
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0027",
+      "start_s": 535.7,
+      "end_s": 540.9,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.8,
+      "channel": "room",
+      "text": "Jesus. Okay. Sorry. What else is on your list?"
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0028",
+      "start_s": 557.1,
+      "end_s": 576.1,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Acme, quickly. Just so you're not surprised. I told Sarah Patel I'd get her the revised pricing proposal by Friday, and I just emailed her, like, half an hour ago to push it to Tuesday."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0029",
+      "start_s": 582.0,
+      "end_s": 582.7,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.77,
+      "channel": "room",
+      "text": "Why?"
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0030",
+      "start_s": 586.1,
+      "end_s": 609.3,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.8,
+      "channel": "room",
+      "text": "I want to put volume tiers in it. They're growing, they said around 550 vehicles by spring, and if we just do a flat per-vehicle price, their CFO's going to push back. I'd rather send it once and have it be right."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0031",
+      "start_s": 617.8,
+      "end_s": 627.5,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.81,
+      "channel": "room",
+      "text": "That's fine. Better than sending it Friday and then sending a new one. Did she say anything back?"
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0032",
+      "start_s": 643.4,
+      "end_s": 654.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "Not yet. I'll let you know. And I'll send it to you before it goes out, like you asked."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0033",
+      "start_s": 657.7,
+      "end_s": 659.1,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.76,
+      "channel": "room",
+      "text": "Thanks. Okay."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0034",
+      "start_s": 662.6,
+      "end_s": 668.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "Other thing. Board meeting. It's the twenty-third, right? Wednesday?"
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0035",
+      "start_s": 671.6,
+      "end_s": 680.1,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.8,
+      "channel": "room",
+      "text": "Wednesday the twenty-third, nine to noon, at Foundry Ridge. Tom's hosting it this time."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0036",
+      "start_s": 683.2,
+      "end_s": 687.6,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.81,
+      "channel": "room",
+      "text": "What do you want from me for it?"
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0037",
+      "start_s": 691.0,
+      "end_s": 708.7,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "I want you to do the product section. Like, fifteen minutes, maybe twenty. Where v2 is, what customers are saying, what's next on the roadmap. And I want real screenshots, not the mocks."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0038",
+      "start_s": 724.8,
+      "end_s": 734.5,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "Dana's on the screenshots already. What about metrics? Do you want me doing the numbers or are you?"
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0039",
+      "start_s": 738.1,
+      "end_s": 752.3,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "I'll do the top-line numbers. But I need the churn dashboard fixed before any of that goes in the deck. Did Ben get to it?"
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0040",
+      "start_s": 768.7,
+      "end_s": 778.6,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "He's on it. I asked him Tuesday. I haven't seen the fix yet, I'll check with him tomorrow."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0041",
+      "start_s": 784.4,
+      "end_s": 793.8,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.78,
+      "channel": "room",
+      "text": "Okay. Because I'm not putting a retention number in front of the board that I don't believe."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0042",
+      "start_s": 802.0,
+      "end_s": 808.2,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.84,
+      "channel": "room",
+      "text": "We've got the deck prep on the calendar, right? Next Thursday?"
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0043",
+      "start_s": 811.2,
+      "end_s": 816.3,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.81,
+      "channel": "room",
+      "text": "Thursday the seventeenth, two o'clock. You, me, and Ben."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0044",
+      "start_s": 819.4,
+      "end_s": 829.8,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.81,
+      "channel": "room",
+      "text": "Good. Let's try to have a real draft by then, not a — not a blank template with, like, headers."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0045",
+      "start_s": 836.1,
+      "end_s": 846.7,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.83,
+      "channel": "room",
+      "text": "I'll write my section this weekend. I'm gonna do a rough narrative first and then turn it into slides."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0046",
+      "start_s": 862.2,
+      "end_s": 866.0,
+      "speaker_label": "Speaker 3",
+      "speaker_name": null,
+      "speaker_confidence": 0.33,
+      "channel": "room",
+      "text": "Oat latte for — for Alex? Alex?"
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0047",
+      "start_s": 869.6,
+      "end_s": 871.8,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.68,
+      "channel": "room",
+      "text": "That's me, thanks."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0048",
+      "start_s": 874.7,
+      "end_s": 879.1,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.8,
+      "channel": "room",
+      "text": "And a drip, medium, for John. [inaudible]"
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0049",
+      "start_s": 889.9,
+      "end_s": 918.7,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.81,
+      "channel": "room",
+      "text": "Okay. The big one on my list. Design. Dana is — she's stretched really thin. She's doing onboarding for v2, she's doing the marketing site, she's doing screenshots for your deck, and she's the only designer we have. I pulled the marketing site off her for now, but that just means it's not getting done."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0050",
+      "start_s": 922.5,
+      "end_s": 923.3,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.72,
+      "channel": "room",
+      "text": "Yeah."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0051",
+      "start_s": 927.0,
+      "end_s": 946.3,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "So I want to talk about a second designer. I think we need one. Like, soon. I don't want to burn Dana out, and there's a whole roadmap after v2 that's, like, eighty percent design work."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0052",
+      "start_s": 961.7,
+      "end_s": 970.9,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "So — I agree with you. I think we need one. But here's where I am on it."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0053",
+      "start_s": 986.9,
+      "end_s": 998.5,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "We open a second designer req only if the Series A extension closes. Tom thinks it closes by end of October."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0054",
+      "start_s": 1001.3,
+      "end_s": 1005.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Okay. So it's — it's tied to the extension."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0055",
+      "start_s": 1008.8,
+      "end_s": 1028.9,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.79,
+      "channel": "room",
+      "text": "It's tied to the extension. I don't want to open a req, get someone halfway through a process, and then have to freeze it. That's worse for everybody. It's worse for the candidate, it's worse for us."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0056",
+      "start_s": 1034.7,
+      "end_s": 1041.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.83,
+      "channel": "room",
+      "text": "Yeah, that's fair. So I shouldn't have Leah post it yet."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0057",
+      "start_s": 1044.9,
+      "end_s": 1062.8,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.84,
+      "channel": "room",
+      "text": "Not yet. Hold it. If the extension closes, you can post it the next day, I don't care. Have the job description ready so it's not a — so we're not starting from zero."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0058",
+      "start_s": 1078.9,
+      "end_s": 1085.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.81,
+      "channel": "room",
+      "text": "Okay. I'll write the JD so it's ready to go."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0059",
+      "start_s": 1100.7,
+      "end_s": 1113.0,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.79,
+      "channel": "room",
+      "text": "Yeah. And just — keep it quiet for now. I don't want people hearing we're hiring a designer and then it doesn't happen."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0060",
+      "start_s": 1115.9,
+      "end_s": 1125.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "Got it. What about in the meantime? Like, can I use a contractor for the marketing site?"
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0061",
+      "start_s": 1128.2,
+      "end_s": 1142.6,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.82,
+      "channel": "room",
+      "text": "For the marketing site, maybe. Send me a — [inaudible] — a proposal and I'll look at it. Small scope. Like, a few weeks of work, not a retainer."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0062",
+      "start_s": 1148.5,
+      "end_s": 1153.7,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "Okay. I'll find someone and send you a proposal."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0063",
+      "start_s": 1162.2,
+      "end_s": 1164.9,
+      "speaker_label": "Speaker 4",
+      "speaker_name": null,
+      "speaker_confidence": 0.34,
+      "channel": "room",
+      "text": "[street noise] [siren] [inaudible]"
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0064",
+      "start_s": 1173.2,
+      "end_s": 1178.4,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "— sorry, I couldn't hear anything there. What'd you say?"
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0065",
+      "start_s": 1183.9,
+      "end_s": 1192.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "I said, I'll find a contractor for the marketing site and send you a proposal."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0066",
+      "start_s": 1207.8,
+      "end_s": 1215.3,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.79,
+      "channel": "room",
+      "text": "Anything else? We should start heading back, I have a — [inaudible] — at five."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0067",
+      "start_s": 1231.0,
+      "end_s": 1242.1,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.84,
+      "channel": "room",
+      "text": "Actually, wait, before we head back — how are you doing? Like, you. You've been carrying a lot of this too."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0068",
+      "start_s": 1245.7,
+      "end_s": 1261.8,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.82,
+      "channel": "room",
+      "text": "Honestly? I'm okay. I'm tired, but, like, good tired. The part I miss is building stuff. I've been in meetings so much I haven't touched code in, like, three weeks."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0069",
+      "start_s": 1270.2,
+      "end_s": 1279.5,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.84,
+      "channel": "room",
+      "text": "You should do that. I mean it. You're better when you're building something. You're less — [inaudible] — grumpy."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0070",
+      "start_s": 1287.6,
+      "end_s": 1303.6,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.82,
+      "channel": "room",
+      "text": "Ha. Thanks. I actually want to prototype something this weekend. An ETA predictor, using our own route history. Just to see if it's any better than what we have."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0071",
+      "start_s": 1306.9,
+      "end_s": 1309.7,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.83,
+      "channel": "room",
+      "text": "Is that for v2?"
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0072",
+      "start_s": 1325.3,
+      "end_s": 1339.1,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "No, no. Way after. It's a, it's a Saturday project. If it's good, I'll show Sarah, and if it's bad, nobody ever hears about it."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0073",
+      "start_s": 1347.7,
+      "end_s": 1357.6,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.8,
+      "channel": "room",
+      "text": "That's the best kind of project. Just don't hand it to Sarah's team as, like, a surprise requirement."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0074",
+      "start_s": 1360.7,
+      "end_s": 1366.6,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "I would never. Okay, I would maybe. But I won't."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0075",
+      "start_s": 1369.5,
+      "end_s": 1382.2,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "How's Ben doing, by the way? I feel like he's getting pulled in every direction too. Dashboards, staging data, your stuff, my stuff."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0076",
+      "start_s": 1385.1,
+      "end_s": 1403.1,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Yeah, he's the only data person, so everything lands on him. He doesn't complain, but I've been trying to batch what I ask him for so it's not, like, twelve pings a day."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0077",
+      "start_s": 1406.8,
+      "end_s": 1419.1,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "Good. Same thing as Sarah, basically. We have a few people who are load-bearing and we're leaning on them really hard."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0078",
+      "start_s": 1424.7,
+      "end_s": 1439.1,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.82,
+      "channel": "room",
+      "text": "Yeah. That's the honest version of the morale thing, I think. It's not that people are unhappy. It's that the same five people are holding up everything."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0079",
+      "start_s": 1454.8,
+      "end_s": 1471.4,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "Yeah. That's — yeah. That's fair. That's a good way to put it. Let's talk about that at the offsite, actually. Not as a complaint session. Just, like, where are we fragile."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0080",
+      "start_s": 1474.6,
+      "end_s": 1479.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "I like that. I'll put it on the agenda."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0081",
+      "start_s": 1483.3,
+      "end_s": 1489.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "Just the offsite. Denver. Is the agenda still on me?"
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0082",
+      "start_s": 1492.5,
+      "end_s": 1512.7,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "Yeah, the agenda's on you. Keep it light. Like, one real strategy session on what's after v2, and then let people actually talk to each other. Last offsite was eight hours of slides and everybody hated it."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0083",
+      "start_s": 1515.7,
+      "end_s": 1521.0,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "I hated it, and I made half the slides."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0084",
+      "start_s": 1528.9,
+      "end_s": 1537.3,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.84,
+      "channel": "room",
+      "text": "Okay. One strategy block, lots of unstructured time. I'll send you a draft next week."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0085",
+      "start_s": 1540.6,
+      "end_s": 1548.1,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "Great. Okay. This was good. Sorry I've been hard to get this week."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0086",
+      "start_s": 1564.5,
+      "end_s": 1568.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "No, it's fine. It's that week."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0087",
+      "start_s": 1579.0,
+      "end_s": 1586.5,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.81,
+      "channel": "room",
+      "text": "It is that week. Okay, let's cross here, the light's about to — [inaudible]."
+    },
+    {
+      "seg_id": "MTG-0910-1ON1#0088",
+      "start_s": 1592.6,
+      "end_s": 1596.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.82,
+      "channel": "room",
+      "text": "Okay, I'm gonna stop the recording."
+    }
+  ]
+}

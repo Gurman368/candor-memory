@@ -1,0 +1,2002 @@
+{
+  "id": "MTG-0909-ACME",
+  "title": "Acme Freight – pricing and rollout",
+  "type": "hybrid",
+  "start": "2026-09-09T11:00:00-07:00",
+  "end": "2026-09-09T11:50:00-07:00",
+  "location": "Brightline HQ – Embarcadero room + Google Meet",
+  "capture": {
+    "device": "MacBook Pro (Alex)",
+    "mic": "built-in",
+    "system_audio": true
+  },
+  "calendar_event_id": "CAL-ACME-0909",
+  "participants_known": [
+    "alex@brightline.example.com",
+    "marcus@brightline.example.com",
+    "sarah.patel@acmefreight.example.com",
+    "chris.hale@acmefreight.example.com"
+  ],
+  "segments": [
+    {
+      "seg_id": "MTG-0909-ACME#0001",
+      "start_s": 1.8,
+      "end_s": 7.6,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.93,
+      "channel": "room",
+      "text": "Are they in yet? I don't see anybody in the lobby."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0002",
+      "start_s": 12.4,
+      "end_s": 17.7,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.96,
+      "channel": "room",
+      "text": "Not yet. It's eleven oh one. Give them a minute."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0003",
+      "start_s": 20.6,
+      "end_s": 25.4,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "I'll ping Sarah. She's usually right on time, so."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0004",
+      "start_s": 30.4,
+      "end_s": 42.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "Hey — before they join. I'm not giving numbers on this call. I want to hear what they need and then put it in writing."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0005",
+      "start_s": 48.4,
+      "end_s": 60.3,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "Agreed. No numbers. We listen, we take notes, we come back with something real. Last time we rushed it and it didn't land."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0006",
+      "start_s": 63.5,
+      "end_s": 71.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.97,
+      "channel": "room",
+      "text": "Yeah. Okay. Is the, uh, is the camera pointed at us or at the ceiling?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0007",
+      "start_s": 93.9,
+      "end_s": 99.5,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "It's at us. You look great. Oh — there they are."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0008",
+      "start_s": 102.1,
+      "end_s": 115.6,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.97,
+      "channel": "room",
+      "text": "Okay, I think — can you guys hear us okay? We're in the conference room, so tell me if we sound like we're in a tin can."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0009",
+      "start_s": 118.5,
+      "end_s": 123.0,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.9,
+      "channel": "remote",
+      "text": "You sound fine. A little echoey, but fine."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0010",
+      "start_s": 130.8,
+      "end_s": 139.9,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "That's just the room. Embarcadero has, like, zero soft surfaces. It's all glass and a whiteboard nobody uses."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0011",
+      "start_s": 143.2,
+      "end_s": 155.4,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.86,
+      "channel": "remote",
+      "text": "Ha. Ours is the opposite, we're in a room with carpet on the walls. I don't know why. I think it's from the nineties."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0012",
+      "start_s": 169.8,
+      "end_s": 172.0,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Chris Hale",
+      "speaker_confidence": 0.85,
+      "channel": "remote",
+      "text": "It's for acoustics. Allegedly."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0013",
+      "start_s": 176.8,
+      "end_s": 184.1,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.93,
+      "channel": "room",
+      "text": "Chris, good to see you. How's the week going? You guys in peak yet?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0014",
+      "start_s": 198.2,
+      "end_s": 211.7,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Chris Hale",
+      "speaker_confidence": 0.82,
+      "channel": "remote",
+      "text": "We're getting there. September's always — it starts ramping. The retail stuff starts moving for the holidays and then it's just, you know, go time until January."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0015",
+      "start_s": 214.3,
+      "end_s": 228.9,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.89,
+      "channel": "remote",
+      "text": "Yeah, it's the calm before the storm. Honestly this is a good time to be doing this, because in like six weeks I won't have time to breathe."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0016",
+      "start_s": 236.9,
+      "end_s": 249.5,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.96,
+      "channel": "room",
+      "text": "Well, we'll try to make it worth it. Thanks for making the time, I know it's — it's a lot of calls this time of year."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0017",
+      "start_s": 252.9,
+      "end_s": 257.7,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.87,
+      "channel": "remote",
+      "text": "No, this one I wanted. This one's actually useful."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0018",
+      "start_s": 260.5,
+      "end_s": 290.3,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "We'll take it. So, quick agenda, and tell us if you want to change anything. We wanted to get your read on how things are going on the current version, walk you through what's coming in v2 and how we'd roll it out to your dispatchers, and then talk pricing. Because I know the last proposal didn't quite land."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0019",
+      "start_s": 297.7,
+      "end_s": 300.5,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.85,
+      "channel": "remote",
+      "text": "That's right. Yeah. That works."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0020",
+      "start_s": 303.4,
+      "end_s": 311.2,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "And Chris, I know you had some IT questions, so we'll save time for those."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0021",
+      "start_s": 314.3,
+      "end_s": 320.3,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Chris Hale",
+      "speaker_confidence": 0.84,
+      "channel": "remote",
+      "text": "Yeah, I've got a list. It's not long. Well. It's medium."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0022",
+      "start_s": 334.3,
+      "end_s": 340.6,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Okay. Sarah, how's it going? Like, honestly. What are your dispatchers saying?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0023",
+      "start_s": 355.4,
+      "end_s": 374.4,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.88,
+      "channel": "remote",
+      "text": "Um, so, honestly, the dispatchers who use it like it. The route board is way better than what we had before, which was, I mean, it was a whiteboard and a spreadsheet, so the bar was low."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0024",
+      "start_s": 378.0,
+      "end_s": 402.2,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.86,
+      "channel": "remote",
+      "text": "The complaint I get the most is multi-stop. They're still building multi-stop routes kind of by hand, and then dragging stops around, and it takes them — some of the guys at our bigger terminals spend, like, the first two hours of their shift just building routes."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0025",
+      "start_s": 405.3,
+      "end_s": 407.6,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.94,
+      "channel": "room",
+      "text": "Two hours. Wow. Okay."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0026",
+      "start_s": 411.2,
+      "end_s": 431.5,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.87,
+      "channel": "remote",
+      "text": "And the other thing is the ETAs. The drivers say the ETAs are optimistic. Like, we tell a customer two o'clock and the truck shows up at three fifteen, and then the customer's mad at us, not at the software."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0027",
+      "start_s": 434.9,
+      "end_s": 447.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.93,
+      "channel": "room",
+      "text": "Yeah. Honestly, both of those are basically what v2 is about. Like, that's not me doing a sales thing. That's literally the two things."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0028",
+      "start_s": 441.7,
+      "end_s": 445.7,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.78,
+      "channel": "room",
+      "text": "It's a little bit a sales thing."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0029",
+      "start_s": 450.0,
+      "end_s": 455.7,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "It's a little bit a sales thing. But it's also true."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0030",
+      "start_s": 459.2,
+      "end_s": 460.6,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.74,
+      "channel": "remote",
+      "text": "[laughs] Okay."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0031",
+      "start_s": 464.0,
+      "end_s": 489.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "So multi-stop optimization is the headline. You give it the stops, the time windows, the vehicle constraints — like which trucks can go where, dock heights, whatever — and it builds the routes. Your dispatchers can still drag things around, but they start from something good instead of from nothing."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0032",
+      "start_s": 492.0,
+      "end_s": 495.4,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.84,
+      "channel": "remote",
+      "text": "Okay. That's — yeah. That's the thing."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0033",
+      "start_s": 498.5,
+      "end_s": 511.2,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Chris Hale",
+      "speaker_confidence": 0.83,
+      "channel": "remote",
+      "text": "Does that run on your side or does it need anything on our side? Like, is there an agent or anything we'd have to install?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0034",
+      "start_s": 514.4,
+      "end_s": 527.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.93,
+      "channel": "room",
+      "text": "All on our side. It's all cloud, nothing to install. The only thing on your side is the driver app, which you already have."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0035",
+      "start_s": 534.5,
+      "end_s": 541.2,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Chris Hale",
+      "speaker_confidence": 0.81,
+      "channel": "remote",
+      "text": "Good. Love that. Every time someone says agent I lose a week."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0036",
+      "start_s": 544.3,
+      "end_s": 569.5,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "And on ETAs, we rebuilt how we calculate them. We're using historical route data now, like how long your trucks actually took on that lane at that time of day, instead of just map distance and speed limits. It should get a lot closer. I'm not going to promise perfect."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0037",
+      "start_s": 577.2,
+      "end_s": 583.3,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.85,
+      "channel": "remote",
+      "text": "Nobody's perfect. Just — closer than an hour off would be great."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0038",
+      "start_s": 598.1,
+      "end_s": 608.3,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Can I ask — when the ETA is wrong today, what actually happens? Like, does the dispatcher call the customer?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0039",
+      "start_s": 611.4,
+      "end_s": 616.1,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.9,
+      "channel": "remote",
+      "text": "Usually the customer calls us. Which is the problem."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0040",
+      "start_s": 619.5,
+      "end_s": 620.6,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.8,
+      "channel": "room",
+      "text": "Yeah."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0041",
+      "start_s": 623.2,
+      "end_s": 639.0,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.84,
+      "channel": "remote",
+      "text": "So if the thing could, like, warn the dispatcher before the customer calls, that alone is — honestly, that's worth a lot to us. That's the thing my CEO would actually notice."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0042",
+      "start_s": 641.8,
+      "end_s": 664.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.96,
+      "channel": "room",
+      "text": "So there's a late-risk flag in v2. It's basic, but it's there. When we think a route's going to miss a delivery window, it turns orange on the board, and you can click into it and see which stop is the problem."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0043",
+      "start_s": 666.9,
+      "end_s": 670.7,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.84,
+      "channel": "remote",
+      "text": "Orange. Okay. Good. Can it text somebody?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0044",
+      "start_s": 673.6,
+      "end_s": 687.8,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "Not in v2. It's on the board and it can send an email. Texting is — it's something we've talked about, I just don't want to promise it today."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0045",
+      "start_s": 691.1,
+      "end_s": 694.3,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.91,
+      "channel": "remote",
+      "text": "That's fair. Email's fine to start."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0046",
+      "start_s": 708.8,
+      "end_s": 721.7,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.97,
+      "channel": "room",
+      "text": "Actually — do you want to just see it? I can share my screen and show you the staging version. It's not final, but it's close."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0047",
+      "start_s": 724.9,
+      "end_s": 730.5,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.9,
+      "channel": "remote",
+      "text": "Yes. Please. That'd be way easier than me imagining it."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0048",
+      "start_s": 733.4,
+      "end_s": 743.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "Okay, one sec. Can you see my screen? It should be a, a map with a bunch of colored lines."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0049",
+      "start_s": 758.3,
+      "end_s": 760.6,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Chris Hale",
+      "speaker_confidence": 0.8,
+      "channel": "remote",
+      "text": "Yep, we see it."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0050",
+      "start_s": 763.7,
+      "end_s": 786.5,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Okay. So this is the dispatcher board in v2. This is a demo account, so these are fake stops around the Bay Area. On the left you've got all the stops for tomorrow that haven't been assigned yet, and on the right is the map."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0051",
+      "start_s": 789.1,
+      "end_s": 809.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "So the old way, you'd drag each stop onto a truck. The new way, you hit this button, optimize, and — give it a second — it builds routes for every truck based on the time windows and the truck constraints."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0052",
+      "start_s": 812.2,
+      "end_s": 816.9,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.83,
+      "channel": "remote",
+      "text": "Wait, it did all of them? Just now?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0053",
+      "start_s": 822.1,
+      "end_s": 841.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "All of them. And each color is a truck. If you click into one — say this blue one — you can see the stop order, the ETA at each stop, and how much slack there is before the window closes."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0054",
+      "start_s": 844.5,
+      "end_s": 853.0,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.83,
+      "channel": "remote",
+      "text": "Okay, that's — yeah. My Stockton people are going to lose their minds. In a good way."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0055",
+      "start_s": 860.8,
+      "end_s": 870.6,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Chris Hale",
+      "speaker_confidence": 0.85,
+      "channel": "remote",
+      "text": "How long does that take with, like, a real fleet? That was a demo with, what, ten trucks?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0056",
+      "start_s": 873.3,
+      "end_s": 895.3,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.96,
+      "channel": "room",
+      "text": "Twelve trucks here. With a fleet your size it takes longer, it's not instant, it's more like — you'd hit the button and go get a coffee. We're still working on speeding it up for the really big fleets, I'll be honest about that."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0057",
+      "start_s": 898.5,
+      "end_s": 904.6,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Chris Hale",
+      "speaker_confidence": 0.86,
+      "channel": "remote",
+      "text": "A coffee's fine. Two hours is not fine. A coffee's fine."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0058",
+      "start_s": 912.1,
+      "end_s": 930.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "And then if a dispatcher doesn't like what it did, they can still drag a stop from one truck to another, and it'll re-check the ETAs for both trucks. So they're never locked in."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0059",
+      "start_s": 933.4,
+      "end_s": 941.4,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.89,
+      "channel": "remote",
+      "text": "That's important. My guys hate it when the computer is, like, too sure of itself."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0060",
+      "start_s": 955.7,
+      "end_s": 961.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.96,
+      "channel": "room",
+      "text": "Yeah. The rule we used was, the software suggests, the dispatcher decides."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0061",
+      "start_s": 965.1,
+      "end_s": 970.6,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.9,
+      "channel": "remote",
+      "text": "Can you show me the orange thing? The late one?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0062",
+      "start_s": 973.7,
+      "end_s": 1003.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.93,
+      "channel": "room",
+      "text": "Yeah — so here. This truck, the green one, has a stop at the end with a two-to-four window, and it's predicting four-twenty. So the route goes orange, and the stop has this little clock icon. Click it and it tells you why. Here it's, uh, a lot of stops before it and traffic on the bridge."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0063",
+      "start_s": 1018.2,
+      "end_s": 1025.9,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.82,
+      "channel": "remote",
+      "text": "Okay. Yeah. That's — honestly if I could just have that tomorrow, I'd be happy."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0064",
+      "start_s": 1022.5,
+      "end_s": 1027.5,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.77,
+      "channel": "room",
+      "text": "We can do September 30. Tomorrow's a little tight."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0065",
+      "start_s": 1032.7,
+      "end_s": 1034.5,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.71,
+      "channel": "remote",
+      "text": "[laughs] Fine. Fine."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0066",
+      "start_s": 1040.0,
+      "end_s": 1045.7,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.96,
+      "channel": "room",
+      "text": "Okay, I'll stop sharing. Any questions on what you saw?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0067",
+      "start_s": 1048.3,
+      "end_s": 1062.6,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Chris Hale",
+      "speaker_confidence": 0.82,
+      "channel": "remote",
+      "text": "Is that the same screen on a laptop and on the big wall monitors? Some of our terminals have the board up on a TV on the wall."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0068",
+      "start_s": 1065.3,
+      "end_s": 1076.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.93,
+      "channel": "room",
+      "text": "Same screen. There's a, a view-only mode for wall displays, it hides the editing stuff and makes the text bigger."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0069",
+      "start_s": 1084.1,
+      "end_s": 1089.6,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.89,
+      "channel": "remote",
+      "text": "What's the timing on v2? Like, when is this real?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0070",
+      "start_s": 1096.8,
+      "end_s": 1105.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "So we just locked the date internally, actually, like yesterday. Route Planner v2 launches September 30."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0071",
+      "start_s": 1113.0,
+      "end_s": 1115.0,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.77,
+      "channel": "remote",
+      "text": "Oh. That's soon."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0072",
+      "start_s": 1119.8,
+      "end_s": 1138.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "It is soon. But we'd roll it out gradually, we're not flipping everybody at once. For you guys I'd suggest we start with one terminal, get those dispatchers comfortable with it, and then expand from there."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0073",
+      "start_s": 1141.3,
+      "end_s": 1153.4,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.9,
+      "channel": "remote",
+      "text": "That makes sense. We'd probably start with Stockton. They're the most organized. They're also the ones complaining the loudest about multi-stop, so."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0074",
+      "start_s": 1156.9,
+      "end_s": 1160.9,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "Complaining is good. Complaining means they care."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0075",
+      "start_s": 1168.8,
+      "end_s": 1175.0,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.89,
+      "channel": "remote",
+      "text": "Oh, they care. Trust me. I get a lot of emails."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0076",
+      "start_s": 1180.5,
+      "end_s": 1183.7,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "How many dispatchers are at Stockton?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0077",
+      "start_s": 1197.9,
+      "end_s": 1209.4,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.85,
+      "channel": "remote",
+      "text": "Stockton's, um, six dispatchers on days and two on nights. And then across all our terminals it's, what, Chris, like forty-something?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0078",
+      "start_s": 1212.7,
+      "end_s": 1223.3,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Chris Hale",
+      "speaker_confidence": 0.89,
+      "channel": "remote",
+      "text": "Forty-two, I think, last time I pulled the user list. Maybe forty-three with the new guy in Fresno."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0079",
+      "start_s": 1226.3,
+      "end_s": 1228.0,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.76,
+      "channel": "remote",
+      "text": "Forty-something. Yeah."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0080",
+      "start_s": 1236.0,
+      "end_s": 1251.1,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "Okay. So Stockton would be a nice size for a first wave. Big enough to actually learn something, small enough that if something's weird we can fix it fast."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0081",
+      "start_s": 1254.0,
+      "end_s": 1271.2,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Chris Hale",
+      "speaker_confidence": 0.85,
+      "channel": "remote",
+      "text": "On the driver app — our drivers are all on the rugged Android devices, and we push apps through our device management. Does the v2 driver app need anything different? Like new permissions or anything?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0082",
+      "start_s": 1274.2,
+      "end_s": 1298.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Good question. I believe it's the same permissions, location and camera for proof of delivery. The update goes through the Play Store like normal, so your device management should just pick it up. But let me double-check that with our engineering lead so I'm not guessing."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0083",
+      "start_s": 1301.8,
+      "end_s": 1315.0,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Chris Hale",
+      "speaker_confidence": 0.87,
+      "channel": "remote",
+      "text": "Yeah, please. If it asks for a new permission, half the drivers will just hit deny, and then I'm getting calls at five a.m."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0084",
+      "start_s": 1317.7,
+      "end_s": 1329.7,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "Chris, is the location stuff okay with your drivers, generally? Like, we've had some fleets where the drivers were nervous about being tracked."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0085",
+      "start_s": 1332.4,
+      "end_s": 1347.2,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Chris Hale",
+      "speaker_confidence": 0.82,
+      "channel": "remote",
+      "text": "It was a thing at first. We made it really clear it only tracks when they're on shift, and that helped. As long as that's still true in v2."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0086",
+      "start_s": 1350.3,
+      "end_s": 1355.1,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "That's still true. On-shift only. That's not changing."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0087",
+      "start_s": 1360.6,
+      "end_s": 1362.1,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Chris Hale",
+      "speaker_confidence": 0.7,
+      "channel": "remote",
+      "text": "Okay, good."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0088",
+      "start_s": 1361.4,
+      "end_s": 1367.7,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.74,
+      "channel": "room",
+      "text": "Okay. Should we get into pricing? I feel like that's the —"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0089",
+      "start_s": 1364.9,
+      "end_s": 1367.6,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.79,
+      "channel": "remote",
+      "text": "Yeah, let's do it."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0090",
+      "start_s": 1371.1,
+      "end_s": 1396.3,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.9,
+      "channel": "remote",
+      "text": "So — let me just be direct, because I think that's easier. The last proposal was per shipment, and I get why you did it that way. But I can't budget that. Our volume swings like crazy. September to December is one thing and then January is, like, a ghost town."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0091",
+      "start_s": 1399.0,
+      "end_s": 1417.2,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.91,
+      "channel": "remote",
+      "text": "And finance wants a number they can put in a spreadsheet in January and not think about again. Per shipment, they have to, like, forecast our volume just to forecast your bill. And they hate that."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0092",
+      "start_s": 1420.6,
+      "end_s": 1442.4,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.96,
+      "channel": "room",
+      "text": "Totally fair. And honestly we've been going back and forth on this internally. Per shipment made sense for some of our smaller customers who have really spiky volume, but for a fleet your size, I think per vehicle is probably a lot cleaner."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0093",
+      "start_s": 1445.0,
+      "end_s": 1459.7,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.84,
+      "channel": "remote",
+      "text": "Per vehicle is how we think about everything. Fuel, insurance, maintenance, tires, it's all per truck. So if your number is per truck it just — it slots right in."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0094",
+      "start_s": 1462.8,
+      "end_s": 1471.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "Right. Yeah. That's kind of what I keep hearing. Fleet ops teams budget by fleet size."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0095",
+      "start_s": 1473.9,
+      "end_s": 1488.6,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "How many vehicles are we talking about? I want to make sure we're sizing this right, because I think the last proposal was working off a pretty old number."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0096",
+      "start_s": 1502.9,
+      "end_s": 1511.0,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.83,
+      "channel": "remote",
+      "text": "So today we run about 420 vehicles. That's tractors and the straight trucks, all in."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0097",
+      "start_s": 1514.4,
+      "end_s": 1531.9,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.89,
+      "channel": "remote",
+      "text": "And we expect to be at around 550 by next spring. We're adding a terminal, and we're bringing some of the owner-operator stuff in-house, so the fleet is — it's growing pretty fast."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0098",
+      "start_s": 1537.4,
+      "end_s": 1542.9,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Okay. So 420 today, around 550 by spring. Got it."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0099",
+      "start_s": 1557.5,
+      "end_s": 1571.8,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "Okay, that's actually really helpful. Because if we price per vehicle, the growth matters a lot. I don't want you to feel like you're getting punished for growing."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0100",
+      "start_s": 1579.6,
+      "end_s": 1599.8,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.85,
+      "channel": "remote",
+      "text": "Yeah, exactly. That's my fear. If we go to 550 and the bill just goes up in a straight line, my CFO's going to ask me why we're not getting any kind of break for being a bigger customer."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0101",
+      "start_s": 1605.0,
+      "end_s": 1620.3,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "Yeah. Let me take that back. I think there's room to do something smarter as you grow, I just want to actually work through the numbers before I say anything."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0102",
+      "start_s": 1622.8,
+      "end_s": 1624.8,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.76,
+      "channel": "remote",
+      "text": "Sure. That's fine."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0103",
+      "start_s": 1629.9,
+      "end_s": 1638.7,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.88,
+      "channel": "remote",
+      "text": "The other thing finance flagged was the onboarding fee. Is that — would that still be in there?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0104",
+      "start_s": 1645.8,
+      "end_s": 1657.5,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "Let me take that back too. I don't want to say something on a call and then walk it back in writing."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0105",
+      "start_s": 1663.0,
+      "end_s": 1680.0,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "What I'll say is we want you guys long-term. We'd rather structure it as, you know, a multi-year thing that works for both sides than nickel-and-dime you on setup."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0106",
+      "start_s": 1683.4,
+      "end_s": 1699.3,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.86,
+      "channel": "remote",
+      "text": "Multi-year is probably fine. We'd want some kind of out if it's really not working, but in principle multi-year is fine. We did three years with our telematics provider."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0107",
+      "start_s": 1702.3,
+      "end_s": 1713.6,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.93,
+      "channel": "room",
+      "text": "And just so I understand your side — per vehicle, is that per vehicle per month, or do you think about it annually?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0108",
+      "start_s": 1718.5,
+      "end_s": 1729.4,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.88,
+      "channel": "remote",
+      "text": "Per month is easier for me to compare, honestly. Everything else I look at is monthly. Finance will annualize it anyway."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0109",
+      "start_s": 1734.8,
+      "end_s": 1738.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "Okay. Per vehicle per month. Got it."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0110",
+      "start_s": 1742.4,
+      "end_s": 1752.0,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "And do you count vehicles that are, like, in the shop? Or seasonal trucks you park in January?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0111",
+      "start_s": 1759.4,
+      "end_s": 1771.4,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.89,
+      "channel": "remote",
+      "text": "Ooh. Good question. I mean — I'd want to only pay for the ones that are actually running, but I know that's a pain."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0112",
+      "start_s": 1777.1,
+      "end_s": 1789.7,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.94,
+      "channel": "room",
+      "text": "Yeah, we'd probably count active vehicles on the account, like trucks that ran a route that month. I'll think about how to make that clean."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0113",
+      "start_s": 1797.8,
+      "end_s": 1802.5,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.82,
+      "channel": "remote",
+      "text": "That would be great, honestly. January would thank you."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0114",
+      "start_s": 1805.4,
+      "end_s": 1816.8,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "And timing on your side — like, what does your approval process look like for something like this? Who has to sign off?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0115",
+      "start_s": 1822.0,
+      "end_s": 1839.8,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.85,
+      "channel": "remote",
+      "text": "So it'd go to me, then our CFO, and then if it's over a certain amount it goes to our CEO too, which it probably is. It's not — it's not fast, but it's not terrible."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0116",
+      "start_s": 1862.0,
+      "end_s": 1865.2,
+      "speaker_label": "Speaker 4",
+      "speaker_name": null,
+      "speaker_confidence": 0.41,
+      "channel": "remote",
+      "text": "Hi, sorry, jumping on late. [inaudible]"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0117",
+      "start_s": 1868.2,
+      "end_s": 1876.3,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.94,
+      "channel": "room",
+      "text": "Hey, no worries. We were just talking about pricing and, uh, timing on your side."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0118",
+      "start_s": 1879.0,
+      "end_s": 1883.5,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.83,
+      "channel": "remote",
+      "text": "Yeah. We're just getting to the approval piece."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0119",
+      "start_s": 1895.4,
+      "end_s": 1907.5,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "So you were saying CFO and then probably CEO. Is there a, like, a time of year that's better or worse for that?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0120",
+      "start_s": 1910.5,
+      "end_s": 1921.0,
+      "speaker_label": "Speaker 4",
+      "speaker_name": null,
+      "speaker_confidence": 0.39,
+      "channel": "remote",
+      "text": "Just so you know, our fiscal year ends in November, so anything needing budget approval has to land before then."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0121",
+      "start_s": 1923.9,
+      "end_s": 1935.0,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.9,
+      "channel": "remote",
+      "text": "Yeah — right. That's a good point. After November it basically goes into next year's budget and that's a whole other process."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0122",
+      "start_s": 1941.0,
+      "end_s": 1950.1,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Okay, that's really helpful. So we want the paperwork in front of you well before November. Noted."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0123",
+      "start_s": 1952.2,
+      "end_s": 1953.9,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.75,
+      "channel": "room",
+      "text": "Noted. Very noted."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0124",
+      "start_s": 1956.0,
+      "end_s": 1965.1,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.89,
+      "channel": "remote",
+      "text": "It's not a hard wall, it's just — it's a lot easier if it's in this year's numbers."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0125",
+      "start_s": 1967.5,
+      "end_s": 1971.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Makes sense. We'll work backwards from that."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0126",
+      "start_s": 1982.6,
+      "end_s": 1990.8,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Chris Hale",
+      "speaker_confidence": 0.84,
+      "channel": "remote",
+      "text": "Can I jump in with the IT stuff while we're on the contract-ish topics?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0127",
+      "start_s": 1996.6,
+      "end_s": 1999.6,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.93,
+      "channel": "room",
+      "text": "Yeah, please. Go for it."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0128",
+      "start_s": 2010.9,
+      "end_s": 2024.3,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Chris Hale",
+      "speaker_confidence": 0.87,
+      "channel": "remote",
+      "text": "Okay. So first, data. If we ever leave — not that we're planning to — can we get our data out? Routes, stops, delivery history, all of it."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0129",
+      "start_s": 2029.0,
+      "end_s": 2046.1,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.96,
+      "channel": "room",
+      "text": "Yes. There's a CSV export in the app for most of it, and everything's available through the API. And if you ever leave, we'd do a full export for you. It's your data."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0130",
+      "start_s": 2051.7,
+      "end_s": 2057.6,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Chris Hale",
+      "speaker_confidence": 0.86,
+      "channel": "remote",
+      "text": "Okay, good. In a format that's not, like, a proprietary blob?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0131",
+      "start_s": 2060.3,
+      "end_s": 2063.1,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "CSV and JSON. No blobs."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0132",
+      "start_s": 2074.1,
+      "end_s": 2086.2,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Chris Hale",
+      "speaker_confidence": 0.87,
+      "channel": "remote",
+      "text": "Great. Second — user management. Right now when we add a dispatcher, someone on Sarah's team has to go invite them by email, right?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0133",
+      "start_s": 2088.6,
+      "end_s": 2093.9,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.85,
+      "channel": "remote",
+      "text": "Yeah, it's me. It's usually me. At eleven p.m."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0134",
+      "start_s": 2096.2,
+      "end_s": 2113.4,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.88,
+      "channel": "remote",
+      "text": "Oh — and that's actually the thing I wanted to ask, and Chris is going to kill me if I don't. SSO. Do you guys support SSO? Like single sign-on with our identity provider?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0135",
+      "start_s": 2116.1,
+      "end_s": 2129.3,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Chris Hale",
+      "speaker_confidence": 0.88,
+      "channel": "remote",
+      "text": "Yeah, we're on octa. Everything new we roll out has to go through Okta now. It's kind of a hard rule for us since last year."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0136",
+      "start_s": 2132.2,
+      "end_s": 2142.5,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.96,
+      "channel": "room",
+      "text": "Yeah. So today, no — today it's email and password with two-factor. But SSO is on our Q4 roadmap."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0137",
+      "start_s": 2145.4,
+      "end_s": 2151.1,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.87,
+      "channel": "remote",
+      "text": "Q4. Okay. So, like, by the end of the year?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0138",
+      "start_s": 2153.2,
+      "end_s": 2155.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "That's the plan, yeah."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0139",
+      "start_s": 2160.6,
+      "end_s": 2165.2,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Chris Hale",
+      "speaker_confidence": 0.86,
+      "channel": "remote",
+      "text": "Is it sample or OIDC? Like, which protocol?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0140",
+      "start_s": 2169.8,
+      "end_s": 2186.3,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.93,
+      "channel": "room",
+      "text": "SAML first, I'd think. I'd have to check with the team on the exact details, but SAML with Okta is the obvious one to start with, because that's what everybody asks for."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0141",
+      "start_s": 2192.1,
+      "end_s": 2200.6,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Chris Hale",
+      "speaker_confidence": 0.86,
+      "channel": "remote",
+      "text": "Okay. And provisioning — like, if someone leaves, do they get turned off automatically? SCIM or whatever?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0142",
+      "start_s": 2203.2,
+      "end_s": 2213.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.96,
+      "channel": "room",
+      "text": "That one I genuinely don't know. Let me find out. I'd rather tell you I don't know than make something up."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0143",
+      "start_s": 2216.8,
+      "end_s": 2224.4,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Chris Hale",
+      "speaker_confidence": 0.82,
+      "channel": "remote",
+      "text": "Appreciate that. Honestly. You'd be surprised how many vendors just say yes to everything."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0144",
+      "start_s": 2227.0,
+      "end_s": 2242.1,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Chris Hale",
+      "speaker_confidence": 0.84,
+      "channel": "remote",
+      "text": "For the pilot terminal I can live with email and password. But for the full rollout, forty-plus dispatchers, I'd need SSO. I can't have forty passwords floating around."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0145",
+      "start_s": 2244.8,
+      "end_s": 2259.4,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.85,
+      "channel": "remote",
+      "text": "Okay, so that kind of works, right? If we start with Stockton this fall, and SSO comes in Q4, then by the time we go wide, it's there."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0146",
+      "start_s": 2270.7,
+      "end_s": 2273.4,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "Yeah, that lines up nicely."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0147",
+      "start_s": 2275.9,
+      "end_s": 2289.3,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Chris Hale",
+      "speaker_confidence": 0.85,
+      "channel": "remote",
+      "text": "Okay. Third thing. Do you have some kind of security overview? Like how data's handled, encryption, where it's hosted. Our security review needs something in writing."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0148",
+      "start_s": 2292.2,
+      "end_s": 2299.6,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Yep, we've got a security overview doc. I'll send it to you after this."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0149",
+      "start_s": 2302.1,
+      "end_s": 2308.6,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Chris Hale",
+      "speaker_confidence": 0.83,
+      "channel": "remote",
+      "text": "Great, thanks. That's — that's actually most of my list. I said medium."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0150",
+      "start_s": 2310.7,
+      "end_s": 2332.4,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.86,
+      "channel": "remote",
+      "text": "Oh, one more from me. Integration. Right now our dispatchers are looking at your app and our telematics dashboard side by side. Is there any way to get the truck locations from our telematics into your board, instead of from the driver app?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0151",
+      "start_s": 2338.3,
+      "end_s": 2342.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Maybe. Which provider are you on?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0152",
+      "start_s": 2344.4,
+      "end_s": 2345.3,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.71,
+      "channel": "remote",
+      "text": "Chris?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0153",
+      "start_s": 2351.1,
+      "end_s": 2360.8,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Chris Hale",
+      "speaker_confidence": 0.81,
+      "channel": "remote",
+      "text": "I'll send it over. We're on one of the big ones. They have an API, it's — it's decent."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0154",
+      "start_s": 2365.0,
+      "end_s": 2385.1,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.95,
+      "channel": "room",
+      "text": "Okay. We have a couple of telematics integrations already and a couple more on the list. Send me the name and I'll tell you honestly where it is. It's not in v2 at launch, I can tell you that."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0155",
+      "start_s": 2387.3,
+      "end_s": 2395.7,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.91,
+      "channel": "remote",
+      "text": "That's fine. That's a nice-to-have. Multi-stop and the ETAs are the must-haves."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0156",
+      "start_s": 2407.2,
+      "end_s": 2410.4,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Good. Because those we can do."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0157",
+      "start_s": 2416.5,
+      "end_s": 2431.9,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Sarah, can I ask — for the Stockton pilot, what would success look like for you? Like, what would you need to see to say, okay, let's roll this out everywhere?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0158",
+      "start_s": 2434.4,
+      "end_s": 2453.6,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.86,
+      "channel": "remote",
+      "text": "Um. Honestly? If route building goes from two hours to, like, thirty minutes, that alone. And if we get fewer angry calls about late trucks. I don't have a number on that, but my team would feel it."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0159",
+      "start_s": 2456.3,
+      "end_s": 2467.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.96,
+      "channel": "room",
+      "text": "Can we measure the route-building time before and after? Like, actually time it for a week before they switch?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0160",
+      "start_s": 2469.1,
+      "end_s": 2480.1,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.82,
+      "channel": "remote",
+      "text": "Yeah, I can have the terminal manager track it. That's easy. They already complain about it, might as well count it."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0161",
+      "start_s": 2486.0,
+      "end_s": 2497.7,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Chris Hale",
+      "speaker_confidence": 0.85,
+      "channel": "remote",
+      "text": "What's your support like? Our dispatchers start at four in the morning. If something breaks at four fifteen, who do they call?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0162",
+      "start_s": 2509.0,
+      "end_s": 2532.5,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Support is email and in-app chat, and we have on-call engineering for anything that's actually down. Early mornings — honestly, human coverage at four a.m. Pacific is thin today. Let me get you a real answer on that instead of a hand-wavy one."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0163",
+      "start_s": 2534.7,
+      "end_s": 2542.6,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Chris Hale",
+      "speaker_confidence": 0.83,
+      "channel": "remote",
+      "text": "Okay. That's fair. It matters for us though, four a.m. is when everything happens."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0164",
+      "start_s": 2553.9,
+      "end_s": 2558.9,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "That's a good flag. We'll come back on it."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0165",
+      "start_s": 2561.3,
+      "end_s": 2571.5,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.86,
+      "channel": "remote",
+      "text": "Do you have other customers our size we could talk to? Like, a reference? My CFO is going to ask."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0166",
+      "start_s": 2573.7,
+      "end_s": 2584.2,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "Yeah, absolutely. I'll line one up. There's a couple of fleets in the same range who'd be happy to talk."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0167",
+      "start_s": 2586.9,
+      "end_s": 2595.7,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.83,
+      "channel": "remote",
+      "text": "Great. Someone who's actually used the multi-stop stuff would be ideal, but I know it's new."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0168",
+      "start_s": 2597.8,
+      "end_s": 2605.4,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Right, it's new. But I'll find someone who's been in the beta, at least."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0169",
+      "start_s": 2608.4,
+      "end_s": 2621.1,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "Sarah, is there anything else on your side that's a must-have we haven't talked about? Like, anything that would stop you from signing?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0170",
+      "start_s": 2632.0,
+      "end_s": 2644.8,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.84,
+      "channel": "remote",
+      "text": "Um. Pricing that my CFO can live with. SSO before we go wide. And honestly just that it works. Like, that Stockton doesn't hate it."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0171",
+      "start_s": 2647.7,
+      "end_s": 2654.0,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.87,
+      "channel": "remote",
+      "text": "If Stockton hates it, I will hear about it for a year."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0172",
+      "start_s": 2656.0,
+      "end_s": 2660.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "Then we'll make sure Stockton doesn't hate it."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0173",
+      "start_s": 2662.9,
+      "end_s": 2675.5,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "We could — Alex, maybe we do a session with the Stockton dispatchers once they're on it? Like a check-in a couple weeks in."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0174",
+      "start_s": 2677.7,
+      "end_s": 2690.5,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.97,
+      "channel": "room",
+      "text": "Yeah, I'd love that. I'd actually love to just watch them use it for an hour. Honestly that's the most useful thing I can do."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0175",
+      "start_s": 2693.5,
+      "end_s": 2698.2,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.86,
+      "channel": "remote",
+      "text": "They'd love that. They'd tell you everything. Bring snacks."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0176",
+      "start_s": 2700.9,
+      "end_s": 2704.4,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "[crosstalk] — donuts, they like donuts, right?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0177",
+      "start_s": 2707.0,
+      "end_s": 2709.4,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.89,
+      "channel": "remote",
+      "text": "Everybody likes donuts, Marcus."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0178",
+      "start_s": 2715.0,
+      "end_s": 2721.2,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "Okay. We're coming up on time, so let's just do next steps."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0179",
+      "start_s": 2732.3,
+      "end_s": 2751.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "Yeah. So, from our side. I'll send you the revised pricing proposal by Friday. Per vehicle, per month, and I'll take a real look at how we handle the growth to 550, and at the onboarding fee."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0180",
+      "start_s": 2753.3,
+      "end_s": 2761.8,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.84,
+      "channel": "remote",
+      "text": "Friday's great. Send it to me directly and I'll get it in front of our CFO."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0181",
+      "start_s": 2764.4,
+      "end_s": 2773.6,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "Will do. And I'll find out about the driver app permissions and the provisioning question for Chris."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0182",
+      "start_s": 2775.7,
+      "end_s": 2789.5,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "And I'll send Chris the security overview today, and once you've had a chance to look at the proposal I'll set up a follow-up with everybody."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0183",
+      "start_s": 2792.1,
+      "end_s": 2797.0,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Chris Hale",
+      "speaker_confidence": 0.81,
+      "channel": "remote",
+      "text": "Sounds good. And I'll send over the telematics details."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0184",
+      "start_s": 2803.4,
+      "end_s": 2815.6,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.9,
+      "channel": "remote",
+      "text": "And on our side we'll figure out who from Stockton should be in the first group. I'll talk to their terminal manager this week."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0185",
+      "start_s": 2817.6,
+      "end_s": 2821.9,
+      "speaker_label": "Speaker 4",
+      "speaker_name": null,
+      "speaker_confidence": 0.37,
+      "channel": "remote",
+      "text": "Thanks, everyone. I'm going to drop. [inaudible]"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0186",
+      "start_s": 2828.0,
+      "end_s": 2833.7,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.96,
+      "channel": "room",
+      "text": "Thanks. Okay — thank you all, seriously. This was really useful."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0187",
+      "start_s": 2835.9,
+      "end_s": 2839.5,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Sarah Patel",
+      "speaker_confidence": 0.84,
+      "channel": "remote",
+      "text": "Thanks, Alex. Thanks, Marcus. Talk soon."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0188",
+      "start_s": 2850.5,
+      "end_s": 2852.0,
+      "speaker_label": "Speaker 5",
+      "speaker_name": "Chris Hale",
+      "speaker_confidence": 0.73,
+      "channel": "remote",
+      "text": "Thanks, guys."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0189",
+      "start_s": 2856.5,
+      "end_s": 2858.1,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.77,
+      "channel": "room",
+      "text": "Bye, everybody."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0190",
+      "start_s": 2874.0,
+      "end_s": 2880.2,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Okay. I think that went well. That went really well, actually."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0191",
+      "start_s": 2882.3,
+      "end_s": 2888.4,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "Yeah. She's — Sarah's great. She just tells you what she needs."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0192",
+      "start_s": 2899.4,
+      "end_s": 2909.1,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.96,
+      "channel": "room",
+      "text": "Hey, did you catch who that was that joined late? The person who said the fiscal year thing?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0193",
+      "start_s": 2911.4,
+      "end_s": 2921.8,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "No idea. I figured you knew. I didn't see a name, it just said, like, a phone number or something."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0194",
+      "start_s": 2925.8,
+      "end_s": 2930.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.95,
+      "channel": "room",
+      "text": "Huh. Okay. Well, it's good to know regardless. November."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0195",
+      "start_s": 2933.3,
+      "end_s": 2946.1,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Yeah, that actually matters. If this slips past November, we're in next year's budget, and that's a whole other cycle. Let's not let it slip."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0196",
+      "start_s": 2948.2,
+      "end_s": 2959.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.95,
+      "channel": "room",
+      "text": "Agreed. Okay, I've got to get the proposal done by Friday. Can we grab thirty minutes tomorrow to go through numbers?"
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0197",
+      "start_s": 2961.3,
+      "end_s": 2966.3,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "Yeah, I'll throw something on your calendar. Nice job."
+    },
+    {
+      "seg_id": "MTG-0909-ACME#0198",
+      "start_s": 2968.9,
+      "end_s": 2972.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.96,
+      "channel": "room",
+      "text": "You too. Okay, stopping this."
+    }
+  ]
+}

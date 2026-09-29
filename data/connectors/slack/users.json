@@ -1,0 +1,90 @@
+[
+  {
+    "id": "U01ALEX",
+    "name": "alex",
+    "real_name": "Alex Rivera",
+    "title": "VP Product",
+    "email": "alex@brightline.example.com",
+    "is_bot": false
+  },
+  {
+    "id": "U02JOHN",
+    "name": "john",
+    "real_name": "John Okafor",
+    "title": "CEO",
+    "email": "john@brightline.example.com",
+    "is_bot": false
+  },
+  {
+    "id": "U03SARAHK",
+    "name": "sarah.kim",
+    "real_name": "Sarah Kim",
+    "title": "Engineering Lead, Route Planner",
+    "email": "sarah.kim@brightline.example.com",
+    "is_bot": false
+  },
+  {
+    "id": "U04DANA",
+    "name": "dana",
+    "real_name": "Dana Lee",
+    "title": "Product Designer",
+    "email": "dana@brightline.example.com",
+    "is_bot": false
+  },
+  {
+    "id": "U05MARCUS",
+    "name": "marcus",
+    "real_name": "Marcus Webb",
+    "title": "Head of Sales",
+    "email": "marcus@brightline.example.com",
+    "is_bot": false
+  },
+  {
+    "id": "U06BEN",
+    "name": "ben",
+    "real_name": "Ben Carter",
+    "title": "Data Engineer",
+    "email": "ben@brightline.example.com",
+    "is_bot": false
+  },
+  {
+    "id": "U07PRIYA",
+    "name": "priya",
+    "real_name": "Priya Nair",
+    "title": "QA Lead",
+    "email": "priya@brightline.example.com",
+    "is_bot": false
+  },
+  {
+    "id": "U08LEAH",
+    "name": "leah",
+    "real_name": "Leah Brooks",
+    "title": "People & Recruiting",
+    "email": "leah@brightline.example.com",
+    "is_bot": false
+  },
+  {
+    "id": "U09RACHEL",
+    "name": "rachel",
+    "real_name": "Rachel Gomez",
+    "title": "Fractional legal counsel",
+    "email": "rachel@brightline.example.com",
+    "is_bot": false
+  },
+  {
+    "id": "B01LINEAR",
+    "name": "linear",
+    "real_name": "Linear",
+    "title": "",
+    "email": null,
+    "is_bot": true
+  },
+  {
+    "id": "B02GITHUB",
+    "name": "github",
+    "real_name": "GitHub",
+    "title": "",
+    "email": null,
+    "is_bot": true
+  }
+]

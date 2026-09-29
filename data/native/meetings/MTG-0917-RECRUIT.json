@@ -1,0 +1,600 @@
+{
+  "id": "MTG-0917-RECRUIT",
+  "title": "Debrief – Jordan Ellis (Backend Engineer)",
+  "type": "remote",
+  "start": "2026-09-17T15:00:00-07:00",
+  "end": "2026-09-17T15:30:00-07:00",
+  "location": "Google Meet",
+  "capture": {
+    "device": "MacBook Pro (Alex)",
+    "mic": "built-in",
+    "system_audio": true
+  },
+  "calendar_event_id": "CAL-RECRUIT-0917",
+  "participants_known": [
+    "alex@brightline.example.com",
+    "leah@brightline.example.com"
+  ],
+  "segments": [
+    {
+      "seg_id": "MTG-0917-RECRUIT#0001",
+      "start_s": 5.0,
+      "end_s": 7.7,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Leah Brooks",
+      "speaker_confidence": 0.94,
+      "channel": "remote",
+      "text": "Hey! Can you hear me?"
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0002",
+      "start_s": 11.4,
+      "end_s": 17.5,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "Yeah, hi. Sorry, I was just finishing a Slack thing. Okay, I'm here."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0003",
+      "start_s": 21.1,
+      "end_s": 36.5,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Leah Brooks",
+      "speaker_confidence": 0.94,
+      "channel": "remote",
+      "text": "No worries. Okay, so, Jordan Ellis. Backend engineer loop. Everybody's scorecards are in, as of like an hour ago, so I wanted to go through them with you and make a call on next steps."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0004",
+      "start_s": 39.0,
+      "end_s": 46.1,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "Yeah, let's do it. I read them this morning, but not Sarah's, hers wasn't in yet."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0005",
+      "start_s": 48.5,
+      "end_s": 64.5,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Leah Brooks",
+      "speaker_confidence": 0.99,
+      "channel": "remote",
+      "text": "Hers came in at lunch. Okay, so quick recap of the loop. I did the phone screen, Ben did the data and SQL round, Sarah Kim did system design, and you did the product and collaboration one."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0006",
+      "start_s": 75.1,
+      "end_s": 75.9,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.79,
+      "channel": "room",
+      "text": "Right."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0007",
+      "start_s": 77.6,
+      "end_s": 101.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Leah Brooks",
+      "speaker_confidence": 0.95,
+      "channel": "remote",
+      "text": "So, my screen, I'll go fast. Jordan's been at a logistics-adjacent company for about four years, mostly backend, mostly Python and Postgres. Left because the team got reorged and they wanted to be closer to product. Communicates well. Very clear about what they want to work on. I was a yes to move forward, obviously."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0008",
+      "start_s": 102.6,
+      "end_s": 103.3,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "Yep."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0009",
+      "start_s": 112.8,
+      "end_s": 136.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Leah Brooks",
+      "speaker_confidence": 0.95,
+      "channel": "remote",
+      "text": "Ben's round. Ben was a strong yes. I'm just gonna read you a bit of his notes. \"Best Postgres interview I've done here. Went straight to EXPLAIN ANALYZE without being asked, spotted the missing index on the second query, and suggested a partial index for the active-routes case, which is exactly what we did in prod.\""
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0010",
+      "start_s": 137.8,
+      "end_s": 142.3,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.94,
+      "channel": "room",
+      "text": "Oh wow, that's— yeah. That's the exact thing we did."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0011",
+      "start_s": 156.9,
+      "end_s": 166.5,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Leah Brooks",
+      "speaker_confidence": 0.96,
+      "channel": "remote",
+      "text": "And he says, um, \"Knows vacuum and bloat stuff better than I do. Asked good questions about how we partition route history.\""
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0012",
+      "start_s": 171.1,
+      "end_s": 181.6,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.95,
+      "channel": "room",
+      "text": "That's really good. We don't get a lot of people who actually know Postgres, like, know it, not just use it through an ORM."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0013",
+      "start_s": 192.0,
+      "end_s": 198.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Leah Brooks",
+      "speaker_confidence": 0.96,
+      "channel": "remote",
+      "text": "That's what Ben said too. And he mentioned Jordan's used PostGIS before, the nearest-neighbor stuff."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0014",
+      "start_s": 202.2,
+      "end_s": 214.2,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.96,
+      "channel": "room",
+      "text": "Oh, nice. That's actually relevant, I've been prototyping on Postgres plus PostGIS for the ETA thing, nearest depot queries and all that. So that's a real plus."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0015",
+      "start_s": 217.8,
+      "end_s": 223.7,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Leah Brooks",
+      "speaker_confidence": 0.97,
+      "channel": "remote",
+      "text": "Okay, so, then Sarah's round. And this is where it's, um, more mixed."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0016",
+      "start_s": 228.0,
+      "end_s": 233.8,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.93,
+      "channel": "room",
+      "text": "Yeah, I figured, from the way she talked about it in the hallway."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0017",
+      "start_s": 236.2,
+      "end_s": 268.8,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Leah Brooks",
+      "speaker_confidence": 0.96,
+      "channel": "remote",
+      "text": "So the prompt was designing the live ETA updates for a fleet of, like, ten thousand trucks, pings every thirty seconds. And her summary is, let me find it. \"Weak on system design. Jumped to a microservices diagram before sizing the problem. Didn't estimate throughput until I asked. Needed a lot of prompting on failure modes, what happens when a consumer falls behind, idempotency on retries. Once prompted, reasoning was solid, but didn't drive the design.\""
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0018",
+      "start_s": 275.8,
+      "end_s": 276.5,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.81,
+      "channel": "room",
+      "text": "Hmm."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0019",
+      "start_s": 281.3,
+      "end_s": 291.6,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Leah Brooks",
+      "speaker_confidence": 0.96,
+      "channel": "remote",
+      "text": "And her rating is a lean no. Not a strong no. She wrote that it's, and I'm quoting, \"a gap, not a wall.\""
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0020",
+      "start_s": 294.3,
+      "end_s": 298.9,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.93,
+      "channel": "room",
+      "text": "Okay. That's kind of the key phrase for me, actually."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0021",
+      "start_s": 301.6,
+      "end_s": 302.6,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Leah Brooks",
+      "speaker_confidence": 0.86,
+      "channel": "remote",
+      "text": "Yeah?"
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0022",
+      "start_s": 304.0,
+      "end_s": 330.5,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "Yeah. Like, if the system design gap is \"doesn't know distributed systems at all,\" that's a problem for this role. If it's \"hasn't had to drive a design from scratch because at their last place somebody senior always did it,\" that's coachable. And Sarah's usually pretty harsh, so a lean no from her with \"a gap, not a wall\" is not nothing."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0023",
+      "start_s": 331.4,
+      "end_s": 334.5,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Leah Brooks",
+      "speaker_confidence": 0.95,
+      "channel": "remote",
+      "text": "Right. That's how I read it too."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0024",
+      "start_s": 339.0,
+      "end_s": 359.8,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.95,
+      "channel": "room",
+      "text": "And my round was good. I wrote it up, but the short version is Jordan asked really good questions about the customers. Like, who actually uses the planner, what does a dispatcher's morning look like, why would a fleet switch from spreadsheets. That's rare for a backend candidate."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0025",
+      "start_s": 363.8,
+      "end_s": 366.8,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Leah Brooks",
+      "speaker_confidence": 0.94,
+      "channel": "remote",
+      "text": "Yeah, your scorecard was a yes."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0026",
+      "start_s": 369.7,
+      "end_s": 373.7,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "Yeah. Strong-ish yes. I didn't want to oversell it."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0027",
+      "start_s": 384.8,
+      "end_s": 392.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Leah Brooks",
+      "speaker_confidence": 0.97,
+      "channel": "remote",
+      "text": "So, okay. Overall we have yes, strong yes, lean no, yes. What do you want to do?"
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0028",
+      "start_s": 397.0,
+      "end_s": 407.2,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "I want to move them to the final round. But I want the final round to actually test the thing we're unsure about."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0029",
+      "start_s": 408.3,
+      "end_s": 411.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Leah Brooks",
+      "speaker_confidence": 0.99,
+      "channel": "remote",
+      "text": "Okay, so, like, another system design?"
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0030",
+      "start_s": 413.3,
+      "end_s": 435.4,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "Yeah. A second system design session, different prompt, different interviewer if we can. Maybe something more like the stuff we actually do day to day. Like, route history ingestion, or the nightly TMS sync. Something where it's less whiteboard-y and more, like, here's our actual problem, how would you build it."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0031",
+      "start_s": 441.5,
+      "end_s": 444.8,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Leah Brooks",
+      "speaker_confidence": 0.99,
+      "channel": "remote",
+      "text": "I like that. Who would run it?"
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0032",
+      "start_s": 448.2,
+      "end_s": 461.0,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "Sarah should still be in the room, 'cause it's her team. But maybe pair her with one of the senior backend folks so it's not just one person's read."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0033",
+      "start_s": 463.6,
+      "end_s": 470.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Leah Brooks",
+      "speaker_confidence": 0.99,
+      "channel": "remote",
+      "text": "Okay. And then John for the culture and values one, like we normally do for final rounds?"
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0034",
+      "start_s": 476.4,
+      "end_s": 479.4,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.94,
+      "channel": "room",
+      "text": "Yes. John for the final conversation."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0035",
+      "start_s": 484.3,
+      "end_s": 491.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Leah Brooks",
+      "speaker_confidence": 0.99,
+      "channel": "remote",
+      "text": "Okay. So final round: second system design with Sarah plus a senior backend engineer, and then John."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0036",
+      "start_s": 494.7,
+      "end_s": 496.1,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.84,
+      "channel": "room",
+      "text": "Yep. That's it."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0037",
+      "start_s": 499.4,
+      "end_s": 503.3,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Leah Brooks",
+      "speaker_confidence": 0.95,
+      "channel": "remote",
+      "text": "Great. So we're moving Jordan to the final round."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0038",
+      "start_s": 507.3,
+      "end_s": 509.5,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.97,
+      "channel": "room",
+      "text": "Yeah. Move to final."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0039",
+      "start_s": 534.8,
+      "end_s": 545.4,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Leah Brooks",
+      "speaker_confidence": 0.98,
+      "channel": "remote",
+      "text": "Timing-wise. Jordan mentioned on my screen they're in process at a couple of other places, and one of them is at the final stage."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0040",
+      "start_s": 558.5,
+      "end_s": 561.4,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "Okay, so we should move fast."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0041",
+      "start_s": 583.4,
+      "end_s": 598.5,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Leah Brooks",
+      "speaker_confidence": 0.94,
+      "channel": "remote",
+      "text": "I think so. What's your availability look like? You don't need to be in the final round, but I'd like you to at least be reachable that day in case John wants to sync after."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0042",
+      "start_s": 601.2,
+      "end_s": 614.8,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.96,
+      "channel": "room",
+      "text": "So, not Wednesday next week. Wednesday's the board meeting, that's the whole morning and I'm gonna be useless after. And then Thursday and Friday I'm at the product offsite in Denver."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0043",
+      "start_s": 617.5,
+      "end_s": 619.5,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Leah Brooks",
+      "speaker_confidence": 0.99,
+      "channel": "remote",
+      "text": "Oh right, the offsite."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0044",
+      "start_s": 625.0,
+      "end_s": 631.8,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.95,
+      "channel": "room",
+      "text": "So Monday or Tuesday next week is best. Monday the 21st or Tuesday the 22nd."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0045",
+      "start_s": 639.3,
+      "end_s": 650.5,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Leah Brooks",
+      "speaker_confidence": 0.99,
+      "channel": "remote",
+      "text": "Okay. John's calendar is also pretty packed with board prep, so, um, let me see. I'll try for Tuesday the 22nd and fall back to Monday."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0046",
+      "start_s": 658.5,
+      "end_s": 666.1,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "Sounds good. And make sure Sarah knows it's coming, she's got a lot going on with launch."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0047",
+      "start_s": 677.7,
+      "end_s": 682.7,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Leah Brooks",
+      "speaker_confidence": 0.99,
+      "channel": "remote",
+      "text": "Yeah, I'll check with her before I send anything to Jordan."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0048",
+      "start_s": 690.4,
+      "end_s": 691.1,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Perfect."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0049",
+      "start_s": 705.3,
+      "end_s": 717.6,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Leah Brooks",
+      "speaker_confidence": 0.97,
+      "channel": "remote",
+      "text": "One more thing. Do you want me to share any of the feedback with Jordan? Like, give them a heads up that the final has another design session?"
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0050",
+      "start_s": 720.0,
+      "end_s": 735.9,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.96,
+      "channel": "room",
+      "text": "Hmm. I'd tell them there's a second system design conversation, and that it'll be closer to a real problem we have. I wouldn't say \"because you were weak.\" Just, like, set them up to do well."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0051",
+      "start_s": 740.4,
+      "end_s": 743.5,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Leah Brooks",
+      "speaker_confidence": 0.95,
+      "channel": "remote",
+      "text": "Yeah, that's what I'd do. Okay."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0052",
+      "start_s": 744.7,
+      "end_s": 752.2,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "And honestly, tell them the Postgres round went really well. That's true, and it's nice to hear."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0053",
+      "start_s": 757.5,
+      "end_s": 763.8,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Leah Brooks",
+      "speaker_confidence": 0.95,
+      "channel": "remote",
+      "text": "I will. Ben will be thrilled, he loves when his interview gets bragged about."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0054",
+      "start_s": 765.5,
+      "end_s": 767.1,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.8,
+      "channel": "room",
+      "text": "Ha. He does."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0055",
+      "start_s": 770.6,
+      "end_s": 778.3,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Leah Brooks",
+      "speaker_confidence": 0.94,
+      "channel": "remote",
+      "text": "Okay. I think that's it. I'll send the invite out today and loop Sarah and John in."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0056",
+      "start_s": 781.2,
+      "end_s": 784.3,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.94,
+      "channel": "room",
+      "text": "Great. Thanks, Leah. This was quick."
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0057",
+      "start_s": 784.7,
+      "end_s": 787.5,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "Leah Brooks",
+      "speaker_confidence": 0.99,
+      "channel": "remote",
+      "text": "That's my favorite kind. Okay, bye!"
+    },
+    {
+      "seg_id": "MTG-0917-RECRUIT#0058",
+      "start_s": 789.1,
+      "end_s": 790.0,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.82,
+      "channel": "room",
+      "text": "Bye."
+    }
+  ]
+}

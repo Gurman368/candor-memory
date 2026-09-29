@@ -1,0 +1,394 @@
+[
+  {
+    "id": "CGPT-F-02",
+    "title": "PRD outline: driver ETA notifications",
+    "create_time": "2026-09-08T15:12:04-07:00",
+    "update_time": "2026-09-08T15:31:02-07:00",
+    "messages": [
+      {
+        "id": "CGPT-F-02#m1",
+        "role": "user",
+        "create_time": "2026-09-08T15:12:04-07:00",
+        "content": "I need a PRD outline for a feature idea: \"driver ETA notifications\". Context: we make dispatch and route-planning software for trucking companies. Today dispatchers call or text receivers by hand when a truck is running late. Idea is that the system notifies the receiving site automatically when a driver's ETA changes meaningfully. Just the outline and the key questions, not a full doc."
+      },
+      {
+        "id": "CGPT-F-02#m2",
+        "role": "assistant",
+        "create_time": "2026-09-08T15:12:41-07:00",
+        "content": "Here's an outline you can fill in.\n\n**1. Problem**\n- Dispatchers manually call or text receivers about late trucks; it's slow, inconsistent and takes dispatcher time away from exceptions that matter.\n- Receivers staff docks based on stale arrival times, so dock labor gets wasted or trucks wait.\n\n**2. Users**\n- Primary: receiving site contacts (warehouse / dock managers) at the shipper's customers.\n- Secondary: dispatchers (fewer calls, visibility into what was sent), drivers (fewer \"where are you\" calls).\n\n**3. Goals / non-goals**\n- Goals: proactive, accurate ETA updates; fewer inbound status calls; dispatcher control over what gets sent.\n- Non-goals (v1): two-way messaging with receivers, live map sharing, appointment rescheduling.\n\n**4. Proposed experience**\n- Trigger rules: ETA shifts by more than N minutes vs. the last notified ETA, or crosses the appointment window.\n- Channels: email and SMS first; webhook for customers with their own systems.\n- Content: load/reference number, new ETA window, reason code if known.\n- Dispatcher controls: per-customer on/off, thresholds, quiet hours, preview of what will be sent.\n\n**5. Dependencies**\n- ETA quality: notifications are only as good as the prediction. Flapping ETAs create notification spam.\n- Contact data for receiving sites (often missing or in a free-text field today).\n\n**6. Success metrics**\n- % of late arrivals notified before the appointment window\n- Inbound status calls per load (dispatcher survey or call logs)\n- Notification accuracy: |actual arrival − notified ETA|\n- Opt-out / unsubscribe rate\n\n**7. Risks and open questions**\n- What threshold avoids spam but still catches meaningful delays?\n- Who owns the receiver relationship: our customer (the carrier) or us? Branding of messages?\n- SMS consent and opt-out handling\n- Do we notify on early arrivals too?\n\n**8. Rollout**\n- Pilot with 2–3 customers, email-only, dispatcher preview mode first."
+      },
+      {
+        "id": "CGPT-F-02#m3",
+        "role": "user",
+        "create_time": "2026-09-08T15:18:30-07:00",
+        "content": "good. add a section on how we'd measure whether the ETA itself is good enough before we turn this on. I'm prototyping an ETA model on the side and I don't want to ship notifications on top of a bad prediction"
+      },
+      {
+        "id": "CGPT-F-02#m4",
+        "role": "assistant",
+        "create_time": "2026-09-08T15:19:12-07:00",
+        "content": "Good instinct. Add this as section 5a:\n\n**5a. ETA readiness gate**\n\nBefore enabling notifications for a customer, the ETA must meet a bar on that customer's historical routes (backtest):\n\n- **Accuracy**: MAE and the share of routes within ±15 min of actual arrival, measured at fixed horizons (e.g. 2h, 1h and 30 min before arrival), not just at departure.\n- **Bias**: mean(predicted / actual) close to 1.0. A systematically early or late model is worse for trust than a noisy one.\n- **Stability**: how many times the ETA crosses the notification threshold per route. If a typical route would trigger 4+ notifications, the threshold or smoothing needs work first.\n- **Segment checks**: split by depot, route length and time of day. A model can look fine on average and be badly off for one depot.\n\nSuggested gate: bias within ±5%, ≥70% within ±15 min at the 1-hour horizon, and median notifications per route ≤ 1 on the backtest. Treat those numbers as placeholders until you've seen real distributions."
+      },
+      {
+        "id": "CGPT-F-02#m5",
+        "role": "user",
+        "create_time": "2026-09-08T15:24:50-07:00",
+        "content": "perfect. one more: give me 3 alternatives we should list in the PRD so it doesn't look like we only considered one approach"
+      },
+      {
+        "id": "CGPT-F-02#m6",
+        "role": "assistant",
+        "create_time": "2026-09-08T15:25:27-07:00",
+        "content": "1. **Dispatcher-triggered notifications**: the system suggests \"Load 4471 is running ~40 min late, notify receiver?\" and the dispatcher clicks send. Lower risk, keeps a human in the loop, but doesn't remove the work.\n2. **Receiver self-serve tracking page**: a link per load showing the current ETA; no push. No spam risk, but receivers have to go look, and many won't.\n3. **Customer-system integration only**: publish ETA changes via webhook/EDI (e.g. 214 status messages) and let the customer's TMS handle notifications. Fits large shippers, useless for small receivers.\n\nThe proposal is effectively automatic push with dispatcher controls, and you can argue it combines the best parts: automation from 3, a human override from 1, and the tracking page from 2 as a later add-on."
+      },
+      {
+        "id": "CGPT-F-02#m7",
+        "role": "user",
+        "create_time": "2026-09-08T15:31:02-07:00",
+        "content": "thanks, that's enough to start the doc"
+      }
+    ]
+  },
+  {
+    "id": "CGPT-0909-PRICING",
+    "title": "Per-vehicle vs per-shipment pricing",
+    "create_time": "2026-09-09T08:40:17-07:00",
+    "update_time": "2026-09-09T09:04:55-07:00",
+    "messages": [
+      {
+        "id": "CGPT-0909-PRICING#m1",
+        "role": "user",
+        "create_time": "2026-09-09T08:40:17-07:00",
+        "content": "I have a customer call at 11 where pricing is going to come up. They're a mid-size carrier (a few hundred trucks and growing) using our dispatch and route-planning product. We need to put together a revised pricing proposal for them. Help me think through per-vehicle vs per-shipment pricing. Don't give me numbers, I want the structure."
+      },
+      {
+        "id": "CGPT-0909-PRICING#m2",
+        "role": "assistant",
+        "create_time": "2026-09-09T08:41:05-07:00",
+        "content": "Here's how the two models compare for a dispatch / route-planning product.\n\n**Per-shipment (usage-based)**\n- Pro: tracks value delivered: more loads planned = more value.\n- Pro: low entry cost for small or seasonal fleets.\n- Con: unpredictable bills; finance teams hate variance.\n- Con: creates an incentive to route *around* the system for some loads (e.g. \"we'll plan the easy ones by hand\").\n- Con: you need airtight shipment counting, and every invoice becomes a reconciliation conversation.\n\n**Per-vehicle (seat-like)**\n- Pro: predictable for both sides; easy to budget and easy to forecast your own revenue.\n- Pro: maps to how carriers think about their operation: trucks, drivers, lanes.\n- Pro: encourages full adoption: once a truck is paid for, every load on it goes through the system.\n- Con: can feel expensive for low-utilization vehicles (seasonal trucks, spares).\n- Con: need a clear definition of an \"active vehicle\" (anything dispatched in the month? anything in the system?).\n\n**Hybrids people use**\n- Per-vehicle with volume tiers (price per vehicle steps down as fleet size grows).\n- Platform fee + per-vehicle.\n- Per-vehicle with a shipment allowance and overage (usually adds complexity without much benefit)."
+      },
+      {
+        "id": "CGPT-0909-PRICING#m3",
+        "role": "user",
+        "create_time": "2026-09-09T08:46:32-07:00",
+        "content": "I'm leaning per-vehicle with volume tiers, because fleet ops teams budget by fleet size. When their ops director asks for budget it's \"we have X trucks, the tools cost Y per truck.\" Per-shipment would make them forecast load volume, which they're bad at. Poke holes in that."
+      },
+      {
+        "id": "CGPT-0909-PRICING#m4",
+        "role": "assistant",
+        "create_time": "2026-09-09T08:47:20-07:00",
+        "content": "The logic is sound: pricing on the unit the buyer already budgets on removes friction in their approval process. Holes worth checking before the call:\n\n1. **Growth works for you and against you.** If they're adding trucks, per-vehicle revenue grows automatically, which is great, but they'll push back if every new truck is a surprise invoice line. Consider true-ups (quarterly or annually) rather than monthly adds.\n2. **Tier boundaries create cliffs.** If the price per vehicle drops at a threshold, make it apply only to vehicles *above* the threshold (marginal tiers), not retroactively to the whole fleet. Otherwise a customer just under the line is better off adding trucks to cut the bill, which looks weird and invites gaming.\n3. **Active vehicle definition.** Decide now: vehicles dispatched at least once in the billing month is the usual answer. It protects them on spares and seasonal trucks and heads off the \"low-utilization\" objection.\n4. **Term length vs. tier.** Larger customers will ask for a better tier in exchange for a longer commitment. Decide whether term length or fleet size (or both) moves the price.\n5. **Comparison shopping.** If a competitor prices per shipment, the customer may do the math for their slow months. Have a one-liner ready on why predictability is worth it.\n\nNone of these kill the idea. They're the questions their finance person will ask."
+      },
+      {
+        "id": "CGPT-0909-PRICING#m5",
+        "role": "user",
+        "create_time": "2026-09-09T08:55:48-07:00",
+        "content": "good point on marginal tiers, that's what I'd want. what should I ask on the call so I can build the proposal after?"
+      },
+      {
+        "id": "CGPT-0909-PRICING#m6",
+        "role": "assistant",
+        "create_time": "2026-09-09T08:56:30-07:00",
+        "content": "Questions that directly feed the proposal:\n\n- **Fleet size today and in 12 months**: how many vehicles would be active in the system, and what's the growth plan?\n- **Utilization**: how many trucks are seasonal or spares? (Tests your active-vehicle definition.)\n- **Contract preferences**: annual vs. multi-year; appetite for a longer term in exchange for better pricing.\n- **Who signs off**: ops director alone, or does it go to finance/CFO? What does that approval process look like?\n- **What they compare you to**: incumbent tools, spreadsheets, or a competitor's quote.\n- **Onboarding scope**: number of depots/dispatchers to train, integrations needed.\n\nAnd one thing *not* to do: don't quote numbers live. Say you'll follow up with a written proposal, which also gives you time to model the tiers against their actual fleet size."
+      },
+      {
+        "id": "CGPT-0909-PRICING#m7",
+        "role": "user",
+        "create_time": "2026-09-09T09:02:11-07:00",
+        "content": "yeah, not quoting anything on the call. Marcus and I will work out the actual numbers afterwards. give me a two-sentence way to explain per-vehicle tiers to their ops director"
+      },
+      {
+        "id": "CGPT-0909-PRICING#m8",
+        "role": "assistant",
+        "create_time": "2026-09-09T09:02:39-07:00",
+        "content": "\"You pay a flat monthly price for each truck you actually dispatch through the platform, so your cost scales with your fleet, not with how busy a given month is. As the fleet grows, every truck above each tier boundary costs less, so growing never makes the existing trucks more expensive.\""
+      },
+      {
+        "id": "CGPT-0909-PRICING#m9",
+        "role": "user",
+        "create_time": "2026-09-09T09:04:55-07:00",
+        "content": "good. thanks"
+      }
+    ]
+  },
+  {
+    "id": "CGPT-F-04",
+    "title": "LinkedIn post: hiring backend engineer",
+    "create_time": "2026-09-11T14:21:36-07:00",
+    "update_time": "2026-09-11T14:36:02-07:00",
+    "messages": [
+      {
+        "id": "CGPT-F-04#m1",
+        "role": "user",
+        "create_time": "2026-09-11T14:21:36-07:00",
+        "content": "Draft a LinkedIn post for me. We're hiring a backend engineer at Brightline. We build dispatch and route-planning software for trucking and freight companies, ~40 people, Series A, based in SF. The role: work on the services that plan routes and keep ETAs accurate for fleets of trucks. Python, Postgres, lots of geospatial stuff. I want it to sound like me, not like a job board. No emojis please."
+      },
+      {
+        "id": "CGPT-F-04#m2",
+        "role": "assistant",
+        "create_time": "2026-09-11T14:22:20-07:00",
+        "content": "Here's a first draft:\n\n---\n\nWe're hiring a backend engineer at Brightline.\n\nEvery morning thousands of trucks leave depots with a plan: which stops, in what order, and when they'll arrive. By 10am half of those plans are wrong: traffic, a dock that isn't ready, a driver who got stuck at the first stop. Our software is what dispatchers use to keep up.\n\nThe backend engineer we're looking for will work on the services that plan routes and keep ETAs honest: Python, Postgres, and a lot of geospatial problems that don't have textbook answers.\n\nWhat you'd get:\n- Problems where a better algorithm means real trucks spend less time idling\n- A small team (~40 people) where you'll talk to customers and see your work in dispatch rooms\n- A product team that cares about getting the details right\n\nWe're in San Francisco. If this sounds like your kind of problem, DM me or apply here: brightline.example.com/careers\n\n---"
+      },
+      {
+        "id": "CGPT-F-04#m3",
+        "role": "user",
+        "create_time": "2026-09-11T14:27:08-07:00",
+        "content": "too long. cut it by half and lose the bullet list, it reads like a job post"
+      },
+      {
+        "id": "CGPT-F-04#m4",
+        "role": "assistant",
+        "create_time": "2026-09-11T14:27:40-07:00",
+        "content": "---\n\nWe're hiring a backend engineer at Brightline.\n\nEvery morning thousands of trucks leave depots with a plan. By 10am half of those plans are wrong, and our software is what dispatchers use to keep up. You'd work on the services that plan routes and keep ETAs honest: Python, Postgres, and geospatial problems without textbook answers.\n\nSmall team in SF, real customers, real trucks. If that sounds like your kind of problem, DM me or apply: brightline.example.com/careers\n\n---"
+      },
+      {
+        "id": "CGPT-F-04#m5",
+        "role": "user",
+        "create_time": "2026-09-11T14:33:15-07:00",
+        "content": "better. change \"keep ETAs honest\" to \"keep arrival times accurate\", my team will roll their eyes at \"honest\". and I want to mention that you'd work closely with product, since that's me"
+      },
+      {
+        "id": "CGPT-F-04#m6",
+        "role": "assistant",
+        "create_time": "2026-09-11T14:33:51-07:00",
+        "content": "---\n\nWe're hiring a backend engineer at Brightline.\n\nEvery morning thousands of trucks leave depots with a plan. By 10am half of those plans are wrong, and our software is what dispatchers use to keep up. You'd work on the services that plan routes and keep arrival times accurate: Python, Postgres, and geospatial problems without textbook answers. You'd work closely with product (that's me), and you'd hear directly from the dispatchers who use what you build.\n\nSmall team in SF, real customers, real trucks. If that sounds like your kind of problem, DM me or apply: brightline.example.com/careers\n\n---"
+      },
+      {
+        "id": "CGPT-F-04#m7",
+        "role": "user",
+        "create_time": "2026-09-11T14:36:02-07:00",
+        "content": "ship it. thanks"
+      }
+    ]
+  },
+  {
+    "id": "CGPT-0913-BOARD",
+    "title": "Board narrative draft – Q3",
+    "create_time": "2026-09-13T14:06:22-07:00",
+    "update_time": "2026-09-13T15:08:11-07:00",
+    "messages": [
+      {
+        "id": "CGPT-0913-BOARD#m1",
+        "role": "user",
+        "create_time": "2026-09-13T14:06:22-07:00",
+        "content": "I'm drafting the narrative section for our Q3 board meeting (it's on the 23rd). I'm VP Product at Brightline, B2B SaaS, dispatch and route-planning software for trucking/freight, Series A, ~40 people. The CEO owns the deck; I own the product + customer narrative. Help me structure it. Metrics I'll use: ARR $2.4M, 31 customers, net revenue retention 118%."
+      },
+      {
+        "id": "CGPT-0913-BOARD#m2",
+        "role": "assistant",
+        "create_time": "2026-09-13T14:07:15-07:00",
+        "content": "Here's a structure that works well for a Series A board narrative, where the audience has read the numbers and wants the story behind them:\n\n1. **Headline** (2–3 sentences): where the business is and the one thing you want the board to remember.\n2. **Metrics that matter**: ARR, customers, NRR, each with one line of \"why it moved\".\n3. **Product**: what shipped, what's next, and one honest risk.\n4. **Customers**: what you're hearing, 1–2 concrete stories.\n5. **Asks / discussion topics**: where you want the board's input.\n\nA few derived numbers you may want to have ready:\n- **Average ARR per customer**: $2.4M / 31 ≈ **$77k**.\n- **NRR of 118%** means that, excluding new logos, the existing base grew 18% over the period. That's strong for a vertical SaaS company at your stage and worth leading with, because it says customers expand as their fleets grow.\n\nWant me to draft the headline and metrics sections first?"
+      },
+      {
+        "id": "CGPT-0913-BOARD#m3",
+        "role": "user",
+        "create_time": "2026-09-13T14:11:40-07:00",
+        "content": "yes. the angle I want: expansion is the story. customers add trucks, we grow with them. and we're about to launch Route Planner v2, it was supposed to be Sep 30 but slipped to Oct 14 because QA found a geocoding regression on Canada/Mexico addresses. I want to be upfront about the slip"
+      },
+      {
+        "id": "CGPT-0913-BOARD#m4",
+        "role": "assistant",
+        "create_time": "2026-09-13T14:12:48-07:00",
+        "content": "**Headline**\n\nBrightline is at **$2.4M ARR across 31 customers** heading into Q4, and the most important number is **net revenue retention of 118%**: our existing customers are growing with us as their fleets grow. Route Planner v2, the biggest product release since the Series A, launches **October 14**, two weeks later than planned, so we can fix a geocoding issue before customers see it.\n\n**Metrics that matter**\n\n- **ARR: $2.4M.** [Add quarter-over-quarter change.] Growth came from both new logos and expansion; see NRR.\n- **Customers: 31.** Average ARR per customer is ~$77k. [Add net new logos this quarter.]\n- **Net revenue retention: 118%.** Expansion is driven by fleet growth: customers add vehicles, and our revenue grows with them. This is the core of our model. We win when our customers grow.\n\n**Product**\n\n- **Route Planner v2** moves from Sep 30 to **Oct 14**. During QA the team found a geocoding regression where some addresses in Canada and Mexico resolved to the wrong coordinates. For cross-border carriers that would have meant wrong routes on day one, so we chose to hold the date rather than ship with a known issue.\n- [What v2 changes for customers, 1–2 lines.]\n- [What's next after v2.]\n\nOne suggestion: say *who* made the call to slip and *when*, briefly. Boards react better to \"we found it in QA and decided within a day\" than to a date that quietly moved."
+      },
+      {
+        "id": "CGPT-0913-BOARD#m5",
+        "role": "user",
+        "create_time": "2026-09-13T14:20:05-07:00",
+        "content": "good. for customers, I want a section on how we think about pricing as we grow, since we're moving toward per-vehicle pricing with volume tiers for larger fleets. keep it high level, no specific deal numbers"
+      },
+      {
+        "id": "CGPT-0913-BOARD#m6",
+        "role": "assistant",
+        "create_time": "2026-09-13T14:20:59-07:00",
+        "content": "**Customers and pricing**\n\nOur largest customers think about their business in trucks: they budget, hire and plan by fleet size. We're aligning pricing with that. For larger fleets we're moving toward **per-vehicle pricing with volume tiers**: a predictable monthly price per active vehicle, with a lower rate for vehicles above each tier boundary.\n\nWhy this matters for the board:\n- **It makes expansion automatic.** When a customer adds trucks, revenue grows without a new sales cycle, which is exactly the dynamic behind our NRR.\n- **It removes a budgeting objection.** Fleet operations leaders can take a per-truck number to their finance team; usage-based pricing forced them to forecast load volume.\n- **Tiers protect us on large deals** by giving a clear, principled discount structure instead of one-off negotiations.\n\n[Optional: one customer story showing fleet growth → expansion.]"
+      },
+      {
+        "id": "CGPT-0913-BOARD#m7",
+        "role": "user",
+        "create_time": "2026-09-13T14:34:18-07:00",
+        "content": "leave pipeline out entirely for now, Marcus owns that section and it's not my call. can you tighten the headline? it's a bit long"
+      },
+      {
+        "id": "CGPT-0913-BOARD#m8",
+        "role": "assistant",
+        "create_time": "2026-09-13T14:34:50-07:00",
+        "content": "Tighter version:\n\n> Brightline is at **$2.4M ARR** across **31 customers**, with **118% net revenue retention**: customers grow with us as their fleets grow. Route Planner v2 launches **October 14**, two weeks later than planned, so we can fix a geocoding issue before customers see it.\n\nNoted on pipeline. I've left it out; you can add a one-line pointer like \"Pipeline: see Marcus's section\" so the narrative doesn't feel like it skips something."
+      },
+      {
+        "id": "CGPT-0913-BOARD#m9",
+        "role": "user",
+        "create_time": "2026-09-13T14:52:37-07:00",
+        "content": "last thing, what questions should I expect from the board on this section?"
+      },
+      {
+        "id": "CGPT-0913-BOARD#m10",
+        "role": "assistant",
+        "create_time": "2026-09-13T14:53:30-07:00",
+        "content": "Likely questions, with what to have ready:\n\n1. **\"What's driving the 118%, a few big accounts or broad-based?\"** Know how many customers expanded vs. flat vs. contracted, and whether one or two accounts account for most of the expansion.\n2. **\"Any logo churn?\"** Have the gross retention number next to NRR; boards will ask if you only show net.\n3. **\"How confident are you in Oct 14?\"** Know what's left on the geocoding fix and what the fallback is.\n4. **\"Does per-vehicle pricing cannibalize existing contracts?\"** Know how many current customers would pay more or less under the new model, and the migration plan.\n5. **\"What's the ARR per customer trend?\"** $77k now; is it going up as you land bigger fleets?\n\nSince NRR is the headline number, make sure you can explain exactly how it's calculated (period, and whether contraction is netted against expansion); boards often ask."
+      },
+      {
+        "id": "CGPT-0913-BOARD#m11",
+        "role": "user",
+        "create_time": "2026-09-13T15:08:11-07:00",
+        "content": "good call. thanks, this is a solid first draft"
+      }
+    ]
+  },
+  {
+    "id": "CGPT-F-01",
+    "title": "Postgres window functions: per-vehicle gaps and rolling on-time rate",
+    "create_time": "2026-09-14T12:31:48-07:00",
+    "update_time": "2026-09-14T12:53:12-07:00",
+    "messages": [
+      {
+        "id": "CGPT-F-01#m1",
+        "role": "user",
+        "create_time": "2026-09-14T12:31:48-07:00",
+        "content": "Postgres question. I have a table route_history(route_id, vehicle_id, depot_id, planned_departure, planned_arrival, actual_departure, actual_arrival, ...). For each vehicle I want the turnaround time: gap between the actual_arrival of one route and the actual_departure of the next route for the same vehicle."
+      },
+      {
+        "id": "CGPT-F-01#m2",
+        "role": "assistant",
+        "create_time": "2026-09-14T12:32:30-07:00",
+        "content": "That's a `LAG` over a per-vehicle window ordered by departure:\n\n```sql\nSELECT\n    route_id,\n    vehicle_id,\n    actual_departure,\n    LAG(actual_arrival) OVER w AS prev_arrival,\n    actual_departure - LAG(actual_arrival) OVER w AS turnaround\nFROM route_history\nWHERE actual_departure IS NOT NULL\nWINDOW w AS (PARTITION BY vehicle_id ORDER BY actual_departure);\n```\n\nNotes:\n- The first route for each vehicle has `prev_arrival = NULL`, so `turnaround` is `NULL` too.\n- The named `WINDOW w` clause avoids repeating the definition.\n- If you have an index on `(vehicle_id, actual_departure)`, Postgres can often feed the window straight from the index without a sort.\n- Negative turnarounds mean overlapping routes for the same truck, usually a data problem worth flagging:\n\n```sql\nSELECT * FROM (<query above>) t WHERE turnaround < interval '0';\n```"
+      },
+      {
+        "id": "CGPT-F-01#m3",
+        "role": "user",
+        "create_time": "2026-09-14T12:38:12-07:00",
+        "content": "nice, and i have that index. now: turnaround in minutes, and ignore gaps over 12 hours (that's overnight, not turnaround). then median turnaround per depot"
+      },
+      {
+        "id": "CGPT-F-01#m4",
+        "role": "assistant",
+        "create_time": "2026-09-14T12:38:55-07:00",
+        "content": "```sql\nWITH gaps AS (\n    SELECT\n        depot_id,\n        EXTRACT(EPOCH FROM actual_departure - LAG(actual_arrival) OVER w) / 60 AS turnaround_min\n    FROM route_history\n    WHERE actual_departure IS NOT NULL\n    WINDOW w AS (PARTITION BY vehicle_id ORDER BY actual_departure)\n)\nSELECT\n    depot_id,\n    count(*) AS n,\n    percentile_cont(0.5) WITHIN GROUP (ORDER BY turnaround_min) AS median_turnaround_min\nFROM gaps\nWHERE turnaround_min BETWEEN 0 AND 12 * 60\nGROUP BY depot_id\nORDER BY median_turnaround_min DESC;\n```\n\nThe filter has to live *outside* the CTE: window functions are evaluated after `WHERE`, so you can't filter on `LAG(...)` in the same query level.\n\nOne subtlety: `depot_id` here is the depot of the *next* route. If trucks can move between depots, decide whether the turnaround belongs to the arriving or departing depot."
+      },
+      {
+        "id": "CGPT-F-01#m5",
+        "role": "user",
+        "create_time": "2026-09-14T12:44:20-07:00",
+        "content": "different question. rolling 7 day on-time rate per depot, where on-time = actual_arrival <= planned_arrival + 15 min. one row per depot per day"
+      },
+      {
+        "id": "CGPT-F-01#m6",
+        "role": "assistant",
+        "create_time": "2026-09-14T12:45:18-07:00",
+        "content": "Aggregate to depot-day first, then use a `RANGE` frame over dates so gaps (days with no routes) are handled correctly:\n\n```sql\nWITH daily AS (\n    SELECT\n        depot_id,\n        (planned_departure AT TIME ZONE 'America/Los_Angeles')::date AS day,\n        count(*) AS routes,\n        count(*) FILTER (\n            WHERE actual_arrival <= planned_arrival + interval '15 minutes'\n        ) AS on_time\n    FROM route_history\n    WHERE actual_arrival IS NOT NULL\n    GROUP BY 1, 2\n)\nSELECT\n    depot_id,\n    day,\n    sum(on_time) OVER w::numeric / NULLIF(sum(routes) OVER w, 0) AS on_time_rate_7d,\n    sum(routes) OVER w AS routes_7d\nFROM daily\nWINDOW w AS (\n    PARTITION BY depot_id\n    ORDER BY day\n    RANGE BETWEEN INTERVAL '6 days' PRECEDING AND CURRENT ROW\n)\nORDER BY depot_id, day;\n```\n\nWhy this shape:\n- **Sum of on-time / sum of routes** over the window, not an average of daily rates, so busy days weigh more than quiet ones.\n- **`RANGE ... INTERVAL '6 days' PRECEDING`** covers the last 7 calendar days even if some days are missing. `ROWS BETWEEN 6 PRECEDING` would silently stretch over more than 7 days when a depot has gaps.\n- Converting to local date before grouping avoids early-morning routes landing on the previous UTC day."
+      },
+      {
+        "id": "CGPT-F-01#m7",
+        "role": "user",
+        "create_time": "2026-09-14T12:51:03-07:00",
+        "content": "the RANGE vs ROWS point would have bitten me. does RANGE with an interval work on a date column? i thought it needed timestamp"
+      },
+      {
+        "id": "CGPT-F-01#m8",
+        "role": "assistant",
+        "create_time": "2026-09-14T12:51:40-07:00",
+        "content": "It works on `date` in Postgres 11+: `RANGE` with an offset is supported for numeric, date, time and timestamp types, and for `date` the offset is an `interval`. If you're on something older, cast to timestamp:\n\n```sql\nORDER BY day::timestamp\nRANGE BETWEEN INTERVAL '6 days' PRECEDING AND CURRENT ROW\n```\n\nBut any Postgres from the last several years is fine as written."
+      },
+      {
+        "id": "CGPT-F-01#m9",
+        "role": "user",
+        "create_time": "2026-09-14T12:53:12-07:00",
+        "content": "on 16. thanks"
+      }
+    ]
+  },
+  {
+    "id": "CGPT-F-03",
+    "title": "Weeknight chicken thighs",
+    "create_time": "2026-09-15T18:04:37-07:00",
+    "update_time": "2026-09-15T18:10:44-07:00",
+    "messages": [
+      {
+        "id": "CGPT-F-03#m1",
+        "role": "user",
+        "create_time": "2026-09-15T18:04:37-07:00",
+        "content": "quick weeknight dinner. I have boneless chicken thighs (about 1.5 lb), a lemon, garlic, a bag of baby potatoes, and some green beans. 40 minutes max, one pan if possible"
+      },
+      {
+        "id": "CGPT-F-03#m2",
+        "role": "assistant",
+        "create_time": "2026-09-15T18:05:20-07:00",
+        "content": "**Sheet-pan lemon garlic chicken thighs with potatoes and green beans** (serves 3–4, ~40 min)\n\n1. Heat the oven to **425°F**.\n2. Halve the baby potatoes. Toss with 1 tbsp olive oil, salt and pepper; spread on a sheet pan and roast **15 minutes** while you prep the rest.\n3. Mix 2 tbsp olive oil, zest and juice of the lemon, 3 minced garlic cloves, 1 tsp salt, ½ tsp pepper, and a pinch of chili flakes or dried oregano if you have them. Toss the chicken thighs in it.\n4. Push the potatoes to the edges, add the chicken in the middle, and roast **10 minutes**.\n5. Toss the green beans with a little oil and salt, scatter them around the chicken, and roast another **10–12 minutes**, until the chicken reaches **175°F** inside (thighs are better above 165°F; they stay juicy).\n6. Squeeze any leftover lemon over everything and rest 3 minutes.\n\nIf you want browner chicken, switch to broil for the last 2 minutes."
+      },
+      {
+        "id": "CGPT-F-03#m3",
+        "role": "user",
+        "create_time": "2026-09-15T18:09:14-07:00",
+        "content": "no fresh garlic it turns out, only garlic powder"
+      },
+      {
+        "id": "CGPT-F-03#m4",
+        "role": "assistant",
+        "create_time": "2026-09-15T18:09:40-07:00",
+        "content": "Use **1 tsp garlic powder** in the marinade instead of the 3 cloves. It's actually less likely to burn at 425°F. Everything else stays the same."
+      },
+      {
+        "id": "CGPT-F-03#m5",
+        "role": "user",
+        "create_time": "2026-09-15T18:10:21-07:00",
+        "content": "and can I skip the chili flakes, kid doesn't like spicy"
+      },
+      {
+        "id": "CGPT-F-03#m6",
+        "role": "assistant",
+        "create_time": "2026-09-15T18:10:44-07:00",
+        "content": "Yes, just leave them out. Oregano or a little paprika adds flavor without heat, or skip seasoning beyond salt, pepper, lemon and garlic. It's still good."
+      }
+    ]
+  },
+  {
+    "id": "CGPT-0917-DENVER",
+    "title": "Dinner ideas for Denver offsite",
+    "create_time": "2026-09-17T21:01:26-07:00",
+    "update_time": "2026-09-17T21:18:52-07:00",
+    "messages": [
+      {
+        "id": "CGPT-0917-DENVER#m1",
+        "role": "user",
+        "create_time": "2026-09-17T21:01:26-07:00",
+        "content": "Our product team has an offsite in Denver, Sep 24–25. We're staying at The Crawford Hotel at Denver Union Station. I need dinner ideas within walking distance of the hotel for a group of about 8. One vegetarian, one gluten-free. Nothing too stuffy."
+      },
+      {
+        "id": "CGPT-0917-DENVER#m2",
+        "role": "assistant",
+        "create_time": "2026-09-17T21:02:31-07:00",
+        "content": "Staying at The Crawford puts you right in Union Station, which is one of the easiest places in Denver to feed a group on foot. Some options, closest first:\n\n**Inside Union Station (zero walk)**\n- **Mercantile Dining & Provision**: seasonal American, relaxed but good; handles dietary restrictions well.\n- **Stoic & Genuine**: seafood-focused; good if the group likes fish; plenty of naturally gluten-free options.\n- **Terminal Bar**: not dinner, but an easy place to meet for a drink before or after.\n\n**A few minutes' walk**\n- **Tavernetta**: Italian, right behind Union Station; lively, great for groups, strong vegetarian pastas and usually gluten-free pasta available.\n- **Wynkoop Brewing Company**: brewpub in LoDo, very casual, big tables; easy for a first-night dinner.\n- **Denver Milk Market** (Dairy Block): food hall, everyone picks their own; zero dietary stress.\n\n**~10–15 minutes' walk**\n- **Guard and Grace**: modern steakhouse downtown, has private dining rooms; more of a \"team dinner\" feel.\n\nFor 8 people, book ahead and ask about a semi-private table or private room, especially on a weeknight during conference season. Please confirm hours and availability directly; restaurant details change."
+      },
+      {
+        "id": "CGPT-0917-DENVER#m3",
+        "role": "user",
+        "create_time": "2026-09-17T21:07:48-07:00",
+        "content": "most people fly in the night before, landing pretty late. so Wed night is just a quick bite, thursday the 24th is the proper team dinner. what would you do"
+      },
+      {
+        "id": "CGPT-0917-DENVER#m4",
+        "role": "assistant",
+        "create_time": "2026-09-17T21:08:40-07:00",
+        "content": "I'd split it like this:\n\n**Wed night (late arrivals)**: don't book anything formal. The **Terminal Bar** or **Stoic & Genuine** bar area inside Union Station works if people want something light without leaving the building. If the kitchens are closed by the time everyone lands, the hotel can point you to what's open late nearby. Worth checking once flights are final.\n\n**Thu Sep 24 (team dinner)**: **Tavernetta** is my pick: walking distance, lively enough for a group that's been in a room all day, and Italian is the easiest cuisine for a vegetarian + gluten-free mix. Ask for their private or semi-private space for 8.\n\n**Backup**: **Guard and Grace** if you want something a notch more polished, or **Mercantile** if you'd rather not walk at all.\n\n**Fri Sep 25**: people will likely eat on the way to the airport, so no group dinner needed."
+      },
+      {
+        "id": "CGPT-0917-DENVER#m5",
+        "role": "user",
+        "create_time": "2026-09-17T21:13:05-07:00",
+        "content": "tavernetta first choice, guard and grace backup. write me a 3-line slack message to the team so people can flag dietary stuff I don't know about"
+      },
+      {
+        "id": "CGPT-0917-DENVER#m6",
+        "role": "assistant",
+        "create_time": "2026-09-17T21:13:37-07:00",
+        "content": "> Denver dinner plan: Thursday 9/24 team dinner at Tavernetta (short walk from the hotel), Guard and Grace as backup. Wednesday night is on your own; Union Station has a few spots for a late bite.\n> If you have any dietary restrictions or allergies I don't already know about, reply here or DM me by Monday so I can pass them to the restaurant.\n> Looking forward to it!"
+      },
+      {
+        "id": "CGPT-0917-DENVER#m7",
+        "role": "user",
+        "create_time": "2026-09-17T21:18:52-07:00",
+        "content": "perfect, thanks"
+      }
+    ]
+  }
+]

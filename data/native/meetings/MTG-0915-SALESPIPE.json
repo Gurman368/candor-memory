@@ -1,0 +1,1001 @@
+{
+  "id": "MTG-0915-SALESPIPE",
+  "title": "Weekly pipeline review",
+  "type": "hybrid",
+  "start": "2026-09-15T11:00:00-07:00",
+  "end": "2026-09-15T11:45:00-07:00",
+  "location": "Brightline HQ – Embarcadero room + Google Meet",
+  "capture": {
+    "device": "MacBook Pro (Alex)",
+    "mic": "built-in",
+    "system_audio": true
+  },
+  "calendar_event_id": "CAL-SALESPIPE-0915",
+  "participants_known": [
+    "alex@brightline.example.com",
+    "john@brightline.example.com",
+    "marcus@brightline.example.com"
+  ],
+  "segments": [
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0001",
+      "start_s": 7.0,
+      "end_s": 12.3,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "Marcus, you there? We can see your little tile but it's frozen."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0002",
+      "start_s": 15.4,
+      "end_s": 26.6,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.95,
+      "channel": "remote",
+      "text": "Yeah— can you hear me? I'm in the car, I pulled over, I'm in a parking lot outside a diner in Modesto, don't judge me."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0003",
+      "start_s": 39.9,
+      "end_s": 43.3,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "No judgment. We can hear you fine."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0004",
+      "start_s": 49.0,
+      "end_s": 55.3,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.96,
+      "channel": "remote",
+      "text": "Okay, great. My video's gonna stay off, the connection's kind of garbage out here."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0005",
+      "start_s": 60.2,
+      "end_s": 77.3,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.93,
+      "channel": "room",
+      "text": "That's fine. Okay, let's go. Pipeline. I want to do it deal by deal, and at the end I want to know what's commit and what's best case, 'cause I'm starting to put the forecast together for the board deck."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0006",
+      "start_s": 84.4,
+      "end_s": 92.9,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.96,
+      "channel": "remote",
+      "text": "Yep. Okay. So I sent the sheet this morning, it should be in your inbox. I'll go top down."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0007",
+      "start_s": 96.1,
+      "end_s": 96.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.82,
+      "channel": "room",
+      "text": "Go."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0008",
+      "start_s": 100.6,
+      "end_s": 120.6,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.97,
+      "channel": "remote",
+      "text": "Pinecrest Carriers. This is the one I feel best about. Regional LTL, based out of Boise, about a hundred and forty trucks. They've been in a trial since mid-August, their dispatch manager, Gary Holm, is basically our champion at this point. He's using it every morning."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0009",
+      "start_s": 122.4,
+      "end_s": 123.8,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.82,
+      "channel": "room",
+      "text": "What's the number?"
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0010",
+      "start_s": 125.8,
+      "end_s": 139.5,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.94,
+      "channel": "remote",
+      "text": "We're talking about thirty K ARR. Proposal went out two weeks ago, they came back with, like, very reasonable redlines. Mostly payment terms, they want net sixty instead of net thirty."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0011",
+      "start_s": 147.6,
+      "end_s": 151.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Net sixty's fine for a deal that size."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0012",
+      "start_s": 154.7,
+      "end_s": 160.3,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.97,
+      "channel": "remote",
+      "text": "That's what I figured. I just wanted to hear you say it."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0013",
+      "start_s": 162.4,
+      "end_s": 165.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "I'm saying it. Net sixty's fine."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0014",
+      "start_s": 167.1,
+      "end_s": 174.9,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.95,
+      "channel": "room",
+      "text": "What's their integration story? Last time I talked to Gary they were worried about the TMS sync."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0015",
+      "start_s": 187.3,
+      "end_s": 203.1,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.99,
+      "channel": "remote",
+      "text": "So that's the one open thing. Their TMS is kind of old, it's an on-prem thing, and they want the nightly sync to push completed routes back into it. Right now we only pull from it."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0016",
+      "start_s": 204.7,
+      "end_s": 213.0,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "Yeah, write-back is on the list but it's not in v2. I don't want you promising write-back for October."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0017",
+      "start_s": 214.8,
+      "end_s": 222.5,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.93,
+      "channel": "remote",
+      "text": "I didn't promise it. I said it's on the roadmap and we'd talk timing after they sign."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0018",
+      "start_s": 227.6,
+      "end_s": 240.3,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "Okay. Can you actually not say \"on the roadmap,\" can you say \"we're looking at it\"? I don't want another roadmap thing turning into a, like, a contract thing."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0019",
+      "start_s": 251.0,
+      "end_s": 254.1,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.98,
+      "channel": "remote",
+      "text": "Ha. Yeah, fair. \"Looking at it.\""
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0020",
+      "start_s": 255.3,
+      "end_s": 257.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "When does Pinecrest close?"
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0021",
+      "start_s": 259.4,
+      "end_s": 268.2,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.98,
+      "channel": "remote",
+      "text": "I'd say by end of October. Gary needs his VP to sign, and she's back from vacation on the first."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0022",
+      "start_s": 270.3,
+      "end_s": 272.1,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Okay. Pinecrest is commit."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0023",
+      "start_s": 295.2,
+      "end_s": 296.8,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.91,
+      "channel": "remote",
+      "text": "Pinecrest is commit."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0024",
+      "start_s": 319.2,
+      "end_s": 330.1,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.96,
+      "channel": "remote",
+      "text": "Next, Ridgeway Haulage. Bigger one. Three hundred trucks, mixed fleet, they do a lot of flatbed. Fifty-five K ARR, give or take depending on tiers."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0025",
+      "start_s": 335.9,
+      "end_s": 337.5,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.79,
+      "channel": "room",
+      "text": "Where are they?"
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0026",
+      "start_s": 338.6,
+      "end_s": 346.4,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.93,
+      "channel": "remote",
+      "text": "They're in procurement. And, uh, they sent us a security questionnaire. It's a hundred and eighty questions."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0027",
+      "start_s": 352.3,
+      "end_s": 354.2,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.96,
+      "channel": "room",
+      "text": "A hundred and eighty."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0028",
+      "start_s": 354.8,
+      "end_s": 369.1,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.93,
+      "channel": "remote",
+      "text": "A hundred and eighty. Most of them are copy-paste from the last one we did, but there's like thirty new ones about data retention and where the data's hosted and who has access."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0029",
+      "start_s": 371.4,
+      "end_s": 372.8,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.79,
+      "channel": "room",
+      "text": "Who's doing it?"
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0030",
+      "start_s": 375.2,
+      "end_s": 388.3,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.98,
+      "channel": "remote",
+      "text": "I've done the first pass. I need, like, an hour from Sarah Kim for the infra questions and maybe Rachel for two of them that are, like, legal-ish. About subprocessors."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0031",
+      "start_s": 398.0,
+      "end_s": 405.8,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Get the hour from Sarah but not this week. This week's launch stuff, she's underwater. Next week."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0032",
+      "start_s": 409.8,
+      "end_s": 416.3,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.95,
+      "channel": "remote",
+      "text": "Totally. Next week is fine, they gave us till the end of the month."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0033",
+      "start_s": 420.1,
+      "end_s": 424.0,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.95,
+      "channel": "room",
+      "text": "Do they have a champion? Like a Gary?"
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0034",
+      "start_s": 424.6,
+      "end_s": 434.5,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.94,
+      "channel": "remote",
+      "text": "Sort of. The ops director likes it. But the CFO is the one who signs, and I've never talked to the CFO. So."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0035",
+      "start_s": 439.4,
+      "end_s": 442.2,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "So that's best case, not commit."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0036",
+      "start_s": 449.2,
+      "end_s": 451.9,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.99,
+      "channel": "remote",
+      "text": "I'd put it at, like, commit-ish."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0037",
+      "start_s": 460.5,
+      "end_s": 466.8,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "There's no commit-ish. It's best case until you've talked to the person who signs."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0038",
+      "start_s": 471.6,
+      "end_s": 474.2,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.98,
+      "channel": "remote",
+      "text": "...Okay. Yeah. Best case. Fair."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0039",
+      "start_s": 481.4,
+      "end_s": 483.7,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.93,
+      "channel": "room",
+      "text": "What's the close date?"
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0040",
+      "start_s": 499.2,
+      "end_s": 504.5,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.96,
+      "channel": "remote",
+      "text": "If the questionnaire goes clean, I think we sign mid-November. Realistically December."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0041",
+      "start_s": 513.0,
+      "end_s": 515.3,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "Okay. Best case, December."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0042",
+      "start_s": 529.7,
+      "end_s": 539.0,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.97,
+      "channel": "remote",
+      "text": "Okay, Copperline Freight. This one's early. Sixty trucks, mostly dry van, out of Sacramento. Came in through the website, actually, inbound."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0043",
+      "start_s": 545.2,
+      "end_s": 546.8,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.81,
+      "channel": "room",
+      "text": "Oh, nice, inbound."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0044",
+      "start_s": 551.9,
+      "end_s": 564.9,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.98,
+      "channel": "remote",
+      "text": "Yeah, we don't get a lot of those. Did one discovery call last Thursday. They're on spreadsheets and a whiteboard. Like, literally a whiteboard, the guy sent me a picture."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0045",
+      "start_s": 566.3,
+      "end_s": 568.8,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "Those are the best customers."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0046",
+      "start_s": 571.0,
+      "end_s": 581.3,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.95,
+      "channel": "remote",
+      "text": "Those are the best customers. They have no system to rip out. So, if it goes, it's maybe twelve K. Small. But fast."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0047",
+      "start_s": 583.5,
+      "end_s": 589.3,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "Are they gonna need the onboarding flow? Like, the new one Dana's doing?"
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0048",
+      "start_s": 593.8,
+      "end_s": 597.8,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.94,
+      "channel": "remote",
+      "text": "Oh, a hundred percent. That's exactly who it's for."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0049",
+      "start_s": 610.0,
+      "end_s": 621.5,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "Okay, I'd love to use them as a, like, a first real test of the new onboarding once v2 is out. If they're up for it."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0050",
+      "start_s": 628.2,
+      "end_s": 632.0,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.93,
+      "channel": "remote",
+      "text": "I think they'd be into it. They're scrappy."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0051",
+      "start_s": 634.3,
+      "end_s": 638.6,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "Put Copperline as pipeline. Not in the forecast yet."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0052",
+      "start_s": 639.9,
+      "end_s": 641.3,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.91,
+      "channel": "remote",
+      "text": "Yep. Pipeline."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0053",
+      "start_s": 656.0,
+      "end_s": 662.8,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.96,
+      "channel": "remote",
+      "text": "Northstar Reefer Lines. Refrigerated, obviously, two hundred-ish trucks. This one is, uh, this one's complicated."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0054",
+      "start_s": 682.9,
+      "end_s": 684.1,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.81,
+      "channel": "room",
+      "text": "Complicated how?"
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0055",
+      "start_s": 691.0,
+      "end_s": 708.1,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.95,
+      "channel": "remote",
+      "text": "They love the routing. The demo went great. But they need temperature monitoring pulled into the planner. Like, their reefer units report temps, and they want the dispatcher to see if a load is running warm, right on the route."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0056",
+      "start_s": 710.8,
+      "end_s": 716.0,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "That's— yeah, we don't do that. That's not a small thing."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0057",
+      "start_s": 745.8,
+      "end_s": 750.7,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.96,
+      "channel": "remote",
+      "text": "I know. I told them we don't do it today."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0058",
+      "start_s": 756.0,
+      "end_s": 767.3,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.96,
+      "channel": "room",
+      "text": "And not in v2, and honestly not in anything I can put a date on right now. That's an integration with, like, three different telematics vendors."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0059",
+      "start_s": 771.6,
+      "end_s": 772.4,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.92,
+      "channel": "remote",
+      "text": "Yeah."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0060",
+      "start_s": 778.2,
+      "end_s": 783.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "So what are they worth if they don't get it?"
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0061",
+      "start_s": 784.9,
+      "end_s": 793.9,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.93,
+      "channel": "remote",
+      "text": "Forty K if they get it. If they don't, I think they walk. I don't think they'll buy without it."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0062",
+      "start_s": 797.3,
+      "end_s": 802.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.91,
+      "channel": "room",
+      "text": "Then it's not in the forecast. Not even best case."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0063",
+      "start_s": 805.9,
+      "end_s": 808.3,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.95,
+      "channel": "remote",
+      "text": "Yeah, I kind of figured."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0064",
+      "start_s": 811.0,
+      "end_s": 828.1,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.94,
+      "channel": "room",
+      "text": "Can you do me a favor, though, and write down exactly what they asked for? Like, which telematics, what they want to see, how often. If we hear this from two more reefer fleets, it's a real roadmap conversation."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0065",
+      "start_s": 834.1,
+      "end_s": 840.6,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.94,
+      "channel": "remote",
+      "text": "Yeah, I'll put it in the notes in the CRM. I took pretty good notes."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0066",
+      "start_s": 847.6,
+      "end_s": 848.4,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.85,
+      "channel": "room",
+      "text": "Thanks."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0067",
+      "start_s": 861.9,
+      "end_s": 865.8,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.97,
+      "channel": "remote",
+      "text": "And then the one we lost. Sagebrush Logistics."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0068",
+      "start_s": 870.1,
+      "end_s": 870.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.82,
+      "channel": "room",
+      "text": "Ugh."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0069",
+      "start_s": 874.3,
+      "end_s": 885.7,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.98,
+      "channel": "remote",
+      "text": "Yeah. They went with the other guys. On price, mostly. They were comparing per-shipment pricing against our per-vehicle, and for their volume per-shipment came out cheaper."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0070",
+      "start_s": 887.1,
+      "end_s": 888.4,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.81,
+      "channel": "room",
+      "text": "How much cheaper?"
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0071",
+      "start_s": 895.5,
+      "end_s": 909.4,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.99,
+      "channel": "remote",
+      "text": "Like, maybe fifteen percent? But honestly, I think it's also that the other guys have a shipper tracking portal, like, their customers can see live ETAs, and we don't have that yet."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0072",
+      "start_s": 915.7,
+      "end_s": 919.6,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Did they say that, or is that your read?"
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0073",
+      "start_s": 923.7,
+      "end_s": 926.5,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.95,
+      "channel": "remote",
+      "text": "That's my read. They said price."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0074",
+      "start_s": 927.4,
+      "end_s": 935.4,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.88,
+      "channel": "room",
+      "text": "Okay. Then it's price. Write it down as price, and put the portal thing as your note, separately."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0075",
+      "start_s": 937.3,
+      "end_s": 938.0,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.88,
+      "channel": "remote",
+      "text": "Fair."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0076",
+      "start_s": 943.5,
+      "end_s": 948.7,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.94,
+      "channel": "room",
+      "text": "Per-shipment keeps coming up. That's, what, the second one this quarter?"
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0077",
+      "start_s": 957.8,
+      "end_s": 960.5,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.95,
+      "channel": "remote",
+      "text": "Second one I know of."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0078",
+      "start_s": 962.6,
+      "end_s": 972.4,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "Okay. I'm not changing the model, per-vehicle is how fleet ops teams budget, but I want to know if it keeps happening."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0079",
+      "start_s": 973.5,
+      "end_s": 974.4,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.79,
+      "channel": "room",
+      "text": "Same."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0080",
+      "start_s": 993.1,
+      "end_s": 995.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "Okay. Anything else in the sheet?"
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0081",
+      "start_s": 998.3,
+      "end_s": 1007.8,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.96,
+      "channel": "remote",
+      "text": "A couple of really early ones, like first-call early. Not worth talking about yet. I'll put them in the sheet as prospects."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0082",
+      "start_s": 1008.8,
+      "end_s": 1015.3,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.89,
+      "channel": "room",
+      "text": "Okay. And Acme, just so it's on here, that proposal's going out today, right?"
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0083",
+      "start_s": 1017.8,
+      "end_s": 1021.2,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.95,
+      "channel": "room",
+      "text": "This afternoon. I'm finishing it after this."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0084",
+      "start_s": 1024.0,
+      "end_s": 1029.8,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Good. We don't need to talk numbers here, I just want it tracked."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0085",
+      "start_s": 1031.3,
+      "end_s": 1036.1,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.98,
+      "channel": "remote",
+      "text": "Yeah, and I'm cc'd, so I'll see it go out."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0086",
+      "start_s": 1038.9,
+      "end_s": 1051.6,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Okay. So, summary for the board forecast. Commit is Pinecrest. Best case is Ridgeway, December. Copperline is pipeline, Northstar is out unless the product changes, Sagebrush is closed lost."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0087",
+      "start_s": 1054.0,
+      "end_s": 1055.7,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.82,
+      "channel": "remote",
+      "text": "That sounds right."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0088",
+      "start_s": 1065.8,
+      "end_s": 1075.9,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.92,
+      "channel": "room",
+      "text": "I'm gonna be conservative on the board slide. I'd rather show a smaller number that we hit than a big one we don't."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0089",
+      "start_s": 1077.5,
+      "end_s": 1082.2,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.98,
+      "channel": "remote",
+      "text": "I know, I know. You've said that like five times."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0090",
+      "start_s": 1087.6,
+      "end_s": 1090.3,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "Because it's true all five times."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0091",
+      "start_s": 1092.6,
+      "end_s": 1093.6,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.85,
+      "channel": "remote",
+      "text": "Ha. Fair."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0092",
+      "start_s": 1097.6,
+      "end_s": 1112.9,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.9,
+      "channel": "room",
+      "text": "Marcus, one ask. For Pinecrest and Copperline, can you get me fifteen minutes with each of them after launch? I want to watch them use the new planner. Not a sales call, just, like, watching."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0093",
+      "start_s": 1115.7,
+      "end_s": 1121.9,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.95,
+      "channel": "remote",
+      "text": "Yeah, I'll set that up. I'll send you times once we're past the launch."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0094",
+      "start_s": 1124.1,
+      "end_s": 1125.0,
+      "speaker_label": "Speaker 3",
+      "speaker_name": "Alex Rivera",
+      "speaker_confidence": 0.86,
+      "channel": "room",
+      "text": "Perfect."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0095",
+      "start_s": 1130.0,
+      "end_s": 1134.8,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.87,
+      "channel": "room",
+      "text": "Okay. Anything else? No? Marcus, go eat your diner breakfast."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0096",
+      "start_s": 1136.5,
+      "end_s": 1139.0,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.93,
+      "channel": "remote",
+      "text": "Breakfast is a lifestyle, John."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0097",
+      "start_s": 1140.9,
+      "end_s": 1142.0,
+      "speaker_label": "Speaker 1",
+      "speaker_name": "John Okafor",
+      "speaker_confidence": 0.78,
+      "channel": "room",
+      "text": "Okay. Bye."
+    },
+    {
+      "seg_id": "MTG-0915-SALESPIPE#0098",
+      "start_s": 1149.0,
+      "end_s": 1150.0,
+      "speaker_label": "Speaker 2",
+      "speaker_name": "Marcus Webb",
+      "speaker_confidence": 0.82,
+      "channel": "remote",
+      "text": "Bye, guys."
+    }
+  ]
+}
