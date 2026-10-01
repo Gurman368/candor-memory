@@ -8,10 +8,20 @@ produce output.
 
 ## Quickstart
 
+One command runs everything (memory + actions bonus, on the training sets):
+
 ```bash
 git clone <this repo>
 cd <this repo>
-cp .env.example .env                     # optional: add ONE api key to improve answers
+cp .env.example .env    # optional: add ONE api key to improve answers, else skip this
+python3 run_all.py
+```
+
+That writes `out/memory_train_answers.jsonl` and `out/actions_train_predictions.jsonl`
+and prints the scoring commands to run next. To run either piece on its own,
+with custom paths (e.g. the hidden test set):
+
+```bash
 python3 run_memory.py  --questions evals/memory_train.jsonl  --out out/memory_train_answers.jsonl
 python3 run_actions.py --commands evals/actions_train.jsonl  --out out/actions_train_predictions.jsonl
 ```
@@ -43,6 +53,7 @@ actions/
   llm_parse.py    optional LLM-based command parser (tried first if a key is set)
 run_memory.py     entrypoint: questions.jsonl -> answers.jsonl
 run_actions.py    entrypoint: commands.jsonl -> predictions.jsonl
+run_all.py        one-command entrypoint: runs both of the above on the train sets
 ```
 
 ### Ingestion and time (`memory/ingest.py`)
