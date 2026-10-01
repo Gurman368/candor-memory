@@ -177,8 +177,10 @@ phrased as commands (routed to `memory.ask`). The LLM-based parser
 robust to novel phrasing since it can read the whole directory and reason
 about it directly; the rule-based parser is the always-available fallback.
 
-**Result on the training set: 11/12 passing (91.7%), 97.4% argument
-accuracy.** See below for the one failure.
+**Result on the training set: 12/12 passing (100%), 100% argument accuracy.**
+The last failure (ACT-TR-10, corrected NRR) was fixed by checking the top
+retrieved records directly for an "X is A, not B" correction pattern before
+falling back to the extractive answerer.
 
 ## What didn't work / known limits
 
@@ -222,16 +224,13 @@ runs. Noting this because it's exactly the kind of failure that's easy to
 miss if you only check the LLM path's system prompt and assume it covers
 every code path.
 
-**Actions, 1 of 12 training commands still fails:** "Email John the
-corrected NRR and thank Ben on Slack" needs the system to notice that a
-Slack message *corrects* an earlier, wrong NRR figure ("NRR is 112%, not
-118%") and use the corrected value. My rule-based enrichment step (looks up
-a fact via the memory retriever when a command says "the corrected/latest/
-current X") sometimes grabs the wrong number when multiple values compete
-across sources. Good illustration of where the LLM-based action path is a
-genuinely better approach, not just a nicer one -- it can actually reason
-about which value supersedes which, rather than pattern-matching on "is X,
-not Y".
+**Actions, ACT-TR-10 was the last failure and is now fixed.** "Email John the
+corrected NRR and thank Ben on Slack" needs the system to notice that a Slack
+message *corrects* an earlier figure ("NRR is 112%, not 118%"). The extractive
+answerer picked unrelated sentences; the fix scans the top-ranked records for the
+correction pattern directly. This is a narrow rule (it only handles the "is A,
+not B" phrasing), so the LLM action path remains the more general solution for
+other kinds of supersession.
 
 **Two-space identity ambiguity took a few iterations to get right.** Every
 Brightline employee is naturally both a Slack user and an email contact
@@ -250,7 +249,7 @@ forbidden records retrieved (top 10 or top 20): 0
 answers (--judge none, no LLM key): strict 37.0%, lenient 48.1%, 0 hard failures
 sources cited: recall 0.567, precision 0.527
 
-actions: 11/12 passing (91.7%), argument accuracy 97.4%
+actions: 12/12 passing (100%), argument accuracy 100%
 ```
 
 Output files from this exact commit: `out/memory_train_answers.jsonl`,
