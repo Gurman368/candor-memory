@@ -35,16 +35,6 @@ def _enrich_body(text, command, as_of_str, data_dir):
         units = load_visible(data_dir, as_of_str)
         by_id = {u.id: u for u in units}
         context = [by_id[i] for i in ids if i in by_id]
-        # Generic correction pattern ("X is A, not B"): if any top-ranked record
-        # states one about this topic, A is the corrected value -- check these
-        # directly, in rank order, before falling back to the extractive answerer.
-        topic = re.compile(re.escape(m.group(2)), re.I)
-        corr_re = re.compile(r"\bis\s+(\d[\d.,]*\s?%?)\s*,?\s*(?:not|instead of|rather than)\s+\d", re.I)
-        for u in context:
-            t = getattr(u, "text", "") or ""
-            cm = corr_re.search(t)
-            if cm and topic.search(t):
-                return f"{text} ({m.group(2).upper()}: {cm.group(1).strip()})"
         fact, _, abstained = _extractive_answer(f"What is the {m.group(2)}?", context)
         if not abstained:
             # a correction reads "X is 112, not 118" -- the corrected value is the

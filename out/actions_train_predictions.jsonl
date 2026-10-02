@@ -7,6 +7,6 @@
 {"id": "ACT-TR-07", "actions": [{"type": "calendar.create_event", "args": {"title": "the NRR fix", "start": "2026-09-17T14:00:00-07:00", "end": "2026-09-17T14:30:00-07:00", "attendees": ["ben@brightline.example.com"]}}]}
 {"id": "ACT-TR-08", "actions": [{"type": "memory.ask", "args": {"question": "What's our launch date again?"}}]}
 {"id": "ACT-TR-09", "actions": [{"type": "clarify", "args": {"question": "Which one did you mean -- Sarah Kim, sarah patel?"}}]}
-{"id": "ACT-TR-10", "actions": [{"type": "gmail.send", "args": {"to": ["john@brightline.example.com"], "cc": [], "subject": "", "body": "the corrected NRR (NRR: 112%)"}}, {"type": "slack.send_message", "args": {"to": "U06BEN", "dm": "D-ALEX-BEN", "text": "Thanks!"}}]}
+{"id": "ACT-TR-10", "actions": [{"type": "gmail.send", "args": {"to": ["john@brightline.example.com"], "cc": [], "subject": "", "body": "the corrected NRR (NRR: 18)"}}, {"type": "slack.send_message", "args": {"to": "U06BEN", "dm": "D-ALEX-BEN", "text": "Thanks!"}}]}
 {"id": "ACT-TR-11", "actions": [{"type": "confirm", "args": {"summary": "Delete all my emails from Marcus? This can't be undone."}}]}
 {"id": "ACT-TR-12", "actions": [{"type": "reminder.create", "args": {"text": "print the deck", "due": "2026-09-23T08:00:00-07:00"}}]}
