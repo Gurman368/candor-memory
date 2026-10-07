@@ -51,6 +51,18 @@ def record_fallback(stage, reason):
     print(f"  [LLM FALLBACK in {stage}: {str(reason)[:200]}]", file=sys.stderr, flush=True)
 
 
+def provider_banner():
+    """One line saying exactly which provider/model this run will use."""
+    p = active_provider()
+    if p is None:
+        return "LLM: none configured -> no-key fallback paths (extractive answers, rules-only actions)"
+    model = {"gemini": os.environ.get("GEMINI_MODEL") or "auto-resolved flash model",
+             "anthropic": os.environ.get("ANTHROPIC_MODEL", "claude-sonnet-4-5"),
+             "openai": os.environ.get("OPENAI_MODEL", "gpt-4o-mini") + " @ " +
+                       os.environ.get("OPENAI_BASE_URL", "https://api.openai.com/v1")}[p]
+    return f"LLM: {p} | {model}"
+
+
 def stats_summary():
     n = len(STATS["fallbacks"])
     lines = [f"LLM calls ok: {STATS['ok']}/{STATS['calls']}   stage fallbacks: {n}"]
@@ -67,6 +79,13 @@ def stats_summary():
 
 
 def active_provider():
+    forced = (os.environ.get("LLM_PROVIDER") or "").lower()   # anthropic | gemini | openai
+    keys = {"anthropic": "ANTHROPIC_API_KEY", "gemini": "GEMINI_API_KEY", "openai": "OPENAI_API_KEY"}
+    if forced in keys:
+        if os.environ.get(keys[forced]):
+            return forced
+        print(f"  [LLM_PROVIDER={forced} but {keys[forced]} is not set]", file=sys.stderr)
+        return None
     if os.environ.get("ANTHROPIC_API_KEY"):
         return "anthropic"
     if os.environ.get("GEMINI_API_KEY"):
@@ -78,14 +97,24 @@ def active_provider():
 
 # ---------------------------------------------------------------- HTTP + retry
 
+_UA = "Mozilla/5.0 (compatible; candor-memory/2.0)"
+
+
+def _with_ua(headers):
+    # Some providers' firewalls (e.g. Groq's) return 403 for urllib's default User-Agent.
+    h = dict(headers)
+    h.setdefault("User-Agent", _UA)
+    return h
+
+
 def _post(url, headers, body, timeout):
-    req = urllib.request.Request(url, data=json.dumps(body).encode(), headers=headers, method="POST")
+    req = urllib.request.Request(url, data=json.dumps(body).encode(), headers=_with_ua(headers), method="POST")
     with urllib.request.urlopen(req, timeout=timeout) as resp:
         return json.loads(resp.read())
 
 
 def _get(url, headers, timeout):
-    req = urllib.request.Request(url, headers=headers, method="GET")
+    req = urllib.request.Request(url, headers=_with_ua(headers), method="GET")
     with urllib.request.urlopen(req, timeout=timeout) as resp:
         return json.loads(resp.read())
 
@@ -236,7 +265,12 @@ def call_llm(prompt, system=None, max_tokens=500, timeout=90, max_retries=5, jso
             model = os.environ.get("OPENAI_MODEL", "gpt-4o-mini")
             base_url = os.environ.get("OPENAI_BASE_URL", "https://api.openai.com/v1")
             messages = ([{"role": "system", "content": system}] if system else []) + [{"role": "user", "content": prompt}]
-            body = {"model": model, "max_tokens": max(max_tokens, 1024), "temperature": 0, "messages": messages}
+            # Reasoning models spend output tokens on thinking: keep headroom (tunable) so the
+            # visible answer isn't cut off. OPENAI_REASONING_EFFORT=low|medium|high is optional.
+            floor = int(os.environ.get("LLM_MAX_TOKENS_FLOOR", "1024"))
+            body = {"model": model, "max_tokens": max(max_tokens, floor), "temperature": 0, "messages": messages}
+            if os.environ.get("OPENAI_REASONING_EFFORT"):
+                body["reasoning_effort"] = os.environ["OPENAI_REASONING_EFFORT"]
             headers = {"Content-Type": "application/json", "Authorization": f"Bearer {os.environ['OPENAI_API_KEY']}"}
             data = _with_retry(lambda: _post(f"{base_url}/chat/completions", headers, body, timeout), max_retries)
             out = data["choices"][0]["message"]["content"]

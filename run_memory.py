@@ -37,7 +37,7 @@ if _env_file.exists():
                 os.environ[key] = val
 
 from memory.answer import answer
-from memory.llm_client import STATS, stats_summary
+from memory.llm_client import STATS, stats_summary, provider_banner
 from memory.ingest import load_visible
 from memory.retrieve import retrieve
 
@@ -47,7 +47,7 @@ def load_jsonl(path):
         return [json.loads(line) for line in f if line.strip()]
 
 
-def run_one(question, as_of, data_dir, context_k=12):
+def run_one(question, as_of, data_dir, context_k=int(os.environ.get("ANSWER_CONTEXT_K", "12"))):
     ids, dbg = retrieve(question, as_of, data_dir, top_k=20)
     if not ids:
         return {"answer": "I don't know -- nothing in memory covers this.",
@@ -69,6 +69,7 @@ def main():
                    help="keep answers from an earlier run that came fully from the model; redo the rest")
     args = p.parse_args()
 
+    print(provider_banner(), flush=True)
     items = load_jsonl(args.questions)
     Path(args.out).parent.mkdir(parents=True, exist_ok=True)
     status_path = Path(args.out + ".status.json")

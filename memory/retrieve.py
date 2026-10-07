@@ -131,12 +131,13 @@ _RERANK_SYSTEM = (
 )
 
 
-def llm_rerank(question, as_of_str, candidates, snippet_chars=700):
+def llm_rerank(question, as_of_str, candidates, snippet_chars=None):
     """Ask the model to pick and order the useful records from `candidates` (Units).
     Returns a list of ids, or None if the model is unavailable or its reply is unusable --
     the caller then keeps the lexical order (logged loudly, never silent)."""
     if os.environ.get("DISABLE_LLM_RERANK") or not candidates:
         return None
+    snippet_chars = snippet_chars or int(os.environ.get("RERANK_SNIPPET_CHARS", "700"))  # lower this on tight token limits
     lines = []
     for u in candidates:
         who = f" | {u.speaker_name}" if u.speaker_name else ""
@@ -240,7 +241,7 @@ def extract_dates(text):
     return out
 
 
-def retrieve(question, as_of_str, data_dir, top_k=20, shortlist=30, pool_k=45, rerank=True):
+def retrieve(question, as_of_str, data_dir, top_k=20, shortlist=30, pool_k=None, rerank=True):
     units = load_visible(data_dir, as_of_str)
     if not units:
         return [], {}
@@ -317,6 +318,7 @@ def retrieve(question, as_of_str, data_dir, top_k=20, shortlist=30, pool_k=45, r
                 seen.add(mid)
                 expanded.append(by_id[mid])
 
+    pool_k = pool_k or int(os.environ.get("RERANK_POOL", "45"))  # lower this on tight token limits
     seen_ids = {u.id for u in expanded}
     pool = (expanded + [u for u in extras if u.id not in seen_ids])[:pool_k]
     ranked_ids = [u.id for u in pool]

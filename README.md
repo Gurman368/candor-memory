@@ -184,11 +184,9 @@ falling back to the extractive answerer.
 
 ## v2
 
-**Status of the output files in `out/`:** they were produced by the no-key fallback
-path (extractive answers, rules-only actions), not by the model. Live-model numbers are
-not in this README yet because the free Gemini quota ran out mid-run; see
-"Not yet verified" below. On Windows set `PYTHONUTF8=1` before running (the data is
-UTF-8; Mac/Linux need nothing).
+**The files in `out/` come from a live-model run** (provider Groq, model `openai/gpt-oss-120b`,
+settings under "v2 results" below), produced by this commit. On Windows set `PYTHONUTF8=1`
+before running (the data is UTF-8; Mac/Linux need nothing).
 
 After hidden-test feedback (retrieval 71%, answers 55%, actions 7/13 -- and
 the core criticism that the model only ever saw keyword-expansion terms, never
@@ -247,13 +245,33 @@ nothing; any id not in the candidate pool is dropped; a real-shaped daily-quota
 fallback path (rules-only / extractive) is unchanged and still gets 88%
 retrieval / 12/12 actions on the training set.
 
-**Not yet verified with a live key** at the time of this commit: a real quota
-exhaustion was hit mid-test-run on the free Gemini tier (expected -- v2 makes
-up to 3 calls/question where v1 made ~1, and the training set alone is 27
-questions), so the hidden-test-relevant numbers (does reranking actually lift
-retrieval, does the looser prompt actually reduce over-abstention) are
-implemented and unit-tested but not yet confirmed end-to-end against the
-training set with the model live. That run is the next step before the call.
+**Verified with a live model:** see "v2 results" under "Eval results". The no-key fallback
+path is unchanged and still gets 88% retrieval / 12/12 actions, so the system degrades
+gracefully; v2 only adds what the model can do on top.
+
+### v2 known limits (read before trusting the numbers)
+
+- **One live model only.** All live numbers are from `openai/gpt-oss-120b` on Groq's free tier.
+  A Gemini run was started but its free quota ran out after a handful of calls (those
+  answers were correct, but it is not a full run). Other models/providers are untested here.
+- **Tested settings differ from the code defaults.** Free-tier token limits forced a smaller
+  prompt: `RERANK_POOL=30` (default 45), `RERANK_SNIPPET_CHARS=400` (default 700),
+  `ANSWER_CONTEXT_K=10` (default 12). The defaults are untested live. `.env.example` lists the
+  exact settings used for the reported numbers.
+- **The train set is a development set.** I used it while building (and I measured candidate-pool
+  recall against its gold records to choose a pool of ~45 over ~20). Nothing is written in for specific
+  questions, but treat train numbers as optimistic. The earlier hidden test scored far lower
+  (71% / 55% / 7 of 13) on the v1 system, so expect a gap.
+- **"Answers 100%" is `--judge none`** (rules only). The official LLM judge can only lower
+  what the rules pass.
+- **MEM-TR-20 still fails retrieval** (finds 1 of 2 needed records in the top 10). Most likely the same
+  cause as in v1 (the dictation's body says only "Hi Sarah"; her full name lives in metadata). I have
+  not confirmed it.
+- **Not bit-for-bit reproducible.** Temperature is 0 (and `seed` where the provider supports it), but
+  Groq may still vary slightly between runs, so a re-run may differ on a few answers.
+- **Actions:** the model sometimes targets a DM id (e.g. `D-ALEX-SARAHK`) instead of a Slack user id;
+  the brief allows both. The "is A, not B" correction rule and ambiguity/destructive rules are still
+  narrow rules, with the model covering the general case.
 
 ## What didn't work / known limits
 
@@ -311,42 +329,43 @@ with an identity-merge step keyed on email address.
 
 ## Eval results (training set)
 
-```
-retrieval score 88.0%  (95% CI over storylines 78%-100%, n=27)
-found everything needed, top 5/10/20: 72% / 88% / 88%
-found nothing needed in top 20: 4%   MRR 0.585
-forbidden records retrieved (top 10 or top 20): 0
+| | v1, no key (fallback path) | **v2, live model** |
+|---|---|---|
+| retrieval score | 88.0% (CI 78-100%) | **96.0%** (CI 90-100%) |
+| everything needed in top 5 / 10 / 20 | 72% / 88% / 92% | **88% / 96% / 96%** |
+| MRR | 0.587 | **0.90** |
+| forbidden records retrieved | 0 | 0 |
+| answers, `--judge none` (strict / lenient) | 37.0% / 48.1% | **100% / 100%** |
+| sources cited, recall / precision | 0.567 / 0.527 | 0.933 / 0.904 |
+| hard failures | 0 | 0 |
+| actions (pass, argument accuracy) | 12/12, 100% | 12/12, 100% |
 
-answers (--judge none, no LLM key): strict 37.0%, lenient 48.1%, 0 hard failures
-sources cited: recall 0.567, precision 0.527
+### v2 results (live model)
 
-actions: 12/12 passing (100%), argument accuracy 100%
-```
+Provider Groq, model `openai/gpt-oss-120b`, settings: `LLM_PROVIDER=openai`,
+`OPENAI_BASE_URL=https://api.groq.com/openai/v1`, `OPENAI_REASONING_EFFORT=low`,
+`LLM_MAX_TOKENS_FLOOR=2048`, `LLM_MIN_INTERVAL=2.5`, `RERANK_POOL=30`,
+`RERANK_SNIPPET_CHARS=400`, `ANSWER_CONTEXT_K=10`. Run summary: memory 54/54 model calls ok,
+actions 11/11 ok, **0 stage fallbacks**, so every answer in `out/` came from the model.
 
 Output files from this exact commit: `out/memory_train_answers.jsonl`,
 `out/actions_train_predictions.jsonl`.
 
 ## Tools and cost
 
-Built primarily with Claude (Sonnet), used as a coding assistant with
-computer/file access throughout -- writing, testing, and iterating on the
-retrieval scoring against the training set directly. No paid API usage for
-the numbers reported above: they're produced by the no-LLM-key fallback
-paths, since my own working environment has no outbound network access to
-any LLM provider (verified: only `api.anthropic.com` and package-registry
-domains are reachable there, and no API key was present in that sandbox).
-The system supports Anthropic, Google Gemini, and any OpenAI-compatible
-endpoint (see `.env.example`) with the intent that running it with a real
-key -- particularly Gemini's free tier -- substantially improves both answer
-quality and action-parsing robustness. **Approximate cost so far: ₹0.**
+Built with Claude (Sonnet) as a coding assistant across several sessions: writing, testing and
+iterating against the training set. **Models used for the reported live numbers:**
+`openai/gpt-oss-120b` via Groq's free tier. I also tried Google Gemini's free tier, which ran out of
+daily quota partway through a run (the code now stops cleanly on that instead of retrying, and
+`--resume` redoes only the affected items). The system supports Anthropic, Gemini and any
+OpenAI-compatible endpoint (see `.env.example`). **Approximate cost: ₹0.**
 
-One practical note for whoever runs this with a key: early runs hit 429
-rate-limit errors on a free tier, which knocked every subsequent question
-into the fallback path for the rest of that run. `memory/llm_client.py` now
-retries with exponential backoff on 429/5xx, and
-`DISABLE_LLM_QUERY_EXPANSION=1` is available to cut call volume roughly in
-half if you're on a tight free tier (query expansion is a bonus signal, not
-required for the pipeline to produce output).
+Practical notes for running live: free tiers rate-limit hard. `LLM_MIN_INTERVAL` spaces calls,
+`--resume` keeps earlier fully model-generated answers, and every fallback is logged and counted
+at the end of each run (`stage fallbacks: 0` means the whole run came from the model). If two
+provider keys are present, force one with `LLM_PROVIDER`; the first line of every run prints the
+provider and model in use. Some providers' firewalls reject Python's default User-Agent with a 403,
+so the client sends its own.
 
 ## Interface
 

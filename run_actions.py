@@ -37,7 +37,7 @@ if _env_file.exists():
 
 from actions.directory import load_directory
 from actions.llm_parse import llm_parse
-from memory.llm_client import stats_summary
+from memory.llm_client import stats_summary, provider_banner
 from actions.rules import parse as rules_parse
 
 
@@ -61,6 +61,7 @@ def main():
     p.add_argument("--quiet", action="store_true")
     args = p.parse_args()
 
+    print(provider_banner(), flush=True)
     directory = load_directory(args.data)
     items = load_jsonl(args.commands)
     Path(args.out).parent.mkdir(parents=True, exist_ok=True)
