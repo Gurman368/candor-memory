@@ -6,6 +6,17 @@
 Input line:  {"id": "...", "command": "...", "as_of": "..."}
 Output line: {"id": "...", "actions": [{"type": "...", "args": {...}}, ...]}
 """
+# Windows' default file encoding is cp1252, not UTF-8 -- this data (and this code)
+# is UTF-8. Force it here so every open() call in this process decodes correctly
+# regardless of OS/locale. No effect on Mac/Linux, where UTF-8 is already the default.
+import builtins as _builtins
+_orig_open = _builtins.open
+def _utf8_open(file, mode="r", *args, **kwargs):
+    if "b" not in mode and "encoding" not in kwargs:
+        kwargs["encoding"] = "utf-8"
+    return _orig_open(file, mode, *args, **kwargs)
+_builtins.open = _utf8_open
+
 import argparse
 import json
 import os
@@ -26,6 +37,7 @@ if _env_file.exists():
 
 from actions.directory import load_directory
 from actions.llm_parse import llm_parse
+from memory.llm_client import stats_summary
 from actions.rules import parse as rules_parse
 
 
@@ -35,7 +47,7 @@ def load_jsonl(path):
 
 
 def run_one(command, as_of, directory, data_dir):
-    actions = llm_parse(command, as_of, directory)
+    actions = llm_parse(command, as_of, directory, data_dir)
     if actions is not None:
         return actions
     return rules_parse(command, as_of, directory, data_dir)
@@ -60,6 +72,7 @@ def main():
             if not args.quiet:
                 print(f"{item['id']:<11} {actions}")
     print(f"\nwrote {len(items)} predictions to {args.out}")
+    print(stats_summary())
 
 
 if __name__ == "__main__":

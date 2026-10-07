@@ -24,6 +24,7 @@ def main():
     p.add_argument("--action-commands", default="evals/actions_train.jsonl")
     p.add_argument("--memory-out", default="out/memory_train_answers.jsonl")
     p.add_argument("--actions-out", default="out/actions_train_predictions.jsonl")
+    p.add_argument("--resume", action="store_true", help="memory: keep earlier fully model-generated answers")
     p.add_argument("--skip-actions", action="store_true", help="run the memory system only")
     args = p.parse_args()
 
@@ -33,7 +34,7 @@ def main():
     subprocess.run([sys.executable, str(HERE / "run_memory.py"),
                      "--questions", args.memory_questions,
                      "--data", args.data,
-                     "--out", args.memory_out], check=True)
+                     "--out", args.memory_out] + (["--resume"] if args.resume else []), check=True)
 
     if not args.skip_actions:
         print("\n" + "=" * 60)

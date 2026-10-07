@@ -177,8 +177,83 @@ phrased as commands (routed to `memory.ask`). The LLM-based parser
 robust to novel phrasing since it can read the whole directory and reason
 about it directly; the rule-based parser is the always-available fallback.
 
-**Result on the training set: 11/12 passing (91.7%), 97.4% argument
-accuracy.** See below for the one failure.
+**Result on the training set: 12/12 passing (100%), 100% argument accuracy.**
+The last failure (ACT-TR-10, corrected NRR) was fixed by checking the top
+retrieved records directly for an "X is A, not B" correction pattern before
+falling back to the extractive answerer.
+
+## v2
+
+**Status of the output files in `out/`:** they were produced by the no-key fallback
+path (extractive answers, rules-only actions), not by the model. Live-model numbers are
+not in this README yet because the free Gemini quota ran out mid-run; see
+"Not yet verified" below. On Windows set `PYTHONUTF8=1` before running (the data is
+UTF-8; Mac/Linux need nothing).
+
+After hidden-test feedback (retrieval 71%, answers 55%, actions 7/13 -- and
+the core criticism that the model only ever saw keyword-expansion terms, never
+the actual candidate records), four changes:
+
+1. **Retrieval reranking** (`memory/retrieve.py`): the model now reads up to
+   ~45 candidate records' real text (id, timestamp, source, speaker, a
+   snippet) and returns an ordered pick of the useful ones, with an explicit
+   rule to also include records that *change* a fact (corrections, edits,
+   disagreement) even when they share few words with the question. Its picks
+   go first; anything it didn't pick keeps the heuristic (BM25+rules) order
+   after, so the mechanism can only add signal, never lose a record the old
+   path would have found. Any id it returns that wasn't in the candidate set
+   -- invented or not -- is dropped before it ever reaches the output.
+   Keyword-expansion is now off by default (`ENABLE_LLM_QUERY_EXPANSION` to
+   turn it on) since the reranker seeing real text is strictly more
+   informative, and it cuts a call per question.
+2. **Less cautious answering** (`memory/answer.py`): the old prompt said
+   "abstain if the records don't answer" and the model over-applied it to
+   partial or indirectly-phrased evidence. New prompt is explicit: abstain
+   *only* when no record states the fact and it can't be assembled from
+   several; wording mismatches or evidence spread across records are not
+   abstention triggers. It also asks for `evidence` before `answer` in the
+   JSON (so the model has to point at records before writing prose), and
+   explicitly weighs speaker confidence instead of treating every speaker
+   attribution as certain.
+3. **Robustness instead of silent downgrade** (`memory/llm_client.py`): a
+   shared `call_llm_json` does one repair retry on malformed JSON before
+   giving up; retries honor `Retry-After` and detect a *daily* quota
+   exhaustion (distinct from a transient rate limit) to fail fast instead of
+   retrying it five times per question; a circuit breaker opens after 3
+   consecutive failures or one quota error, so a dead key doesn't burn the
+   rest of the run retrying; every fallback is logged loudly and counted
+   (`stats_summary()`), never silent. `run_memory.py --resume` keeps answers
+   from an earlier run that came fully from the model and only redoes the
+   rest, so a quota cutoff doesn't mean starting over.
+4. **Actions with memory, not just the directory** (`actions/llm_parse.py`):
+   the model now also gets memory records relevant to the command and any
+   email address it can find written next to an unrecognized name anywhere
+   in memory -- so "email the new hire" can resolve someone who only appears
+   in a meeting transcript, never in an email header or the Slack directory.
+   Genuine same-first-name ambiguity and destructive commands are still
+   decided by the deterministic rules before the model is even called (never
+   let a model guess which Sarah to message), and the system prompt now says
+   explicitly: if Alex already stated the message content, use it -- don't
+   ask again; only clarify for a missing/ambiguous recipient or time.
+   Everything the model proposes is validated against real directory/memory
+   ids and emails before being accepted.
+
+**Verified offline** (`tests/test_offline.py`, `tests/test_actions_offline.py`,
+`tests/test_quota.py` -- all mocked, no API key needed, all passing): JSON
+parsing tolerates fences/preamble/trailing text and does one repair retry;
+rerank failure keeps the lexical order and is logged, never silently returns
+nothing; any id not in the candidate pool is dropped; a real-shaped daily-quota
+429 trips the breaker immediately instead of retrying 5 times. The no-key
+fallback path (rules-only / extractive) is unchanged and still gets 88%
+retrieval / 12/12 actions on the training set.
+
+**Not yet verified with a live key** at the time of this commit: a real quota
+exhaustion was hit mid-test-run on the free Gemini tier (expected -- v2 makes
+up to 3 calls/question where v1 made ~1, and the training set alone is 27
+questions), so the hidden-test-relevant numbers (does reranking actually lift
+retrieval, does the looser prompt actually reduce over-abstention) are
+implemented and unit-tested but not yet confirmed end-to-end against the
+training set with the model live. That run is the next step before the call.
 
 ## What didn't work / known limits
 
@@ -222,16 +297,11 @@ runs. Noting this because it's exactly the kind of failure that's easy to
 miss if you only check the LLM path's system prompt and assume it covers
 every code path.
 
-**Actions, 1 of 12 training commands still fails:** "Email John the
-corrected NRR and thank Ben on Slack" needs the system to notice that a
-Slack message *corrects* an earlier, wrong NRR figure ("NRR is 112%, not
-118%") and use the corrected value. My rule-based enrichment step (looks up
-a fact via the memory retriever when a command says "the corrected/latest/
-current X") sometimes grabs the wrong number when multiple values compete
-across sources. Good illustration of where the LLM-based action path is a
-genuinely better approach, not just a nicer one -- it can actually reason
-about which value supersedes which, rather than pattern-matching on "is X,
-not Y".
+**Actions, ACT-TR-10 was the last failure and is now fixed.** "Email John the
+corrected NRR and thank Ben on Slack" needs the system to notice that a Slack
+message *corrects* an earlier figure ("NRR is 112%, not 118%"). The fix scans the
+top-ranked records for the correction pattern directly. It is a narrow rule (only
+the "is A, not B" phrasing), so the model path is the general solution.
 
 **Two-space identity ambiguity took a few iterations to get right.** Every
 Brightline employee is naturally both a Slack user and an email contact
@@ -250,7 +320,7 @@ forbidden records retrieved (top 10 or top 20): 0
 answers (--judge none, no LLM key): strict 37.0%, lenient 48.1%, 0 hard failures
 sources cited: recall 0.567, precision 0.527
 
-actions: 11/12 passing (91.7%), argument accuracy 97.4%
+actions: 12/12 passing (100%), argument accuracy 100%
 ```
 
 Output files from this exact commit: `out/memory_train_answers.jsonl`,
