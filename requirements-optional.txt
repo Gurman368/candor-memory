@@ -1,0 +1,3 @@
+# OPTIONAL. The system runs with the standard library only. Installing this adds a local embedding
+# model (matches on meaning, not exact words) as one more retriever; it downloads ~90 MB on first use.
+sentence-transformers

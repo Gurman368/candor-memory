@@ -13,6 +13,7 @@ One command runs everything (memory + actions bonus, on the training sets):
 ```bash
 git clone <this repo>
 cd <this repo>
+pip install -r requirements.txt
 cp .env.example .env    # optional: add ONE api key to improve answers, else skip this
 python3 run_all.py
 ```
@@ -34,10 +35,7 @@ python3 score_memory.py    --gold ../evals/memory_train.jsonl  --answers ../out/
 python3 score_actions.py   --gold ../evals/actions_train.jsonl --predictions ../out/actions_train_predictions.jsonl
 ```
 
-No API key is required for any of this to run end to end (standard library
-only, no `pip install` needed). With zero keys set, the memory system falls
-back to an extractive answerer and the action parser falls back to its
-rule-based path (see "Two answer paths" below).
+Install dependencies via `pip install -r requirements.txt` (installs `sentence-transformers` for the local embedding model and the local cross-encoder reranker; see "v3" below). No API key is strictly required to run end to end: with zero keys set, the memory system falls back to an extractive answerer and the action parser falls back to its rule-based path (see "Two answer paths" below). Adding an API key enables model-driven answer synthesis and action parsing.
 
 ## Architecture
 
@@ -273,6 +271,67 @@ gracefully; v2 only adds what the model can do on top.
   the brief allows both. The "is A, not B" correction rule and ambiguity/destructive rules are still
   narrow rules, with the model covering the general case.
 
+## v3: retrieval round (after the second round of feedback)
+
+Feedback: the model could only re-sort what keyword search had already found, so a record
+worded differently from the question never reached it. This round changes **retrieval only**;
+answers and actions are untouched.
+
+**How I measured.** The train set can't show this problem (its pool already held everything for
+24 of 25 questions). So I wrote `evals/memory_dev_paraphrase.jsonl`: the same 25 gold records
+with each question reworded to avoid the records' vocabulary (my own paraphrases, so a proxy, not
+the hidden set). `tools/eval_first_stage.py` reports, with no model call, whether everything needed
+is in the top 10 and in the pool the language model actually sees; each change has an env switch so it
+can be measured alone. `tools/sweep_plan.py` tunes the planner's settings from cached plans.
+
+**What changed, against the seven points:**
+1. *Two ways to find records* -- done. A char n-gram retriever (standard library) is always on. A local
+   embedding model (`sentence-transformers`, optional) is merged with keyword search by reciprocal rank
+   fusion. `memory/candidates.py`.
+2. *Enrich records at load* -- only the deterministic part: "Friday" / "tomorrow" / "last Monday" inside
+   a record are resolved against that record's own timestamp, so nothing leaks from later. The model-written
+   summaries/synonyms were **not** built.
+3. *Search again before giving up* -- done. The answer step reports what is still missing; if it abstains
+   or lists something missing, the model writes 1-3 new searches that run over everything visible and the
+   answer is rewritten. **Tested only with a fake model so far, not run live.**
+4. *Let the model plan the search* -- done. The planner rewrites the question into 1-4 searches, one per
+   fact, and extracts dates. It is shown a glossary mined from the records (frequent topics, distinctive words),
+   so it can map "Colorado" to the city the records name. Query rewriting is back on (the date join no
+   longer needs the words "day"/"calendar"). The "that day" pass anchors on dates from the plan-informed results.
+5. *Search each source separately* -- done (BM25 inside each source, interleaved).
+6. *Catch later changes* -- done (records on the same topic that say it moved / was corrected are pulled in
+   even outside the thread, in date order).
+7. *A wider first pass* -- done. About 150 candidates; a small local cross-encoder
+   (`cross-encoder/ms-marco-MiniLM-L-6-v2`) keeps the best ~45 for the model. The planner may only add to the
+   pool, never push out what plain search found (`PLAN_SLOTS`).
+
+**Results, each step added on top of the previous** (top 10 / pool the model sees, out of 25; no model rerank):
+
+| Setting | dev top 10 | dev pool | train top 10 | train pool |
+|---|---|---|---|---|
+| start of this round | 9 | 16 | 22 | 24 |
+| + n-gram, per-source, dates, changes, day-join | 10 | 16 | 22 | 24 |
+| + model query planner (real plans, gpt-oss-120b) | 16 | 19 | 21 | 24 |
+| embeddings only, no planner | 13 | 16 | 22 | 23 |
+| embeddings + local reranker, no planner | 16 | 20 | 22 | 24 |
+| **everything (default)** | **18** | **21** | 21 | 24 |
+
+Alone, on the dev set (top 10 / top 20): n-gram 10/13, per-source 9/13, dates 9/11, changes 9/11 (baseline 9/11):
+the lexical changes help a little; the gain comes from the planner, embeddings and the local reranker.
+The planner's weight (1.0) and reserved slots (15) were chosen with `tools/sweep_plan.py` on these 50 questions.
+
+**Limits, plainly.**
+- The dev set is my own paraphrases of train questions and I tuned two settings on it: a difference of one
+  question is noise (n=25). It shows direction, not a hidden-set score.
+- These are first-stage numbers. I have **not** re-run the full pipeline (model rerank, answers, search-again)
+  live since these changes: my free Groq daily token limit ran out. `out/` is still the output of the previous
+  commit (`ce9f616`), not of this one.
+- The planner numbers use plans from one model (`openai/gpt-oss-120b`, cached in `.cache/plans.json`).
+- Embeddings and the local reranker are optional; without `sentence-transformers` retrieval falls back to
+  keyword + n-gram + the planner (dev top 10: 10 without planner, 16 with).
+- Still unbuilt: model-written record summaries at load, a second hop beyond the date join, and a held-out
+  question set not derived from train.
+
 ## What didn't work / known limits
 
 **Memory, retrieval, 3 of 27 training questions still fail:**
@@ -348,7 +407,7 @@ Provider Groq, model `openai/gpt-oss-120b`, settings: `LLM_PROVIDER=openai`,
 `RERANK_SNIPPET_CHARS=400`, `ANSWER_CONTEXT_K=10`. Run summary: memory 54/54 model calls ok,
 actions 11/11 ok, **0 stage fallbacks**, so every answer in `out/` came from the model.
 
-Output files from this exact commit: `out/memory_train_answers.jsonl`,
+Output files from commit `ce9f616` (the v2 commit; not regenerated since, see "v3"): `out/memory_train_answers.jsonl`,
 `out/actions_train_predictions.jsonl`.
 
 ## Tools and cost

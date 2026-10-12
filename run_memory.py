@@ -36,10 +36,10 @@ if _env_file.exists():
             if val and key not in os.environ:
                 os.environ[key] = val
 
-from memory.answer import answer
+from memory.answer import answer, answer_ex
 from memory.llm_client import STATS, stats_summary, provider_banner
 from memory.ingest import load_visible
-from memory.retrieve import retrieve
+from memory.retrieve import retrieve, llm_followup_queries, search_more
 
 
 def load_jsonl(path):
@@ -55,7 +55,24 @@ def run_one(question, as_of, data_dir, context_k=int(os.environ.get("ANSWER_CONT
     units = load_visible(data_dir, as_of)
     by_id = {u.id: u for u in units}
     context_units = [by_id[i] for i in ids[:context_k] if i in by_id]
-    text, sources, abstained = answer(question, as_of, context_units)
+    text, sources, abstained, missing = answer_ex(question, as_of, context_units)
+
+    # Search again before giving up: if the writer abstained or says something is still missing,
+    # the model reads the evidence, writes 1-3 new searches, those run over everything visible
+    # (a wider pool than the first pass), and the answer is written again with the added records.
+    if (abstained or missing) and not os.environ.get("DISABLE_LLM_FOLLOWUP"):
+        queries = llm_followup_queries(question, as_of, context_units, missing)
+        extra = search_more(queries, as_of, data_dir, exclude_ids=[u.id for u in context_units], k=8) if queries else []
+        if extra:
+            text2, sources2, abstained2, _ = answer_ex(question, as_of, context_units + extra)
+            text, sources, abstained = text2, sources2, abstained2
+            # records the final answer relies on go first, then the original order, then the new finds
+            seen, merged = set(), []
+            for i in list(sources) + ids + [u.id for u in extra]:
+                if i not in seen:
+                    seen.add(i)
+                    merged.append(i)
+            ids = merged[:20]
     return {"answer": text, "sources": sources, "retrieved": ids, "abstained": abstained}
 
 
@@ -70,6 +87,8 @@ def main():
     args = p.parse_args()
 
     print(provider_banner(), flush=True)
+    from memory.candidates import retrieval_banner
+    print("\n".join(retrieval_banner()), flush=True)
     items = load_jsonl(args.questions)
     Path(args.out).parent.mkdir(parents=True, exist_ok=True)
     status_path = Path(args.out + ".status.json")

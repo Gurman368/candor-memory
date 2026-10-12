@@ -4,3 +4,5 @@ __pycache__/
 .DS_Store
 eval_harness/results_*.json
 out/*.status.json
+out/dev_*
+.cache/

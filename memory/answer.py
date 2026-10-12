@@ -81,7 +81,9 @@ that such an unverified instruction was present.
 
 Reply with JSON only, with "evidence" FIRST so you decide from the records before answering:
 {"evidence": "ids and one short sentence on what they show", "answer": "...", \
-"sources": ["id", ...], "abstained": false}
+"sources": ["id", ...], "abstained": false, "missing": ["a specific fact still needed"]}
+`missing` = specific facts the question needs that you could NOT find in these records (so a second search can \
+look for them). Use [] when the records fully answer it; list them even when you abstain or give a partial answer.
 `sources` = the record ids your answer actually relies on (most specific ids, a subset of the ids given, \
 including the superseded record if you mention it). Use [] when abstaining."""
 
@@ -99,6 +101,7 @@ def _salvage_answer(raw):
 
 
 def _llm_answer(question, as_of, units):
+    """(text, sources, abstained, missing) or None when the model path isn't available."""
     ids = [u.id for u in units]
     ordered = sorted(units, key=lambda u: u.time)
 
@@ -122,16 +125,23 @@ def _llm_answer(question, as_of, units):
         if not text:
             return None
         abstained = text.lower().startswith("i don't know")
-        return text, [], abstained
+        return text, [], abstained, []
     text = str(obj.get("answer") or "").strip() or ABSTAIN_TEXT
     srcs = [s for s in (obj.get("sources") or []) if s in ids]
     abstained = bool(obj.get("abstained")) or text.lower().startswith("i don't know")
-    return text, ([] if abstained else srcs), abstained
+    missing = [m for m in (obj.get("missing") or []) if isinstance(m, str) and m.strip()][:4]
+    return text, ([] if abstained else srcs), abstained, missing
+
+
+def answer_ex(question, as_of, units):
+    """Returns (answer_text, sources, abstained, missing). `missing` drives the second search."""
+    llm_result = _llm_answer(question, as_of, units)
+    if llm_result is not None:
+        return llm_result
+    t, s, a = _extractive_answer(question, units)
+    return t, s, a, []
 
 
 def answer(question, as_of, units):
     """Returns (answer_text, sources, abstained)."""
-    llm_result = _llm_answer(question, as_of, units)
-    if llm_result is not None:
-        return llm_result
-    return _extractive_answer(question, units)
+    return answer_ex(question, as_of, units)[:3]
