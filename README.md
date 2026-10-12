@@ -35,7 +35,7 @@ python3 score_memory.py    --gold ../evals/memory_train.jsonl  --answers ../out/
 python3 score_actions.py   --gold ../evals/actions_train.jsonl --predictions ../out/actions_train_predictions.jsonl
 ```
 
-Install dependencies via `pip install -r requirements.txt` (installs `sentence-transformers` for the local embedding model and the local cross-encoder reranker; see "v3" below). No API key is strictly required to run end to end: with zero keys set, the memory system falls back to an extractive answerer and the action parser falls back to its rule-based path (see "Two answer paths" below). Adding an API key enables model-driven answer synthesis and action parsing.
+`pip install -r requirements.txt` installs `sentence-transformers` for the local embedding model and cross-encoder reranker (see "v3" below). No API key is strictly required: without one the memory system uses an extractive fallback and actions use the rule-based path. Adding an API key (Groq / Anthropic / Gemini) enables the full LLM pipeline.
 
 ## Architecture
 
